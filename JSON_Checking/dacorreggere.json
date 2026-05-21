@@ -1,0 +1,76 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Luca Occhi",
+      "eta": 34
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "ruolo": "Sviluppatore software",
+      "competenze_tecniche": [
+        "Progettazione software",
+        "Gestione progetti Scrum/Kanban",
+        "BPMN modeling",
+        "UML",
+        "Test Automation (JUnit)",
+        "Progettazione architetture microservizi"
+      ],
+      "lingue": [
+        "Inglese - B2"
+      ],
+      "soft_skills": [
+        "Comunicazione",
+        "Leadership",
+        "Gestione team",
+        "Gestione progetti"
+      ],
+      "tecnologie_conosciute": [
+        "Eclipse",
+        "IntelliJ IDEA",
+        "Visual Studio Code",
+        "JBoss",
+        "Tomcat",
+        "SVN",
+        "Git",
+        "Ant",
+        "Maven",
+        "Node.js",
+        "HTML5",
+        "XML",
+        "JavaScript",
+        "JQuery",
+        "CSS3",
+        "Bootstrap",
+        "Angular 7",
+        "Bootstrap Italia",
+        "J2EE",
+        "SpringBoot",
+        "Spring Data JPA",
+        "Oracle",
+        "MySQL",
+        "SQL",
+        "PL/SQL",
+        "Jira",
+        "SOAP/REST",
+        "UML",
+        "Liferay",
+        "Java",
+        "C",
+        "Bash",
+        "Python",
+        "Windows",
+        "Linux",
+        "Reti",
+        "Iptables"
+      ],
+      "certificazioni": [
+        "AgilePM Foundation (2020)"
+      ]
+    }
+  }
+}
