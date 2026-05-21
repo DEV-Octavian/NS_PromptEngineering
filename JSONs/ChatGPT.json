@@ -1,0 +1,87 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Luca Occhi",
+      "eta": 34
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "competenze": [
+        "Progettazione software",
+        "Sviluppo e manutenzione software",
+        "Gestione progetti",
+        "Team leadership",
+        "Microservizi",
+        "Interoperabilità SOAP/REST",
+        "Test automation",
+        "Database relazionali",
+        "Sicurezza informatica",
+        "Gestione reti"
+      ],
+      "lingue": [
+        "Italiano",
+        "Inglese"
+      ],
+      "soft_skills": [
+        "Comunicazione",
+        "Gestione team",
+        "Problem solving",
+        "Organizzazione",
+        "Leadership"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C",
+        "Python",
+        "Bash",
+        "J2EE",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Hibernate",
+        "Angular 7",
+        "HTML5",
+        "XML",
+        "JavaScript",
+        "jQuery",
+        "CSS3",
+        "Bootstrap",
+        "Bootstrap Italia",
+        "Oracle",
+        "MySQL",
+        "PL/SQL",
+        "SOAP",
+        "REST",
+        "JUnit",
+        "Selenium",
+        "Docker",
+        "OpenShift",
+        "Git",
+        "SVN",
+        "Maven",
+        "Ant",
+        "Node.js",
+        "JBoss",
+        "Tomcat",
+        "Liferay",
+        "Alfresco",
+        "Activiti",
+        "Jenkins",
+        "Nexus",
+        "GitLab",
+        "Jira",
+        "UML",
+        "Eclipse",
+        "IntelliJ IDEA",
+        "Visual Studio Code",
+        "Linux",
+        "Windows",
+        "Iptables"
+      ]
+    }
+  }
+}

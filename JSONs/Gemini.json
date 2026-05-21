@@ -1,0 +1,105 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Luca Occhi",
+      "eta": 34
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "competenze": [
+        "Progettazione software",
+        "Progettazione e manutenzione di progetti interni e in outsourcing",
+        "Implementazione e decisioni progettuali",
+        "Sviluppo frontend, back-office e front-office",
+        "Dematerializzazione flussi documentali",
+        "Case Management System basati su Motori di Workflow",
+        "Interoperabilità applicativa",
+        "Integrazione autenticazione forte, firma digitale e grafometrica",
+        "Gestione reti e relativi protocolli",
+        "Sicurezza informatica (software antimalware e firewall)",
+        "Elaborazione digitale delle immagini"
+      ],
+      "lingue": [
+        "Italiano",
+        "Inglese"
+      ],
+      "soft_skills": [
+        "Competenze comunicative",
+        "Competenze organizzative e gestionali",
+        "Team leadership",
+        "Scrum",
+        "Kanban",
+        "AgilePM"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C",
+        "Bash",
+        "Python",
+        "HTML5",
+        "XML",
+        "JavaScript",
+        "JQuery",
+        "CSS3",
+        "Bootstrap",
+        "Angular 7",
+        "Bootstrap Italia",
+        "J2EE",
+        "SpringBoot",
+        "Spring Data Jpa (Hibernate)",
+        "Oracle",
+        "Mysql",
+        "SQL",
+        "Oracle PL/SQL",
+        "Eclipse",
+        "Intellij IDEA",
+        "Visual Studio Code",
+        "JBoss",
+        "Tomcat",
+        "SVN",
+        "GIT",
+        "Ant",
+        "Maven",
+        "Node.js",
+        "BPMN specification & modeling",
+        "Jira",
+        "SOAP",
+        "REST",
+        "Junit",
+        "UML",
+        "Liferay Portal Server",
+        "Windows",
+        "GNU/Linux",
+        "Iptables",
+        "XSL-FO",
+        "PKCS#7",
+        "PKCS#11",
+        "SMTP",
+        "IMAP",
+        "S-MIME",
+        "EJB",
+        "JMS",
+        "JGroups",
+        "JAPS",
+        "Apache http Server",
+        "NFS",
+        "Log4j",
+        "JavaFX",
+        "CAS",
+        "Alfresco",
+        "Activiti",
+        "GitLab",
+        "Selenium",
+        "Docker Container",
+        "Open Shift",
+        "Jenkins",
+        "Nexus"
+      ]
+    }
+  }
+}
