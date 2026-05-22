@@ -1,0 +1,72 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Primo Alberi",
+      "eta": null
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Magistrale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 3
+    },
+    "competenze": {
+      "ruolo": "Developer",
+      "competenze_tecniche": [
+        "Implementazione codice sorgente",
+        "Personalizzazioni e sviluppo ad hoc",
+        "Configurazione avanzata prodotti",
+        "Bug tracking",
+        "Parametrizzazione componenti custom",
+        "Test di carico, funzionali, analisi statica e collaudo",
+        "Sviluppo registri decentralizzati blockchain"
+      ],
+      "lingue": [
+        "Italiano - madrelingua",
+        "Inglese - B2"
+      ],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Oracle 19c",
+        "PostgreSQL",
+        "Ubuntu Linux",
+        "Oracle Linux",
+        "VMWare ESXi",
+        "Liferay",
+        "Alfresco",
+        "Apache Tomcat",
+        "JBoss",
+        "Eclipse",
+        "ANSI C",
+        "Log4J",
+        "OpenLDAP",
+        "Java",
+        "Javascript",
+        "C/C++",
+        "HTML5",
+        "Python",
+        "Selenium",
+        "jUnit",
+        "J2EE",
+        "XML/XSL-FO",
+        "PKCS#7/#11",
+        "SMTP",
+        "IMAP",
+        "S-MIME",
+        "HTTP/SOAP",
+        "EJB",
+        "JMS",
+        "JGroups",
+        "JAPS",
+        "Oracle RDBMS",
+        "Apache HTTP Server",
+        "NFS",
+        "Hyperledger Fabric",
+        "Golang",
+        "Spring Framework",
+        "Docker"
+      ],
+      "certificazioni": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Daniele Bigozzi",
+      "eta": null
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea in Scienze dell'Informazione"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 35
+    },
+    "competenze": {
+      "ruolo": "Senior IT Project Manager",
+      "competenze_tecniche": [
+        "Gestione progetti IT",
+        "Analisi dei requisiti",
+        "Pianificazione e stima interventi",
+        "Allocazione risorse",
+        "Gestione rilasci in produzione",
+        "Manutenzione correttiva e adeguativa",
+        "Gestione SAL e collaudi",
+        "Case Management System",
+        "Workflow management",
+        "Dematerializzazione documentale"
+      ],
+      "lingue": [
+        "Italiano (madrelingua)",
+        "Inglese (B2)"
+      ],
+      "soft_skills": [
+        "Gestione rapporti con il cliente",
+        "Leadership",
+        "Pianificazione",
+        "Organizzazione",
+        "Problem solving"
+      ],
+      "tecnologie_conosciute": [
+        "Oracle 19c",
+        "PostgreSQL",
+        "Ubuntu Linux 18.04",
+        "VMWare ESXi 7",
+        "Oracle Linux Server 7",
+        "Liferay",
+        "Alfresco",
+        "Apache Tomcat",
+        "JBoss",
+        "Eclipse",
+        "ANSI C",
+        "Log4J",
+        "OpenLDAP",
+        "Java",
+        "JavaScript",
+        "C/C++",
+        "HTML5",
+        "Python",
+        "Selenium",
+        "jUnit"
+      ],
+      "certificazioni": [
+        "Red Hat Sales Specialist - Middleware Application Development (2018)",
+        "PRINCE2 (2014)",
+        "ITIL SS Intermediate level (2013)",
+        "PMP - Project Management Professional (2012)"
+      ]
+    }
+  }
+}

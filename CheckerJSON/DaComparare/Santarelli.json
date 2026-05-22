@@ -1,0 +1,103 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Eduardo Santarelli",
+      "eta": 38
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Filosofia – Università di Bologna"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 16
+    },
+    "competenze": {
+      "ruolo": "Analista Programmatore",
+      "competenze_tecniche": [
+        "Analisi e sviluppo software in ambito Pubblica Amministrazione",
+        "Progettazione e manutenzione di sistemi informativi civili e gestionali",
+        "Sviluppo back-end Java/JavaEE e microservizi",
+        "Sviluppo web front-end (SPA e portali responsive)",
+        "Progettazione e gestione di basi dati relazionali (Oracle, SQL Server, PL/SQL)",
+        "Pratiche DevOps e CI/CD (pipeline, automazione build e deploy)",
+        "Containerizzazione e orchestrazione (Docker, OpenShift)",
+        "Test automation e QA (JUnit, Selenium)",
+        "Help desk specialistico di II livello",
+        "Consulenza tecnica e supporto applicativo",
+        "Gestione rete aziendale (VMWare, Windows Server, Active Directory)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Oracle RDBMS",
+        "PL/SQL",
+        "SQL Server",
+        "Java",
+        "JavaEE",
+        "Spring Framework",
+        "Spring Boot",
+        "Java MicroProfile",
+        "Eclipse MicroProfile",
+        "JBoss/WildFly Application Server",
+        "IBM WebSphere Liberty",
+        "OpenLiberty",
+        "Oracle WebLogic",
+        "Oracle Service Bus",
+        "Python",
+        "Apache HTTP Server",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "JQuery",
+        "TypeScript",
+        "AngularJS",
+        "Angular 6+",
+        "Angular 7",
+        "React",
+        "Liferay Portal (v7.1)",
+        "Liferay Portal Server",
+        "JavaFX",
+        "XML",
+        "XML/XSL-FO",
+        "PKCS#7",
+        "PKCS#11",
+        "SMTP",
+        "IMAP",
+        "S-MIME",
+        "HTTP/SOAP",
+        "EJB",
+        "JMS",
+        "JGroups",
+        "JAPS",
+        "NFS",
+        "Log4j",
+        "Docker",
+        "OpenShift Container Platform",
+        "RedHat OpenShift 3.11",
+        "Ansible",
+        "RedHat 3Scale",
+        "Oracle IAM",
+        "Elasticsearch",
+        "Kibana",
+        "Hawcular",
+        "Heapster",
+        "JUnit",
+        "Selenium",
+        "Ant",
+        "Maven",
+        "Gradle",
+        "Webpack",
+        "Jenkins",
+        "Nexus Repository",
+        "Git",
+        "GitLab",
+        "VMWare",
+        "Windows Server",
+        "Active Directory",
+        "Sistemi operativi GNU/Linux"
+      ],
+      "certificazioni": []
+    }
+  }
+}

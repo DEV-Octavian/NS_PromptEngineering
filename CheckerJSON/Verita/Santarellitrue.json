@@ -1,0 +1,63 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Eduardo Santarelli",
+      "eta": 38
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Informatica (in corso) + Laurea Triennale in Filosofia"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "ruolo": "Analista Programmatore",
+      "competenze_tecniche": [
+        "Analisi e sviluppo software",
+        "Architetture a microservizi",
+        "DevOps e CI/CD",
+        "Containerizzazione e orchestrazione container",
+        "Infrastructure as Code",
+        "Test automation e QA",
+        "Help Desk II livello",
+        "Manutenzione correttiva applicativa",
+        "Sviluppo front-end e back-end",
+        "API management e API Gateway",
+        "Business Process Management",
+        "Gestione documentale",
+        "Redazione documentazione tecnica"
+      ],
+      "lingue": [
+        "Italiano (madrelingua)",
+        "Inglese (C1)"
+      ],
+      "soft_skills": [
+        "Problem solving",
+        "Lavoro in team",
+        "Autonomia",
+        "Redazione documentazione",
+        "Coordinamento"
+      ],
+      "tecnologie_conosciute": [
+        "Java", "J2EE", "Spring Framework", "Spring Boot",
+        "Java Microprofile", "Python", "JavaScript",
+        "TypeScript", "jQuery", "AngularJS", "Angular 6+",
+        "React", "HTML5", "CSS3",
+        "Oracle RDBMS", "PL/SQL", "SQL Server",
+        "JBoss/WildFly", "WebSphere Liberty", "OpenLiberty",
+        "Apache HTTP Server", "Liferay 7.1",
+        "Docker", "OpenShift Container Platform",
+        "RedHat OpenShift 3.11", "Ansible", "RedHat 3Scale",
+        "Oracle IAM", "Jenkins", "SonarQube", "Nexus",
+        "GitLab", "Maven", "Ant", "Gradle", "Webpack",
+        "Elasticsearch", "Kibana", "JUnit", "Selenium",
+        "XML", "PKCS#7", "PKCS#11", "SMTP", "IMAP",
+        "S-MIME", "HTTP/SOAP", "REST", "EJB", "JMS",
+        "JGroups", "Log4j", "JavaFX", "NFS",
+        "GNU/Linux", "VMWare", "Windows Server",
+        "Active Directory"
+      ],
+      "certificazioni": []
+    }
+  }
+}

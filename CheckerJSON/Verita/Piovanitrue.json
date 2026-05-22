@@ -1,0 +1,52 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Alessio Piovani",
+      "eta": 33
+    },
+    "formazione": {
+      "livello_di_istruzione": "Diploma di scuola superiore, Perito Informatico (laurea interrotta)"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "ruolo": "Sviluppatore software",
+      "competenze_tecniche": [
+        "Sviluppo front-end e back-end",
+        "Analisi dei requisiti evolutivi",
+        "Help Desk II livello",
+        "Testing e bugfix",
+        "Sviluppo app mobile (Android, iOS)",
+        "Progettazione UML",
+        "Sviluppo videogiochi (Unity3D)",
+        "Calcoli statistici (Saiku, Pentaho)"
+      ],
+      "lingue": [
+        "Italiano (madrelingua)",
+        "Inglese (B2/C1)",
+        "Francese (A2)"
+      ],
+      "soft_skills": [
+        "Problem solving",
+        "Lavoro in team",
+        "Autonomia"
+      ],
+      "tecnologie_conosciute": [
+        "Java", "J2EE", "C#", "HTML", "PHP", "MySQL",
+        "Assembly 8086", "C", "C++", "XML", "XSL-FO",
+        "PKCS#7", "PKCS#11", "SMTP", "IMAP", "S-MIME",
+        "HTTP/SOAP", "EJB", "JMS", "JGroups", "JAPS",
+        "Liferay Portal Server", "Oracle RDBMS",
+        "JBoss Application Server", "Apache HTTP Server",
+        "NFS", "Log4j", "Jira", "Alfresco",
+        "Saiku", "Pentaho Data Integration",
+        "NetBeans", "Eclipse", "Visual Studio", "VSCode",
+        "XAMPP", "WAMPP", "PhpMyAdmin",
+        "Unity3D", "MonoDevelop", "Xamarin Studio",
+        "Microsoft Office", "OpenOffice"
+      ],
+      "certificazioni": []
+    }
+  }
+}

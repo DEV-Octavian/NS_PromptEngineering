@@ -1,0 +1,118 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Luca Occhi",
+      "eta": 34
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Triennale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 10
+    },
+    "competenze": {
+      "ruolo": "Sviluppatore software",
+      "competenze_tecniche": [
+        "Progettazione software",
+        "Progettazione e modellazione BPMN",
+        "Analisi e modellazione UML",
+        "Gestione e progettazione di architetture a microservizi",
+        "Progettazione e gestione di basi di dati relazionali",
+        "Sviluppo applicazioni web full-stack",
+        "Sviluppo J2EE e Spring (Spring Boot, Spring Data JPA)",
+        "Sviluppo frontend con framework JavaScript (Angular)",
+        "Automazione dei test (JUnit, Selenium)",
+        "Gestione del ciclo di vita del software con strumenti di change management",
+        "Interoperabilità applicativa su modelli SOAP/REST",
+        "Conoscenze di reti e protocolli di rete",
+        "Sicurezza informatica (antimalware, firewall, iptables)",
+        "Metodologie Agile (Scrum, Kanban)",
+        "Case Management e Workflow su piattaforme enterprise"
+      ],
+      "lingue": [
+        "Italiano - Madrelingua",
+        "Inglese - B2"
+      ],
+      "soft_skills": [
+        "Competenze comunicative sviluppate in contesti di team e con clienti",
+        "Capacità di lavorare in team",
+        "Esperienza come team leader",
+        "Capacità di gestione di piccoli team (responsabile di un team di 3 persone)",
+        "Capacità di gestione di progetti",
+        "Orientamento agli obiettivi",
+        "Capacità organizzative",
+        "Problem solving",
+        "Attitudine al lavoro in contesti strutturati e con più stakeholder"
+      ],
+      "tecnologie_conosciute": [
+        "Eclipse",
+        "IntelliJ IDEA",
+        "Visual Studio Code",
+        "JBoss Application Server",
+        "Tomcat",
+        "Apache http Server",
+        "Apache Web Server",
+        "SVN",
+        "Git",
+        "Ant",
+        "Maven",
+        "Node.js",
+        "HTML5",
+        "XML",
+        "XML/XSL-FO",
+        "JavaScript",
+        "JQuery",
+        "CSS3",
+        "Bootstrap",
+        "Bootstrap Italia",
+        "Angular 7",
+        "Java",
+        "J2EE",
+        "Spring Boot",
+        "Spring Data JPA (Hibernate)",
+        "Oracle RDBMS",
+        "MySQL",
+        "SQL",
+        "Oracle PL/SQL",
+        "Jira (Atlassian)",
+        "SOAP",
+        "REST",
+        "HTTP/S",
+        "EJB",
+        "JMS",
+        "JGroups",
+        "JAPS",
+        "Liferay Portal Server",
+        "Liferay CMS",
+        "NFS",
+        "Log4j",
+        "JavaFX",
+        "CAS",
+        "Alfresco",
+        "Activiti",
+        "JUnit",
+        "Selenium",
+        "Docker",
+        "OpenShift",
+        "GitLab",
+        "Jenkins",
+        "Nexus",
+        "PKCS#7",
+        "PKCS#11",
+        "SMTP",
+        "IMAP",
+        "S-MIME",
+        "Windows",
+        "GNU/Linux",
+        "Shell Bash",
+        "Bash scripting",
+        "Python",
+        "Software antimalware",
+        "Firewall e iptables"
+      ],
+      "certificazioni": [
+        "AgilePM Foundation (2020)"
+      ]
+    }
+  }
+}

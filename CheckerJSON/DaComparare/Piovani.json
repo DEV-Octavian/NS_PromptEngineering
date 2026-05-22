@@ -1,0 +1,95 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Alessio Piovani",
+      "eta": 33
+    },
+    "formazione": {
+      "livello_di_istruzione": "Diploma di scuola superiore – Perito Informatico (I.T.I.S. Odone Belluzzi - Informatica ABACUS)"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 11
+    },
+    "competenze": {
+      "ruolo": "Programmatore software in outsourcing per il Ministero della Giustizia",
+      "competenze_tecniche": [
+        "Sviluppo front-end e back-end (Java, JBoss)",
+        "Analisi dei requisiti",
+        "Sviluppo ed evoluzione di software di cancelleria",
+        "Sviluppo app da zero (anche in team)",
+        "Help Desk di II livello",
+        "Testing e bug fixing",
+        "Progettazione UML",
+        "Scrittura di pseudo-codice",
+        "Programmazione in Java, C#, C, C++, HTML, PHP, MySQL, Assembly 8086",
+        "Sviluppo app Android/iOS",
+        "Utilizzo di strumenti di tracking issues",
+        "Utilizzo di strumenti per calcoli statistici",
+        "Sviluppo videogiochi (progetti personali)"
+      ],
+      "lingue": [
+        "Italiano - Madrelingua",
+        "Francese - A2",
+        "Inglese - B2"
+      ],
+      "soft_skills": [
+        "Risoluzione problemi",
+        "Lavoro in team",
+        "Autonomia operativa",
+        "Supporto agli utenti (Help Desk)"
+      ],
+      "tecnologie_conosciute": [
+        "Microsoft Office",
+        "OpenOffice",
+        "NetBeans",
+        "Eclipse",
+        "Visual Studio",
+        "VSCode",
+        "DIA",
+        "XAMPP",
+        "WAMPP",
+        "PhpMyAdmin",
+        "Unity3D",
+        "MonoDevelop",
+        "Xamarin Studio",
+        "Xamarin Forms",
+        "Jira",
+        "Alfresco",
+        "Saiku",
+        "Pentaho Data Integration",
+        "Java",
+        "C#",
+        "C",
+        "C++",
+        "HTML",
+        "PHP",
+        "MySQL",
+        "Assembly 8086",
+        "J2EE",
+        "XML",
+        "PKCS#7",
+        "PKCS#11",
+        "SMTP",
+        "IMAP",
+        "S-MIME",
+        "HTTP",
+        "SOAP",
+        "EJB",
+        "JMS",
+        "JGroups",
+        "JAPS",
+        "Liferay Portal Server",
+        "Oracle RDBMS",
+        "JBoss Application Server",
+        "Apache HTTP Server",
+        "NFS",
+        "Log4j",
+        "Android",
+        "iOS"
+      ],
+      "certificazioni": [
+        "Corso Formazione e Informazione dei Lavoratori a Basso Rischio"
+      ]
+    }
+  }
+}

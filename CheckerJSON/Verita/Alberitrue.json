@@ -1,0 +1,52 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Primo Alberi",
+      "eta": null
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea Magistrale in Informatica"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 7
+    },
+    "competenze": {
+      "ruolo": "Developer",
+      "competenze_tecniche": [
+        "Implementazione codice sorgente",
+        "Personalizzazioni e sviluppo ad hoc",
+        "Configurazione avanzata di prodotti specifici",
+        "Bug tracking e risoluzione bug",
+        "Parametrizzazione e implementazione componenti custom",
+        "Interfacce di integrazione",
+        "Test di carico e funzionali",
+        "Analisi statica e collaudo",
+        "Sviluppo blockchain permissioned",
+        "Registri decentralizzati"
+      ],
+      "lingue": [
+        "Italiano (madrelingua)",
+        "Inglese (B2)"
+      ],
+      "soft_skills": [
+        "Problem solving",
+        "Autonomia",
+        "Lavoro in team"
+      ],
+      "tecnologie_conosciute": [
+        "Oracle 19c", "PostgreSQL", "Oracle",
+        "Ubuntu Linux 18.04", "VMWare ESXi 7",
+        "Oracle Linux Server 7", "Liferay", "Alfresco",
+        "Apache Tomcat", "JBoss", "Eclipse", "ANSI C",
+        "Log4J", "OpenLDAP", "Java", "JavaScript",
+        "C/C++", "HTML5", "Python", "Selenium", "jUnit",
+        "J2EE", "XML/XSL-FO", "PKCS#7", "PKCS#11",
+        "SMTP", "IMAP", "S-MIME", "HTTP/SOAP",
+        "EJB", "JMS", "JGroups",
+        "Hyperledger Fabric", "Golang",
+        "Spring Framework", "Docker Container"
+      ],
+      "certificazioni": []
+    }
+  }
+}

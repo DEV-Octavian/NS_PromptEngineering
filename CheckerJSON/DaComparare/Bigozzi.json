@@ -1,0 +1,73 @@
+{
+  "profilo_candidato": {
+    "informazioni_personali": {
+      "nome_e_cognome": "Daniele Bigozzi",
+      "eta": null
+    },
+    "formazione": {
+      "livello_di_istruzione": "Laurea in Scienze dell'Informazione (Università degli studi di Bologna)"
+    },
+    "esperienza": {
+      "anni_di_anzianita": 29
+    },
+    "competenze": {
+      "ruolo": "Senior IT Project Manager",
+      "competenze_tecniche": [
+        "Gestione progetti IT complessi",
+        "Gestione rapporti con il cliente/committente",
+        "Analisi richieste del cliente",
+        "Analisi dei requisiti di sistema",
+        "Stima tempi/costi e pianificazione interventi",
+        "Definizione tempi di progetto e allocazione risorse",
+        "Gestione rilasci in produzione",
+        "Gestione richieste di implementazione evolutiva",
+        "Pianificazione e gestione SAL e collaudi",
+        "Governo ciclo di manutenzione correttiva e adeguativa",
+        "Adozione metodologie Agile SCRUM",
+        "Gestione servizi di help desk e manutenzione applicativa"
+      ],
+      "lingue": [
+        "Italiano - madrelingua",
+        "Inglese - B2"
+      ],
+      "soft_skills": [
+        "Capacità di gestione del cliente",
+        "Leadership e coordinamento di team",
+        "Pianificazione e organizzazione",
+        "Orientamento al risultato",
+        "Problem solving",
+        "Capacità di lavorare per obiettivi",
+        "Comunicazione efficace",
+        "Attenzione alla qualità del servizio"
+      ],
+      "tecnologie_conosciute": [
+        "Oracle 19c",
+        "PostgreSQL",
+        "Ubuntu Linux",
+        "Oracle Linux Server",
+        "VMWare ESXi",
+        "Liferay",
+        "Alfresco",
+        "Apache Tomcat",
+        "JBoss",
+        "Eclipse",
+        "Log4J",
+        "OpenLDAP",
+        "Java",
+        "Javascript",
+        "C",
+        "C++",
+        "HTML5",
+        "Python",
+        "Selenium",
+        "JUnit"
+      ],
+      "certificazioni": [
+        "Red Hat Sales Specialist - Middleware Application Development (10/2018)",
+        "Prince2 (07/2014)",
+        "ITIL SS Intermediate level (07/2013)",
+        "PMP - Project Management Professional (05/2012)"
+      ]
+    }
+  }
+}
