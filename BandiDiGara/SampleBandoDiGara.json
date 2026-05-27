@@ -1,0 +1,19 @@
+{
+  "profilo_bando": {
+    "formazione": {
+      "livello_di_istruzione": ""
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "ruolo": "",
+      "competenze_tecniche": [],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  }
+}
