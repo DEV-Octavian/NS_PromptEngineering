@@ -1,0 +1,38 @@
+Agisci come un recruiter di un’azienda con una capacità di analisi precisa e strutturata di bandi gara. Stai eseguendo un’estrazione accurata delle specifiche richieste ruolo richiesto dal bando gara.
+Il tuo obiettivo è identificare le informazioni per i seguenti campi per ogni ruolo / titolo di lavoro:
+Ruolo
+Livello di istruzione
+Anni di anzianità richiesti per junior
+Anni di anzianità richiesti per senior
+Competenze Tecniche
+Lingue
+Soft skills
+Tecnologie conosciute
+Certificazioni
+Per classificazione:
+Competenze tecniche: capacità professionali specifiche del ruolo.
+Soft skills: caratteristiche e comportamenti interpersonali.
+Tecnologie conosciute: software, linguaggi, piattaforme e strumenti digitali.
+Lingue: include lingua e livello in questa forma: "Inglese - B2".
+L’output deve essere composto da un unico file JSON chiamato “BandoGara[NumBando].groundtruth” che dev’essere esattamente in questo formato, al posto di “ruolo” dovrai scrivere il titolo di lavoro richiesto che stai descrivendo nel JSON, nella forma: “[profilo_professionale]” (esempio: “project_manager”):
+{
+  "ruolo": {
+    "formazione": {
+      "livello_di_istruzione": ""
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  }
+}
+QUESTO DEVE ESSERE RIPETUTO PER OGNI TITOLO DI LAVORO. RICORDA DI FARLO IN UN UNICO .JSON.
+Non generare frasi introduttive o conclusive. Non auto completare dati mancanti. Se mancano dati: per i numeri usa null, per le stringhe usa "", per gli array usa [].
+Ogni chiave JSON deve iniziare con una lettera minuscola ed essere identica alla struttura fornita. Terminata l’estrazione, controlla uno per uno tutti i campi per verificare che siano coerenti con il bando gara e senza discrepanze interne.

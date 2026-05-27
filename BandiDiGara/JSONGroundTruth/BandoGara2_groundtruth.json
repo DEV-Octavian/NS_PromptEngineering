@@ -1,0 +1,200 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione di progetti ICT dal concepimento alla consegna finale",
+        "Adozione e promozione di metodologie agili",
+        "Gestione della performance di progetto",
+        "Controllo qualità, sicurezza e sostenibilità",
+        "Gestione costi e tempi di progetto"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Leadership",
+        "Capacità organizzative",
+        "Gestione delle priorità",
+        "Orientamento ai risultati"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "cloud_administrator": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 3
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione e manutenzione di infrastrutture cloud",
+        "Installazione e configurazione di sistemi ICT",
+        "Monitoraggio delle prestazioni cloud",
+        "Implementazione di policy di sicurezza delle informazioni",
+        "Gestione backup e piani di disaster recovery",
+        "Automazione delle attività di routine",
+        "Ottimizzazione delle risorse cloud",
+        "Progettazione e gestione di strategie per le basi dati",
+        "Monitoraggio e miglioramento delle performance dei database",
+        "Pianificazione dell'espansione dei database"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Attenzione ai dettagli",
+        "Problem solving",
+        "Proattività"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "solution_application_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale o superiore"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 3
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Implementazione e integrazione di soluzioni applicative basate su cloud computing",
+        "Valutazione dei vincoli e rischi di progetto",
+        "Definizione di requisiti non funzionali (scalabilità, sicurezza)",
+        "Progettazione della struttura e dei componenti delle applicazioni software",
+        "Progettazione, realizzazione, controllo e manutenzione delle basi dati",
+        "Garanzia di affidabilità, manutenibilità e scalabilità delle applicazioni",
+        "Supervisione di team di sviluppatori",
+        "Allineamento delle soluzioni alle strategie e agli standard tecnici"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Capacità di analisi",
+        "Problem solving",
+        "Capacità di supervisione",
+        "Comunicazione tecnica"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale o superiore"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi del sistema informativo per il miglioramento della performance del business",
+        "Identificazione delle aree di cambiamento del sistema informativo",
+        "Formulazione dei requisiti funzionali e non funzionali",
+        "Supervisione della corretta applicazione dei requisiti",
+        "Gestione del cambiamento (change management)",
+        "Controllo dell'impatto delle modifiche sul sistema informativo"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Capacità analitiche",
+        "Orientamento al business",
+        "Capacità di comunicazione con stakeholder",
+        "Attenzione al dettaglio"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "cloud_front_end_mobile_developer": {
+    "formazione": {
+      "livello_di_istruzione": "Diploma di scuola media superiore"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 2,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Realizzazione e codifica di soluzioni ICT",
+        "Scrittura di specifiche di prodotti ICT conformi ai requisiti del cliente",
+        "Sviluppo di applicazioni con architetture multilivello, web-based e cloud-based",
+        "Pianificazione e disegno di dettaglio applicativo",
+        "Sviluppo di programmi di diagnostica",
+        "Progettazione e scrittura di software per massimizzare funzionalità ed efficienza",
+        "Realizzazione e codifica di interfacce web responsive"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Precisione",
+        "Capacità di lavorare in team",
+        "Orientamento alla qualità"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "service_desk_agent": {
+    "formazione": {
+      "livello_di_istruzione": "Diploma di scuola media superiore"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 1,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Supporto telefonico e via e-mail a clienti interni ed esterni per aspetti tecnici",
+        "Risoluzione di errori dovuti a problemi o aspetti critici ICT",
+        "Supporto agli utenti per massimizzare la produttività nell'uso di attrezzature ICT e applicazioni software"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Cortesia e professionalità",
+        "Capacità di comunicazione",
+        "Orientamento al cliente",
+        "Gestione dello stress"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_dominio": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento con almeno un corso post-laurea nella materia di riferimento della capacità professionale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Competenze specialistiche in materia giuridica e normativa",
+        "Competenze in materia di protezione dei dati e GDPR",
+        "Conoscenza dei procedimenti amministrativi della PA",
+        "Competenze di comunicazione pubblica",
+        "Supporto all'innovazione, semplificazione e digitalizzazione dei processi",
+        "Dialogo con l'Amministrazione per recepire e indirizzare esigenze di innovazione",
+        "Definizione dei requisiti nei progetti realizzativi e nello svolgimento dei servizi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Capacità di interlocuzione con la Pubblica Amministrazione",
+        "Capacità di analisi normativa",
+        "Comunicazione efficace",
+        "Orientamento all'innovazione"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  }
+}
