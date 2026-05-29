@@ -1,0 +1,456 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 12
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Normativa appalti pubblici",
+        "Tematiche ICT applicative e infrastrutturali",
+        "Principi e tecnologie di Intelligenza Artificiale",
+        "Cybersecurity, continuità operativa, privacy",
+        "Tecniche di stima e misura dei progetti",
+        "Metodologie di sviluppo sistemi e test",
+        "Project management",
+        "Risk management"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Ottime capacità relazionali"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "Certificazione Project Management PMI o equivalenti"
+      ]
+    }
+  },
+
+  "consulente_organizzativo_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Pianificazione strategica",
+        "Reingegnerizzazione processi",
+        "Change management",
+        "Studi di fattibilità",
+        "Analisi di mercato",
+        "Program & Project Management",
+        "Valutazione impatti organizzativi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Visione ampia e propositiva",
+        "Interazione ai diversi livelli gerarchici"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+
+  "consulente_organizzativo_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 3,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Pianificazione strategica",
+        "Reingegnerizzazione processi",
+        "Change management",
+        "Studi di fattibilità",
+        "Analisi di mercato"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Visione ampia",
+        "Interazione ai diversi livelli gerarchici"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "consulente_bpr_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi organizzativa",
+        "Business Process Reengineering",
+        "Gestione del cambiamento",
+        "Benchmarking",
+        "Analisi comparate",
+        "Digitalizzazione servizi PA"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+
+  "consulente_bpr_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi processi",
+        "Business Process Reengineering",
+        "Benchmarking",
+        "Mappatura processi"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Raccolta requisiti",
+        "Analisi funzionale",
+        "Modellazione dati",
+        "OOA",
+        "SOA",
+        "Test planning",
+        "Documentazione funzionale",
+        "Machine learning",
+        "Data science",
+        "IA governance"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Python",
+        "R",
+        "Piattaforme cloud IA"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "CBAP",
+        "Certificazioni IA (es. Microsoft AI Fundamentals, Google ML Engineer)"
+      ]
+    }
+  },
+
+  "business_information_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Sviluppo applicativo cloud",
+        "Data mining",
+        "Open data",
+        "Big data",
+        "Workflow management",
+        "Document management",
+        "Service management framework"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "digital_transformation_leader": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Strategia digitale",
+        "Digital by design",
+        "Business case",
+        "Analisi dati",
+        "Trend tecnologici",
+        "Intelligenza Artificiale"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "esperto_change_management_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Change management",
+        "Mappatura competenze",
+        "Comunicazione",
+        "Risk management",
+        "Privacy",
+        "Sicurezza informatica"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "esperto_change_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 6,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Change management",
+        "Mappatura competenze",
+        "Comunicazione"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "digital_educator_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Tecnologie formative",
+        "Didattica",
+        "E-learning",
+        "Progettazione formativa",
+        "Risk management IA"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "digital_educator_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione formativa",
+        "E-learning",
+        "Supporto alla formazione"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "consulente_project_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 7
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Project management",
+        "Risk management",
+        "PMO",
+        "Normativa appalti pubblici",
+        "Cybersecurity",
+        "Continuità operativa",
+        "Privacy"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+
+  "user_experience_designer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "User centered design",
+        "Usabilità",
+        "Accessibilità",
+        "Prototipazione",
+        "Design thinking",
+        "Markup",
+        "Scripting",
+        "CMS/ECM"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "OWL",
+        "Strumenti di prototipazione",
+        "Strumenti multimediali"
+      ],
+      "certificazioni": []
+    }
+  },
+
+  "esperto_di_dominio": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea in discipline tecniche"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi dati",
+        "Cybersecurity",
+        "Continuità operativa",
+        "Privacy",
+        "Data governance",
+        "Analisi economica/giuridica",
+        "IA applicata al dominio"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+
+  "ai_strategy_advisor": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Strategia IA",
+        "Machine learning",
+        "Data science",
+        "Analisi dati",
+        "Digital transformation",
+        "Normativa IA"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "Certificazioni IA",
+        "Certificazioni Project Management"
+      ]
+    }
+  },
+
+  "ai_compliance_risk_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "AI Act",
+        "GDPR",
+        "ISO/IEC 42001",
+        "ISO/IEC 23894",
+        "Risk management",
+        "Audit IA",
+        "Data protection",
+        "Bias management"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [],
+      "certificazioni": [
+        "ITIL 4 foundation (consigliata)",
+        "CIPP/E",
+        "ISO/IEC 27001",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "CISSP",
+        "CISM"
+      ]
+    }
+  }
+}

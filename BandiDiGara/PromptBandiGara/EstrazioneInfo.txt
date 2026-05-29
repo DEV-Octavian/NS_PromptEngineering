@@ -14,7 +14,7 @@ Competenze tecniche: capacità professionali specifiche del ruolo.
 Soft skills: caratteristiche e comportamenti interpersonali.
 Tecnologie conosciute: software, linguaggi, piattaforme e strumenti digitali.
 Lingue: include lingua e livello in questa forma: "Inglese - B2".
-L’output deve essere composto da un unico file JSON chiamato “BandoGara[NumBando].groundtruth” che dev’essere esattamente in questo formato, al posto di “ruolo” dovrai scrivere il titolo di lavoro richiesto che stai descrivendo nel JSON, nella forma: “[profilo_professionale]” (esempio: “project_manager”):
+L’output deve essere composto da un unico file JSON chiamato “BandoGara[NumBando]” che dev’essere esattamente in questo formato, al posto di “ruolo” dovrai scrivere il titolo di lavoro richiesto che stai descrivendo nel JSON, nella forma: “[profilo_professionale]” (esempio: “project_manager”):
 {
   "ruolo": {
     "formazione": {

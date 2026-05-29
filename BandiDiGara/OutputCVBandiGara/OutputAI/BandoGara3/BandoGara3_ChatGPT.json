@@ -1,0 +1,904 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 8,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Project management",
+        "Business applications and information systems architecture",
+        "SDLC",
+        "Agile",
+        "SAFE",
+        "Waterfall",
+        "System integration",
+        "Risk management",
+        "Data management",
+        "Cybersecurity best practices",
+        "ITIL"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Leadership",
+        "Communication",
+        "Negotiation",
+        "Analytical thinking",
+        "Problem-solving",
+        "Organizational skills",
+        "Stakeholder management",
+        "Team management",
+        "Ability to work under pressure",
+        "Multitasking"
+      ],
+      "tecnologie_conosciute": [
+        "MS Project",
+        "Jira",
+        "Azure DevOps",
+        "AWS",
+        "Azure",
+        "APIs",
+        "Middleware"
+      ],
+      "certificazioni": [
+        "PMBOK",
+        "PM²",
+        "PRINCE2",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 8,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Requirements gathering",
+        "Business process analysis",
+        "Solution validation",
+        "UAT",
+        "Data analysis",
+        "Software development methodologies",
+        "Business modelling",
+        "Documentation"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Analytical thinking",
+        "Critical thinking",
+        "Communication",
+        "Facilitation",
+        "Presentation skills",
+        "Attention to detail",
+        "Organizational skills",
+        "Interpersonal skills",
+        "Adaptability",
+        "Teamwork"
+      ],
+      "tecnologie_conosciute": [
+        "SWOT",
+        "MoSCoW",
+        "BPMN",
+        "UML",
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "Trello",
+        "SQL",
+        "Excel",
+        "Power BI",
+        "ERP",
+        "CRM"
+      ],
+      "certificazioni": []
+    }
+  },
+  "testing_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 8,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Test planning",
+        "Manual testing",
+        "Automated testing",
+        "Bug tracking",
+        "Regression testing",
+        "Integration testing",
+        "Performance testing",
+        "QA methodologies",
+        "Agile testing"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Attention to detail",
+        "Analytical thinking",
+        "Problem-solving",
+        "Communication",
+        "Documentation skills",
+        "Collaboration",
+        "Continuous learning",
+        "Task management",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "Azure DevOps",
+        "TestRail",
+        "Bugzilla",
+        "OTRS",
+        "ServiceNow",
+        "Selenium",
+        "webdriver.io",
+        "Postman",
+        "Python",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "JMeter",
+        "Jenkins",
+        "GitLab CI"
+      ],
+      "certificazioni": [
+        "ISTQB Foundation Level",
+        "ISTQB Advanced Level"
+      ]
+    }
+  },
+  "solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Software architecture",
+        "Enterprise architecture",
+        "Data modelling",
+        "Business process analysis",
+        "System integration",
+        "DevOps",
+        "CI/CD",
+        "Technical leadership"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Strategic thinking",
+        "Problem-solving",
+        "Communication",
+        "Presentation skills",
+        "Leadership",
+        "Collaboration",
+        "Attention to detail",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "REST",
+        "SOAP",
+        "Kafka",
+        "RabbitMQ",
+        "SQL",
+        "NoSQL",
+        "Docker",
+        "Kubernetes",
+        "TOGAF",
+        "Zachman",
+        "ERP",
+        "CRM",
+        "CMS",
+        "ArchiMate",
+        "Sparx EA"
+      ],
+      "certificazioni": []
+    }
+  },
+  "security_officer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 8,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Cybersecurity",
+        "Risk management",
+        "Security audits",
+        "Incident response",
+        "Compliance management",
+        "IAM",
+        "Vulnerability management",
+        "Penetration testing",
+        "Security awareness training"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Integrity",
+        "Confidentiality",
+        "Analytical thinking",
+        "Problem-solving",
+        "Communication",
+        "Leadership",
+        "Collaboration",
+        "Documentation skills",
+        "Ability to work under pressure"
+      ],
+      "tecnologie_conosciute": [
+        "Splunk",
+        "QRadar",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Linux",
+        "Windows",
+        "SSL/TLS",
+        "HTTPS",
+        "IPsec",
+        "Nessus",
+        "Qualys",
+        "VPN",
+        "PKI",
+        "MFA"
+      ],
+      "certificazioni": [
+        "ISO 27001",
+        "NIST"
+      ]
+    }
+  },
+  "software_developer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Software development",
+        "Unit testing",
+        "Integration testing",
+        "Code versioning",
+        "Release management",
+        "CI/CD",
+        "REST APIs",
+        "SDLC",
+        "Agile",
+        "Scrum",
+        "Kanban"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Communication",
+        "Team collaboration",
+        "Time management",
+        "Attention to detail",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C#",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "PHP",
+        "IBM Case Manager",
+        "IBM Business Automations",
+        "BPM",
+        "React",
+        "Angular",
+        "Spring Boot",
+        "Django",
+        ".NET",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "JUnit",
+        "Mocha",
+        "Jasmine",
+        "Azure DevOps",
+        "Jenkins",
+        "GitLab CI",
+        "Travis CI",
+        "Jira",
+        "Confluence"
+      ],
+      "certificazioni": []
+    }
+  },
+  "support_officer_trainer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree, post-secondary education, or secondary education with equivalent professional experience in Computer Science or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Second-line IT support",
+        "IT asset management",
+        "Training delivery",
+        "Technical troubleshooting",
+        "IT security compliance",
+        "IT service management"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Organizational skills",
+        "Time management",
+        "Communication",
+        "Interpersonal skills",
+        "Autonomy",
+        "Collaboration",
+        "Resilience",
+        "Flexibility",
+        "Proactivity"
+      ],
+      "tecnologie_conosciute": [
+        "Microsoft 365",
+        "Azure",
+        "ITIL",
+        "Confluence",
+        "SharePoint"
+      ],
+      "certificazioni": [
+        "ITIL Foundation",
+        "Microsoft Certified: Modern Desktop Administrator Associate",
+        "CompTIA Network+",
+        "CompTIA Security+"
+      ]
+    }
+  },
+  "m365_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "M365 administration",
+        "Solution design",
+        "M365 governance",
+        "Identity and access management",
+        "Automation",
+        "CI/CD",
+        "Agile delivery"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Documentation skills",
+        "Troubleshooting",
+        "Collaboration"
+      ],
+      "tecnologie_conosciute": [
+        "SharePoint Online",
+        "Microsoft Teams",
+        "Exchange Online",
+        "OneDrive",
+        "Power Automate",
+        "Power Apps",
+        "Azure Active Directory",
+        "MFA",
+        "Intune",
+        "Autopilot",
+        "Endpoint Manager",
+        "Microsoft 365 Defender",
+        "Azure Security Centre",
+        "Microsoft Purview",
+        "DLP",
+        "Microsoft Sentinel",
+        "PowerShell",
+        "Azure DevOps",
+        "Active Directory",
+        "Exchange Server"
+      ],
+      "certificazioni": [
+        "PM2-Agile",
+        "Scrum"
+      ]
+    }
+  },
+  "ibm_solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Solution architecture",
+        "Data modelling",
+        "Business process analysis",
+        "Agile DevOps"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Workshop facilitation",
+        "Presentation skills",
+        "Documentation skills",
+        "Multicultural collaboration"
+      ],
+      "tecnologie_conosciute": [
+        "IBM Filenet",
+        "IBM Content Navigator",
+        "IBM Business Automation Workflow",
+        "Datacap",
+        "IBM Enterprise Bus",
+        "Aspera",
+        "IBM Cloud Pak",
+        "AI technologies"
+      ],
+      "certificazioni": []
+    }
+  },
+  "network_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Network design",
+        "Network monitoring",
+        "Troubleshooting",
+        "Network security",
+        "Infrastructure optimization",
+        "WAN technologies",
+        "Wi-Fi configuration"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Communication",
+        "Teamwork",
+        "Attention to detail",
+        "Adaptability",
+        "Time management",
+        "Organizational skills"
+      ],
+      "tecnologie_conosciute": [
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "HTTP",
+        "SNMP",
+        "VPN",
+        "OSPF",
+        "BGP",
+        "EIGRP",
+        "VLAN",
+        "STP",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "SolarWinds",
+        "PRTG",
+        "Wireshark",
+        "AWS",
+        "Azure",
+        "SDN",
+        "VMware NSX",
+        "IPv6",
+        "MPLS",
+        "SD-WAN",
+        "802.11",
+        "Wi‑Fi 6"
+      ],
+      "certificazioni": []
+    }
+  },
+  "data_and_ai_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Data governance",
+        "Data modelling",
+        "AI pipelines",
+        "Machine learning",
+        "Generative AI",
+        "Data visualization",
+        "LLM fine-tuning",
+        "Containerization"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Collaboration",
+        "Innovation",
+        "Technical guidance"
+      ],
+      "tecnologie_conosciute": [
+        "Apache Atlas",
+        "DataHub",
+        "ELK Stack",
+        "IBM solutions",
+        "Microsoft platforms",
+        "Hugging Face Transformers",
+        "TensorFlow",
+        "PyTorch",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "cloud_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Cloud infrastructure design",
+        "Infrastructure as Code",
+        "Cloud security",
+        "Cloud migration",
+        "CI/CD integration",
+        "Automation",
+        "Monitoring"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Communication",
+        "Attention to detail",
+        "Time management",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "EC2",
+        "S3",
+        "Lambda",
+        "RDS",
+        "VPC",
+        "Azure Virtual Machines",
+        "Azure Blob Storage",
+        "AKS",
+        "Terraform",
+        "CloudFormation",
+        "Azure ARM",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "GitLab CI",
+        "AWS CodePipeline",
+        "Azure DevOps",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "CloudWatch",
+        "Azure Monitor",
+        "Prometheus",
+        "Datadog",
+        "New Relic"
+      ],
+      "certificazioni": []
+    }
+  },
+  "devsecops_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "DevSecOps",
+        "CI/CD",
+        "Security automation",
+        "Vulnerability management",
+        "Cloud security",
+        "Incident response",
+        "Infrastructure as Code",
+        "Compliance management"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Collaboration",
+        "Problem-solving",
+        "Attention to detail",
+        "Leadership",
+        "Mentorship",
+        "Adaptability",
+        "Time management"
+      ],
+      "tecnologie_conosciute": [
+        "Jenkins",
+        "GitLab CI",
+        "Azure DevOps",
+        "CircleCI",
+        "Snyk",
+        "SonarQube",
+        "Fortify",
+        "Aqua Security",
+        "HashiCorp Vault",
+        "OWASP ZAP",
+        "Docker",
+        "Kubernetes",
+        "AWS Security Hub",
+        "Azure Security Center",
+        "GCP Security Command Center",
+        "AWS IAM",
+        "Azure AD",
+        "Terraform",
+        "CloudFormation",
+        "Azure ARM",
+        "Splunk",
+        "ELK Stack",
+        "Nessus",
+        "Qualys",
+        "Datadog",
+        "New Relic",
+        "Syslog",
+        "OSSEC"
+      ],
+      "certificazioni": []
+    }
+  },
+  "systems_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Infrastructure engineering",
+        "Virtualized infrastructure",
+        "Infrastructure monitoring",
+        "Cloud resource management",
+        "Infrastructure security",
+        "Infrastructure as Code",
+        "Containerization"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Communication",
+        "Attention to detail",
+        "Time management",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "Nutanix AHV",
+        "Nutanix AOS",
+        "Prism",
+        "Linux",
+        "Windows Server",
+        "Terraform",
+        "Ansible",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "Docker",
+        "Kubernetes",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "SolarWinds",
+        "PRTG",
+        "Nagios",
+        "AWS Cost Explorer",
+        "Azure Cost Management"
+      ],
+      "certificazioni": []
+    }
+  },
+  "it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "IT infrastructure support",
+        "Technical support",
+        "System monitoring",
+        "IT security best practices",
+        "ITIL service management",
+        "Documentation",
+        "Training"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Analytical thinking",
+        "Communication",
+        "Interpersonal skills",
+        "Customer orientation",
+        "Adaptability",
+        "Meeting leadership"
+      ],
+      "tecnologie_conosciute": [
+        "Windows",
+        "Linux",
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "VPN",
+        "Active Directory",
+        "Microsoft 365",
+        "VMware",
+        "Hyper-V",
+        "PowerShell",
+        "Bash",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "high_level_it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Master Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "IT infrastructure design",
+        "Architecture planning",
+        "Cybersecurity",
+        "Risk assessment",
+        "Disaster recovery",
+        "DevOps methodologies",
+        "Software engineering methodologies",
+        "Business case analysis"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Strategic thinking",
+        "Leadership",
+        "Decision-making",
+        "Communication",
+        "Project management",
+        "Adaptability",
+        "Documentation skills",
+        "Team coordination"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "GCP",
+        "PowerShell",
+        "Python",
+        "Ansible",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "NIST",
+        "ISO 27001"
+      ],
+      "certificazioni": []
+    }
+  },
+  "service_desk_operator": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree, post-secondary education, or secondary education with equivalent professional experience"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "First-line technical support",
+        "Hardware troubleshooting",
+        "Software troubleshooting",
+        "Network troubleshooting",
+        "User account management",
+        "Inventory management",
+        "Service management"
+      ],
+      "lingue": [
+        "English - C1"
+      ],
+      "soft_skills": [
+        "Analytical thinking",
+        "Problem-solving",
+        "Communication",
+        "Customer orientation",
+        "Flexibility",
+        "Responsiveness",
+        "Discretion",
+        "Collaboration",
+        "Continuous learning"
+      ],
+      "tecnologie_conosciute": [
+        "Ticketing systems",
+        "Remote support tools",
+        "IT/AV equipment"
+      ],
+      "certificazioni": []
+    }
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 12
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione progetti di medie e grandi dimensioni",
+        "Stima dei costi e delle risorse necessarie",
+        "Pianificazione delle attività",
+        "Allocazione risorse con profili professionali e competenze legate alla tipologia di progetti",
+        "Assegnazione attività alle risorse",
+        "Controllo avanzamento delle attività",
+        "Verifica dei risultati",
+        "Valutazione misure correttive",
+        "Consuntivazione",
+        "Comunicazione con utenza anche a livello dirigenziale",
+        "Governo progetti di evoluzione tecnologica e migrazione con gruppi di progetto di medie e grandi dimensioni",
+        "Normativa relativa agli appalti pubblici",
+        "Tematiche ICT applicative ed infrastrutturali",
+        "Tematiche di cybersecurity, continuità operativa, privacy",
+        "Tecniche di stima e misura dei progetti",
+        "Metodologie di sviluppo sistemi e di test"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Ottime capacità relazionali"
+      ],
+      "tecnologie_conosciute": [
+        "Tecniche e prodotti software per project management e risk management",
+        "Intelligenza Artificiale",
+        "Machine learning",
+        "NLP",
+        "Analytics avanzati"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "Certificazione in ambito Project Management, PMI o equivalenti"
+      ]
+    }
+  },
+  "consulente_organizzativo_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Consulenza strategica",
+        "Definizione di mission aziendali",
+        "Declinazione di piani industriali",
+        "Disegno di scenari alternativi",
+        "Sviluppo di business case",
+        "Disegno di modelli organizzativi",
+        "Gestione ed implementazione delle attività di PMO e loro evoluzione",
+        "Organizzazione aziendale",
+        "Ottimizzazione dei servizi/sistemi informativi e dell'organizzazione",
+        "Selezione/definizione e impostazione di modelli e schemi di misurazione quantitativa",
+        "Predisposizione di studi di fattibilità, analisi di mercato, benchmark, valutazioni di scenari alternativi, modelli operativi",
+        "Modellare e produrre contenuti e documenti di pianificazione strategica",
+        "Valutare gli impatti organizzativi e di change management derivanti da scelte di strategia aziendale/istituzionale",
+        "Definire e implementare programmi di trasformazione comprendenti la gestione delle risorse umane",
+        "Comprendere lo scenario normativo di riferimento e gli impatti sugli obiettivi strategici, sull'ICT e l'organizzazione"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Operare in modo propositivo, con una visione ampia che supera i confini del proprio ruolo",
+        "Interagire ed interloquire ai diversi livelli della gerarchia organizzativa"
+      ],
+      "tecnologie_conosciute": [
+        "Processi e strumenti di Program & Project Management",
+        "Metodologie e tecniche di reingegnerizzazione dei processi",
+        "Tecniche per il Change Management",
+        "Trend tecnologici",
+        "Trasformazione digitale"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "consulente_organizzativo_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 3,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Supporto alla definizione di mission aziendali, declinazione di piani industriali, disegno di scenari alternativi, sviluppo di business case e disegno di modelli organizzativi",
+        "Gestione ed implementazione delle attività di PMO e loro evoluzione",
+        "Collaborazione alla selezione/definizione e realizzazione di modelli e schemi di misurazione quantitativa",
+        "Collaborazione alla predisposizione di studi di fattibilità, analisi di mercato, benchmark, valutazioni di scenari alternativi, modelli operativi",
+        "Modellare e produrre contenuti e documenti di pianificazione strategica",
+        "Collaborare alla valutazione degli impatti organizzativi e di change management derivanti da scelte di strategia",
+        "Supportare la definizione e l'implementazione di programmi di trasformazione comprendenti la gestione delle risorse umane",
+        "Collaborare alla produzione di studi di fattibilità e valutazioni funzionali/organizzative/tecniche/economiche",
+        "Comprendere lo scenario normativo di riferimento e gli impatti sugli obiettivi strategici, sull'ICT e l'organizzazione"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Operare in modo propositivo, con una visione ampia che supera i confini del proprio ruolo",
+        "Interagire ed interloquire ai diversi livelli della gerarchia organizzativa"
+      ],
+      "tecnologie_conosciute": [
+        "Processi e strumenti di Program & Project Management",
+        "Metodologie e tecniche di reingegnerizzazione dei processi",
+        "Tecniche per il Change Management",
+        "Trend tecnologici",
+        "Trasformazione digitale"
+      ],
+      "certificazioni": []
+    }
+  },
+  "consulente_business_process_reengineering_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi e revisione dei processi organizzativi ed operativi dell'Amministrazione",
+        "Disegno dei processi digitali funzionali all'erogazione dei servizi digitali",
+        "Individuazione di nuove opportunità di miglioramento dei processi e di ottimizzazione dei servizi digitali",
+        "Definizione, progettazione, realizzazione di schemi di misurazione e indicatori per i processi digitali",
+        "Progettazione e realizzazione dell'assessment dei processi as is",
+        "Realizzazione del disegno del processo digitale to be",
+        "Guida e coordinamento del team di lavoro per il disegno del processo digitale",
+        "Definire i processi di business ad alto contenuto di IT",
+        "Coordinare gruppi di progetto anche in termini di pianificazione, stato avanzamento e consuntivazione attività",
+        "Realizzare e utilizzare meccanismi per il tracciamento di best practices e lesson learned",
+        "Impiegare tecniche di benchmarking, analisi organizzativa, mappatura dei processi, identificazione di requisiti di servizio",
+        "Comprendere gli impatti delle scelte strategiche dell'Amministrazione sui servizi e sui relativi processi"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Strumenti di disegno e presentazione di processi e workflow",
+        "Tecniche e prodotti software per project/program management",
+        "Metodologie e best practices di analisi organizzativa",
+        "Disegno dei processi",
+        "BPR",
+        "Gestione del cambiamento",
+        "CAD",
+        "Piano Triennale per l'informatica nella Pubblica Amministrazione",
+        "Digitalizzazione dei servizi nella PA"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "consulente_business_process_reengineering_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Collaborazione all'analisi e alla revisione dei processi organizzativi ed operativi dell'Amministrazione",
+        "Collaborazione al disegno dei processi digitali funzionali all'erogazione dei servizi digitali",
+        "Supporto al team di lavoro per il disegno del processo digitale e degli indicatori relativi",
+        "Definire i processi per l'erogazione di servizi digitali",
+        "Realizzare ed utilizzare meccanismi per il tracciamento di best practices e lesson learned",
+        "Impiegare tecniche di benchmarking, analisi organizzativa, mappatura dei processi, identificazione di requisiti di servizio",
+        "Comprendere gli impatti delle scelte strategiche dell'Amministrazione sui servizi e sui relativi processi"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Strumenti di disegno e presentazione di processi e workflow",
+        "CAD",
+        "Piano Triennale per l'informatica nella Pubblica Amministrazione",
+        "BPR",
+        "Benchmarking",
+        "Mappatura dei processi"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Rilevazione, definizione e analisi dei requisiti dell'utente",
+        "Progettazione dei processi correlati ai requisiti",
+        "Valutazione della rispondenza e della copertura degli aspetti funzionali dei sistemi esistenti",
+        "Pianificazione dei test, attestazione di esattezza e completezza, certificazione di conformità del sw ai requisiti",
+        "Partecipazione a progetti di grandi dimensioni di monitoraggio e governance, demand e PMO di sistemi informativi",
+        "Redazione di documentazione funzionale",
+        "Responsabilità della copertura funzionale e non funzionale del software realizzato",
+        "Sviluppo di business case relativi all'implementazione di processi e servizi digitali",
+        "Raccolta e formalizzazione dei requisiti di business e funzionali",
+        "Raccogliere e analizzare requisiti per applicazioni accessibili e conformi alla privacy",
+        "Verificare la copertura funzionale di sistemi e applicazioni rispetto ai requisiti di servizio/processo",
+        "Supportare le attività di test, fornendo resoconto dell'esito e analisi dei risultati",
+        "Supportare l'analis delle cause di errori utente o guasti tecnici",
+        "Gestione dei procedimenti amministrativi"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Piattaforme cloud IA",
+        "Python",
+        "R",
+        "Algoritmi di machine learning",
+        "Data science",
+        "IA governance",
+        "Explainability",
+        "Etica dell'IA",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN",
+        "Catalogo del software a riuso",
+        "Metodologie di modellazione dati",
+        "Metodologie di analisi e disegno per oggetti (OOA)",
+        "Metodologie di analisi e disegno per servizi (SOA)",
+        "Standard ISO 9000",
+        "Gestione dell'identità digitale",
+        "Normativa appalti pubblici",
+        "Legge n. 4 del 9 gennaio 2004 (Accessibilità)"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "CBAP®",
+        "Certificazioni in ambito IA come Microsoft AI Fundamentals, Google Professional Machine Learning Engineer, o equivalenti (richieste nel complesso delle risorse)"
+      ]
+    }
+  },
+  "business_information_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Proposta di piani e gestione dell'evoluzione funzionale e tecnica del Sistema Informativo",
+        "Gestione ed implementazione degli aggiornamenti delle applicazioni esistenti",
+        "Responsabilità della gestione dello sviluppo dell'Information Technology nel dominio del business",
+        "Anticipazione dei cambiamenti al Sistema Informativo e l'impatto sul business",
+        "Formalizzazione, consolidamento e indirizzamento dello sviluppo della configurazione del sistema informativo",
+        "Stabilire un ambiente dati comune compresi processi e procedure",
+        "Realizzazione di studi di fattibilità, analisi tecnico-economica, analisi comparativa, benchmark e ricerche di mercato",
+        "Partecipazione attiva alle attività di Demand Management e Customer Satisfaction",
+        "Analizzare il contesto di business dell'organizzazione e la sua evoluzione",
+        "Tradurre i principali elementi di un piano strategico in requisiti funzionali per lo sviluppo dei servizi ICT",
+        "Determinare i requisiti per i processi collegati ai servizi ICT e formalizzare i requisiti dell'utente",
+        "Gestire l'ambiente dei dati comuni, processi e procedure, convalidando le conformità e non conformità",
+        "Mantenere il modello informativo per soddisfare gli standard di integrità e sicurezza"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Cloud",
+        "Tecniche di data mining",
+        "Sistemi previsionali",
+        "Open data",
+        "Big data",
+        "Workflow Management",
+        "Gestione Documentale",
+        "Function Point",
+        "COSMIC",
+        "SNAP",
+        "SQuaRE",
+        "ITIL",
+        "COBIT",
+        "UNI CEI ISO/IEC 25024:2016",
+        "Legge n°4/2004",
+        "CAD",
+        "DECRETO LEGISLATIVO 10 agosto 2018, n. 101 (Gdpr)",
+        "Piano Triennale",
+        "Strategia Nazionale di Cybersicurezza",
+        "Strategia Cloud Italia"
+      ],
+      "certificazioni": []
+    }
+  },
+  "digital_transformation_leader": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Responsabilità delle valutazioni di strategia digitale e loro declinazione",
+        "Indirizzare la transizione digitale",
+        "Modellare la strategia digitale evidenziando i benefici della trasformazione digitale",
+        "Supporto per un approccio orientato al digital by design per il disegno dei processi e la mappa dei servizi",
+        "Supporto alla prioritizzazione degli obiettivi strategici di trasformazione digitale e valutazione degli impatti",
+        "Identificazione, realizzazione di business case e progettazione di iniziative di trasformazione digitale",
+        "Identificare, raccogliere, preparare, validare, analizzare, interpretare dati",
+        "Raccogliere, analizzare, valutare le esigenze degli utenti rispetto ai servizi digitali",
+        "Progettare servizi digitali e valutare l'impatto sul funzionamento dell'Amministrazione",
+        "Individuare e prioritizzare interventi di trasformazione digitale",
+        "Predisporre studi di fattibilità, analisi di mercato, benchmark, valutazioni di scenari alternativi, modelli operativi",
+        "Valutare la maturità digitale e IA dell'organizzazione, identificando gap e opportunità",
+        "Valutare l'impatto delle soluzioni IA su processi, persone e risultati di business",
+        "Comprendere e veicolare all'Amministrazione le scelte strategiche di altre Amministrazioni"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Guidare team multidisciplinari nell'adozione di soluzioni IA"
+      ],
+      "tecnologie_conosciute": [
+        "Intelligenza Artificiale",
+        "Machine learning",
+        "NLP",
+        "Analytics avanzati",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN",
+        "Catalogo del software a riuso",
+        "Modelli de maturità digitale e IA (es. modello AgID)",
+        "CAD",
+        "Agenda Digitale",
+        "Piano Triennale per l'informatica nella Pubblica Amministrazione",
+        "Metodologie e tecniche di reingegnerizzazione dei processi",
+        "Gestione del cambiamento organizzativo"
+      ],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_change_management_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione di interventi di change management sul personale dell'Amministrazione",
+        "Valutazione e bilanciamento dei ruoli, delle responsabilità e delle competenze del personale",
+        "Supervisione del team di progettazione della transizione al digitale",
+        "Progettazione, esecuzione e valutazione e mappatura delle competenze del personale as is",
+        "Definizione delle caratteristiche attese per l'adozione dei principi, modalità di lavoro e processi",
+        "Definizione della strategia di comunicazione, progettando le modalità, i canali e i contenuti",
+        "Progettazione di interventi finalizzati all'allineamento di ruoli e competenze",
+        "Progettazione di interventi finalizzati allo sviluppo di competenze specifiche per governare l'uso dell'IA",
+        "Definire le modalità di mappatura competenze e gestire le risorse professionali impiegate",
+        "Individuare e rappresentare la mappa delle competenze to be"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Interagire con i diversi livelli gerarchici dell'Amministrazione"
+      ],
+      "tecnologie_conosciute": [
+        "Metodologie, processi e modelli di change management",
+        "Metodologie e tecniche di comunicazione",
+        "Strumenti per l'identificazione e la mappatura delle competenze",
+        "Principi di risk management, privacy, sicurezza informatica e governance dei dati",
+        "Intelligenza Artificiale"
+      ],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_change_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione di interventi di change management sul personale dell'Amministrazione",
+        "Valutazione e bilanciamento dei ruoli, delle responsabilità e delle competenze del personale",
+        "Mappatura delle competenze del personale rispetto agli interventi di trasformazione digitale",
+        "Definire la strategia di Comunicazione, progettando le modalità, i canali e i contenuti",
+        "Indirizzare e progettare le attività legate alla mappatura delle competenze as is",
+        "Progettare gli interventi finalizzati all'allineamento di ruoli e competenze",
+        "Definire le modalità di mappatura competenze e gestire le risorse professionali",
+        "Individuare e rappresentare la mappa delle competenze to be"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Interagire con i diversi livelli gerarchici dell'Amministrazione"
+      ],
+      "tecnologie_conosciute": [
+        "Metodologie, processi e modelli di change management",
+        "Metodologie e tecniche di comunicazione",
+        "Strumenti per la mappatura delle competenze",
+        "Principi di risk management, privacy, sicurezza informatica e governance dei dati"
+      ],
+      "certificazioni": []
+    }
+  },
+  "digital_educator_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, supervisione della produzione dei contenuti ed erogazione dell'affiancamento per la digital transformation",
+        "Supporto alla definizione dei fabbisogni formativi e nella redazione del piano formativo",
+        "Conduzione degli interventi di formazione e affiancamento",
+        "Progettazione, realizzazione ed erogazione di corsi formativi sulle tematiche richieste",
+        "Promozione e coordinamento di iniziative di formazione e upskilling sulle competenze IA",
+        "Recepimento e adattamento dei contenuti della formazione in funzione dell'utenza target",
+        "Progettazione e coordinamento dell'esecuzione delle attività di verifica dell'apprendimento e customer satisfaction",
+        "Preparare e correggere i test di apprendimento",
+        "Affiancare gli utenti in contesti operativi complessi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Promuovere una cultura aziendale orientata alla compliance e alla gestione del rischio IA"
+      ],
+      "tecnologie_conosciute": [
+        "Tecnologie formative, anche a distanza",
+        "Metodologie, tecniche e soluzioni per la didattica, individuale e di gruppo",
+        "E-learning e modalità ibride",
+        "Soluzioni di comunicazione",
+        "Principi di risk management, privacy, sicurezza informatica e governance dei dati specifici per l'IA"
+      ],
+      "certificazioni": []
+    }
+  },
+  "digital_educator_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Supporto alla progettazione, alla produzione di contenuti e all'affiancamento per la trasformazione digitale",
+        "Supporto nella definizione dei fabbisogni formativi e nella redazione del piano formativo",
+        "Collaborare alla progettazione di corsi di formazione in aula e mediante tecnologie multimediali",
+        "Supportare l'erogazione di corsi",
+        "Supportare la preparazione e correzione di test di apprendimento",
+        "Affiancare gli utenti",
+        "Supportare la progettazione e realizzazione di indagini di soddisfazione degli utenti"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Tecnologie formative, anche a distanza",
+        "Metodologie, tecniche e soluzioni per la didattica",
+        "E-learning",
+        "Tecnologie multimediali"
+      ],
+      "certificazioni": []
+    }
+  },
+  "consulente_di_project_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 7
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione progetti per raggiungere la performance ottimale conforme ai requisiti originali",
+        "Supporto alla definizione e gestione di progetti dal concepimento iniziale alla consegna finale",
+        "Supporto all'organizzazione, coordinamento e conduzione del team di progetto",
+        "Operare in autonomia sui progetti di dimensioni medie e piccole",
+        "Partecipazione a progetti di grandi dimensioni di monitoraggio e governance, demand e PMO",
+        "Supporto alla supervisione dei progressi del progetto",
+        "Diffusione e distribuzione dell'informazione proveniente dall'Amministrazione",
+        "Coordinamento, registrazione e assicurazione della conformità alla qualità attesa",
+        "Aggiornamento della pianificazione di progetto",
+        "Fornire supporto metodologico, procedurale e tecnico per il monitoraggio delle iniziative (PMO)"
+      ],
+      "lingue": [],
+      "soft_skills": [],
+      "tecnologie_conosciute": [
+        "Tecniche e prodotti software per project management e risk management",
+        "ITIL",
+        "Framework e-CF"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "user_experience_designer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Responsabile dell'applicazione dell'approccio centrato sull'utente (human centered)",
+        "Supporto nella progettazione di interfacce e di interazioni tra utenti e applicazioni per Web, Mobile e App",
+        "Integrazione dei requisiti utente, vincoli di accessibilità e usabilità in un'interfaccia visuale",
+        "Definizione di uno stile visuale e interattivo",
+        "Guida e pianificazione delle attività di progettazione centrata sull'utente",
+        "Analisi dei processi di business e traduzione in processi applicativi",
+        "Effettuare analisi competitive, studi di usabilità e di accessibilità, focus group, interviste, test utente",
+        "Redazione di documentazione di design (modelli di pagina, processi, navigazione e sitemap)",
+        "Realizzazione di prototipi funzionali o specifiche funzionali per i team di sviluppo",
+        "Controllo, valutazione e gestione delle problematiche di accessibilità",
+        "Comprendere le esigenze, i comportamenti e le capacità degli utenti",
+        "Tradurre requisiti utente e obiettivi di business in comportamento interattivo (scenari, storyboard, use case, user stories)"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Rappresentare le esigenze del cliente presso il team di sviluppo"
+      ],
+      "tecnologie_conosciute": [
+        "Sistemi di CMS e ECM",
+        "Markup e fogli di stile",
+        "Linguaggi di scripting",
+        "Strumenti di creazione ed editing multimediale",
+        "Strumenti di pubblicazione per web e social",
+        "Strumenti per la progettazione e la prototipazione di interfacce visuali",
+        "Strumenti e linguaggi per la prototipazione veloce",
+        "OWL Web Ontology Language",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN",
+        "Catalogo del software a riuso",
+        "ISO/IEC 40500:2012",
+        "W3C Web Content Accessibility Guidelines (WCAG) 2.0",
+        "User Centered Design",
+        "Human Factors Engineering",
+        "User Experience",
+        "Metodologie Agile",
+        "Lean Startup",
+        "Design Thinking"
+      ],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_dominio": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea in discipline tecniche"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Fornire competenze specialistiche altamente qualificate su temi specifici",
+        "Predisposizione di studi di fattibilità, analisi di mercato, valutazione di scenari alternativi, modelli operativi",
+        "Supporto consulenziale in materia economica, econometrica, statistica, comparti e settori della PA",
+        "Consulenza giuridica specialistica (CAD, Agenda Digitale, contratti pubblici, diritto amministrativo, finanziario, tributario, penale)",
+        "Consulenza su cyber security, continuità operativa e privacy per l'adeguamento",
+        "Identificazione, raccolta e analisi di dati per estrarne informazioni di supporto decisionale",
+        "Analisi dei dati metrici per il governo dei processi e verifiche di congruità",
+        "Dialogare con l'Amministrazione recependo ed indirizzando le esigenze di innovazione",
+        "Identificare, valutare e documentare casi d'uso IA rilevanti per il dominio",
+        "Supportare la definizione di requisiti funzionali e di qualità per soluzioni IA"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Collaborare con figure di compliance e risk management"
+      ],
+      "tecnologie_conosciute": [
+        "Machine learning",
+        "NLP",
+        "Automazione",
+        "Analytics",
+        "Data governance",
+        "Metodologie di comunicazione web",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN",
+        "Function Point",
+        "COSMIC",
+        "SNAP",
+        "SQuaRE",
+        "Standard e metodologie di analisi e gestione del rischio informatico",
+        "Continuità operativa",
+        "Privacy"
+      ],
+      "certificazioni": []
+    }
+  },
+  "ai_strategy_advisor": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Aiutare le organizzazioni a sviluppare e implementare strategie efficaci per integrare l'IA nei processi",
+        "Definire, promuovere e supervisionare l'adozione di soluzioni di intelligenza artificiale",
+        "Analizzare le esigenze dell'Amministrazione e identificare opportunità di applicazione dell'IA",
+        "Sviluppare strategie di integrazione dell'IA nei processi amministrativi",
+        "Guidare la raccolta, l'analisi e l'interpretazione di grandi quantità di dati",
+        "Ottimizzare la personalizzazione e l'engagement degli utenti tramite sistemi IA",
+        "Monitorare l'efficacia delle strategie IA e proporre miglioramenti continui",
+        "Formare e sensibilizzare il personale sull'adozione dell'IA e sulle best practice",
+        "Interpretare e ottimizzare grandi quantità di dati per decisioni strategiche",
+        "Valutare l'impatto delle soluzioni IA su processi, persone e risultati di business"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Comunicare in modo efficace con stakeholder tecnici e non tecnici",
+        "Guidare team multidisciplinari nell'adozione di soluzioni IA"
+      ],
+      "tecnologie_conosciute": [
+        "Intelligenza artificiale",
+        "Machine learning",
+        "Data science",
+        "NLP",
+        "Automazione",
+        "Analytics avanzati",
+        "Modelli di maturità digitale e IA (es. modello AgID)",
+        "Normativa su privacy, etica e governance dell'IA",
+        "Trasformazione digitale",
+        "Gestione del cambiamento",
+        "Trend tecnologici"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation (nel complesso delle risorse)",
+        "Certificazioni in ambito IA e Data Science (es. Microsoft Azure AI Fundamentals, Google Professional Machine Learning Engineer, IBM AI Engineering) (nel complesso delle risorse)",
+        "Certificazioni in Project Management (es. PMI, Agile) (nel complesso delle risorse)"
+      ]
+    }
+  },
+  "ai_compliance_risk_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione delle conformità e dei rischi associati all'uso dell'intelligenza artificiale",
+        "Definizione e implementazione di politiche, procedure e standard per garantire un uso responsabile dell'IA",
+        "Analisi e interpretazione delle normative applicabili ai sistemi IA",
+        "Valutazione e classificazione dei rischi IA (inaccettabile, alto, limitato, minimo)",
+        "Redazione e aggiornamento di policy, procedure e linee guida per la compliance IA",
+        "Conduzione di Data Protection Impact Assessment (DPIA) e valutazioni di impatto etico e sociale",
+        "Monitoraggio continuo dei sistemi IA per garantire trasparenza, tracciabilità e auditabilità",
+        "Condurre audit e controlli periodici sui sistemi IA",
+        "Identificare, valutare e mitigare i rischi legali, etici, di sicurezza e reputazionali",
+        "Redigere documentazione di compliance e risk assessment"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Collaborazione con team tecnici, legali e di business",
+        "Comunicare efficacemente con stakeholder tecnici, legali e di business",
+        "Promuovere una cultura aziendale orientata alla compliance e alla gestione del rischio IA"
+      ],
+      "tecnologie_conosciute": [
+        "AI Act",
+        "GDPR",
+        "ISO/IEC 42001",
+        "ISO/IEC 23894:2024",
+        "NIST AI RMF",
+        "ISO 27001",
+        "ISO 31000",
+        "Machine learning",
+        "NLP",
+        "Generative AI",
+        "Risk management",
+        "Privacy",
+        "Sicurezza informatica",
+        "Governance dei dati",
+        "Strumenti di compliance"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation (consigliata, nel complesso delle risorse)",
+        "Certificazioni in ambito privacy e compliance (es. CIPP/E, ISO/IEC 27001:2022 e successive, Lead Implementer, DPO) (nel complesso delle risorse)",
+        "Certificazioni specifiche su IA governance e risk management (es. NIST AI RMF 1.0, ISO/IEC 42001:2023) (nel complesso delle risorse)",
+        "Certificazioni in ambito sicurezza informatica (es. CISSP, CISM) (nel complesso delle risorse)"
+      ]
+    }
+  }
+}
