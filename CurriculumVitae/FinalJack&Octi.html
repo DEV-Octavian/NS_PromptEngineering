@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & Prompt Engineering — Jack & Octi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+/* ═══════════════════════════════════════════════════
+   RESET + TOKENS
+═══════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font-ui:   "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --bg-deep: #03030a;
+
+  /* Glass layers */
+  --g1:  rgba(255,255,255,0.048);
+  --g2:  rgba(255,255,255,0.085);
+  --g3:  rgba(255,255,255,0.130);
+  --gs:  rgba(255,255,255,0.095);
+  --gsh: rgba(255,255,255,0.200);
+
+  /* Apple system palette */
+  --c-blue:   #0a84ff;
+  --c-indigo: #5e5ce6;
+  --c-purple: #bf5af2;
+  --c-pink:   #ff375f;
+  --c-teal:   #5ac8fa;
+  --c-green:  #30d158;
+  --c-yellow: #ffd60a;
+  --c-orange: #ff9f0a;
+
+  /* Text */
+  --t1: rgba(255,255,255,0.94);
+  --t2: rgba(255,255,255,0.55);
+  --t3: rgba(255,255,255,0.28);
+
+  /* Radii */
+  --r-sm: 12px; --r-md: 18px; --r-lg: 22px;
+  --r-xl: 32px; --r-2xl: 44px;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--t1);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ─── AURORA BG ─── */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0;
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 85% 65% at 15%  5%,  rgba(99,102,241,.30) 0%, transparent 62%),
+    radial-gradient(ellipse 60% 55% at 85%  15%, rgba(168,85,247,.24) 0%, transparent 58%),
+    radial-gradient(ellipse 70% 60% at 50%  88%, rgba(236,72,153,.18) 0%, transparent 62%),
+    radial-gradient(ellipse 55% 42% at 5%   70%, rgba(59,130,246,.20) 0%, transparent 58%),
+    radial-gradient(ellipse 40% 50% at 95%  65%, rgba(16,185,129,.13) 0%, transparent 58%);
+  animation: aurora 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes aurora {
+  0%   { transform: scale(1)     rotate(0deg);    opacity:1;    }
+  50%  { transform: scale(1.03)  rotate(0.3deg);  opacity:.88;  }
+  100% { transform: scale(1.055) rotate(-.4deg);  opacity:.95;  }
+}
+
+/* Grain overlay */
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 1;
+  pointer-events: none; opacity: .32;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════════════
+   PRISM ORB — used in nav, hero, closing
+═══════════════════════════════════════════════════ */
+.prism-orb {
+  position: relative;
+  border-radius: 50%;
+  flex-shrink: 0;
+  isolation: isolate;
+  overflow: hidden;
+}
+.prism-orb--sm { width: 26px; height: 26px; }
+.prism-orb--md { width: 100%; height: 100%; }
+
+/* rainbow conic base — the prismatic spectrum */
+.prism-orb__base {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 0deg at 50% 50%,
+    #6366f1 0%,  #818cf8 10%, #a855f7 22%,
+    #ec4899 36%, #f59e0b 48%, #10b981 60%,
+    #3b82f6 72%, #6366f1 100%);
+  animation: prism-spin 8s linear infinite;
+  z-index: 1;
+}
+@keyframes prism-spin { to { filter: hue-rotate(360deg); } }
+
+/* prismatic light dispersion facets */
+.prism-orb__facets {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 60deg at 42% 36%,
+    rgba(255,255,255,.60) 0deg,
+    rgba(168,85,247,.75) 28deg,
+    rgba(236,72,153,.70) 58deg,
+    rgba(245,158,11,.65) 88deg,
+    rgba(16,185,129,.60) 118deg,
+    rgba(59,130,246,.65) 148deg,
+    rgba(99,102,241,.75) 178deg,
+    rgba(255,255,255,.50) 208deg,
+    rgba(236,72,153,.60) 238deg,
+    rgba(168,85,247,.65) 278deg,
+    rgba(255,255,255,.55) 318deg,
+    rgba(255,255,255,.60) 360deg);
+  mix-blend-mode: screen;
+  opacity: .60;
+  animation: prism-facets 5.5s linear infinite reverse;
+  z-index: 2;
+}
+@keyframes prism-facets { to { filter: hue-rotate(-360deg); } }
+
+/* inner caustic streaks — simulate refraction */
+.prism-orb__caustics {
+  position: absolute; inset: 0; border-radius: 50%;
+  background:
+    radial-gradient(ellipse 9% 32% at 54% 42%,
+      rgba(255,255,255,.60) 0%, transparent 80%),
+    radial-gradient(ellipse 6% 24% at 44% 62%,
+      rgba(168,85,247,.55) 0%, transparent 80%),
+    radial-gradient(ellipse 5% 20% at 64% 56%,
+      rgba(59,130,246,.45) 0%, transparent 80%),
+    radial-gradient(ellipse 4% 18% at 38% 38%,
+      rgba(16,185,129,.40) 0%, transparent 80%);
+  z-index: 4; pointer-events: none;
+  animation: caustics-drift 3.8s ease-in-out infinite alternate;
+}
+@keyframes caustics-drift {
+  from { opacity: .70; transform: rotate(-5deg) scale(.98); }
+  to   { opacity: 1;   transform: rotate(5deg)  scale(1.02); }
+}
+
+/* glass shell — simulates curved glass surface */
+.prism-orb__shell {
+  position: absolute; inset: 0; border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 28%,
+      rgba(255,255,255,.14) 0%, transparent 52%),
+    radial-gradient(circle at 72% 70%,
+      rgba(255,255,255,.05) 0%, transparent 45%);
+  backdrop-filter: blur(1px);
+  z-index: 5; pointer-events: none;
+}
+
+/* primary gloss highlight + small specular */
+.prism-orb__gloss {
+  position: absolute; inset: 0; border-radius: 50%;
+  background:
+    radial-gradient(ellipse 52% 36% at 32% 22%,
+      rgba(255,255,255,.92) 0%,
+      rgba(255,255,255,.38) 28%,
+      transparent 60%),
+    radial-gradient(ellipse 20% 13% at 70% 74%,
+      rgba(255,255,255,.50) 0%,
+      transparent 70%);
+  z-index: 6; pointer-events: none;
+}
+
+/* rim / bevel edge */
+.prism-orb__rim {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,.40);
+  box-shadow:
+    inset 0 2px 6px rgba(255,255,255,.24),
+    inset 0 -2px 6px rgba(0,0,0,.18),
+    0 0 28px rgba(168,85,247,.55),
+    0 0 70px rgba(168,85,247,.22);
+  z-index: 7; pointer-events: none;
+}
+/* smaller rim for nav */
+.prism-orb--sm .prism-orb__rim {
+  box-shadow:
+    inset 0 1px 3px rgba(255,255,255,.28),
+    0 0 14px rgba(168,85,247,.70),
+    0 0 32px rgba(168,85,247,.28);
+}
+
+/* ═══════════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: 54px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 28px;
+  background: rgba(4,4,14,.72);
+  backdrop-filter: saturate(200%) blur(48px);
+  -webkit-backdrop-filter: saturate(200%) blur(48px);
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; font-weight: 600; letter-spacing: -.25px;
+  color: var(--t1);
+}
+
+.nav-segments {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.055);
+  border: 0.5px solid rgba(255,255,255,0.10);
+  border-radius: 999px;
+  padding: 3px; gap: 1px;
+}
+.nav-seg {
+  border-radius: 999px; padding: 4px 10px;
+  font-size: 10px; font-weight: 500; color: var(--t2);
+  letter-spacing: .01em; cursor: pointer;
+  transition: all .22s cubic-bezier(.4,0,.2,1);
+  user-select: none; white-space: nowrap;
+}
+.nav-seg:hover  { color: var(--t1); background: rgba(255,255,255,.06); }
+.nav-seg.active {
+  background: rgba(94,92,230,.28);
+  border: 0.5px solid rgba(94,92,230,.50);
+  color: rgba(200,198,255,.96);
+  box-shadow: 0 0 12px rgba(94,92,230,.3) inset;
+}
+
+.nav-right { display: flex; align-items: center; gap: 14px; justify-content: flex-end; }
+.nav-counter {
+  font-family: var(--font-mono);
+  font-size: 10.5px; font-weight: 700;
+  color: var(--t3); letter-spacing: .06em;
+}
+.nav-dots { display: flex; gap: 5px; align-items: center; }
+.nav-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: rgba(255,255,255,.16); cursor: pointer;
+  transition: all .25s cubic-bezier(.34,1.56,.64,1);
+}
+.nav-dot.active {
+  width: 16px; border-radius: 4px;
+  background: var(--c-indigo);
+  box-shadow: 0 0 8px rgba(94,92,230,.85);
+}
+
+#progress-bar {
+  position: fixed; top: 0; left: 0; height: 2px; z-index: 1001; width: 0%;
+  background: linear-gradient(90deg,var(--c-indigo),var(--c-purple),var(--c-pink));
+  transition: width .32s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 0 12px rgba(168,85,247,.7);
+}
+
+/* ═══════════════════════════════════════════════════
+   SLIDE WRAPPER — adaptive height
+═══════════════════════════════════════════════════ */
+.slide {
+  position: relative; z-index: 2;
+  width: 100%; min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex; align-items: center; justify-content: center;
+  padding: 70px 16px 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* ═══════════════════════════════════════════════════
+   GLASS CARD — adaptive to screen
+═══════════════════════════════════════════════════ */
+.glass-card {
+  position: relative; z-index: 3;
+  width: 100%;
+  max-width: min(1060px, calc(100vw - 32px));
+  border-radius: var(--r-2xl);
+  padding: clamp(18px, 3vw, 46px) clamp(16px, 4vw, 56px);
+  background:
+    linear-gradient(148deg,
+      rgba(255,255,255,.100) 0%,
+      rgba(255,255,255,.034) 42%,
+      rgba(255,255,255,.062) 100%);
+  backdrop-filter: saturate(220%) blur(72px);
+  -webkit-backdrop-filter: saturate(220%) blur(72px);
+  border: 0.5px solid var(--gsh);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,.065) inset,
+    0 1.5px 0 rgba(255,255,255,.22) inset,
+    0 -1px 0 rgba(0,0,0,.14) inset,
+    0 52px 100px rgba(0,0,0,.60),
+    0 14px 44px rgba(0,0,0,.38),
+    0  4px 12px rgba(0,0,0,.28);
+  overflow: hidden;
+  box-sizing: border-box;
+  opacity: 0; transform: translateY(32px) scale(0.983);
+  transition: opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1);
+}
+.slide.visible .glass-card { opacity:1; transform:translateY(0) scale(1); }
+
+.glass-card::before {
+  content:''; position:absolute; top:0; left:6%; right:6%; height:.5px; z-index:5;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.6), transparent);
+  pointer-events:none;
+}
+.glass-card::after {
+  content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none; z-index:0;
+  background: radial-gradient(ellipse 75% 40% at 50% -5%, rgba(255,255,255,.07) 0%, transparent 65%);
+}
+
+/* ambient blobs */
+.blob {
+  position:absolute; border-radius:50%;
+  filter:blur(76px); pointer-events:none; z-index:0;
+  animation: blob-float 14s ease-in-out infinite alternate;
+}
+@keyframes blob-float {
+  from { transform:translate(0,0) scale(1); }
+  to   { transform:translate(32px,-20px) scale(1.08); }
+}
+
+/* ═══════════════════════════════════════════════════
+   EYEBROW / TAGS
+═══════════════════════════════════════════════════ */
+.eyebrow {
+  display:inline-flex; align-items:center; gap:7px;
+  background:rgba(94,92,230,.13);
+  border:.5px solid rgba(94,92,230,.42);
+  border-radius:999px; padding:5px 14px;
+  font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(200,198,255,.88); margin-bottom:20px;
+}
+.eyebrow-dot {
+  width:5px; height:5px; border-radius:50%;
+  background:var(--c-indigo); box-shadow:0 0 7px rgba(94,92,230,.9);
+  animation:pulse 2.4s ease-in-out infinite; flex-shrink:0;
+}
+@keyframes pulse {
+  0%,100%{box-shadow:0 0 4px rgba(94,92,230,.5);}
+  50%{box-shadow:0 0 12px rgba(94,92,230,1);}
+}
+.section-tag {
+  display:inline-flex; align-items:center;
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:999px; padding:3px 12px;
+  font-size:10px; font-weight:600; letter-spacing:.10em; text-transform:uppercase;
+  color:var(--t3); margin-bottom:13px;
+}
+
+/* ═══════════════════════════════════════════════════
+   TYPOGRAPHY — fluid scaling
+═══════════════════════════════════════════════════ */
+h1.hero-title {
+  font-size:clamp(28px, 4.2vw, 66px);
+  font-weight:700; line-height:1.03; letter-spacing:-.04em;
+  color:var(--t1); margin-bottom:18px;
+}
+.grad-text {
+  background:linear-gradient(135deg,#a78bfa 0%,#ec4899 52%,#f59e0b 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.grad-text-2 {
+  background:linear-gradient(135deg,#60a5fa 0%,#a78bfa 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+h2.section-title {
+  font-size:clamp(19px, 2.6vw, 40px);
+  font-weight:700; line-height:1.07; letter-spacing:-.03em;
+  color:var(--t1); margin-bottom:8px;
+}
+.hero-sub, .section-sub {
+  font-size:clamp(12px, 1vw, 15px); font-weight:400; color:var(--t2);
+  line-height:1.70; max-width:530px; margin-bottom:34px;
+}
+
+/* ═══════════════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════════════ */
+.btn-row { display:flex; gap:11px; flex-wrap:wrap; }
+.btn-filled {
+  display:inline-flex; align-items:center; gap:7px;
+  background:linear-gradient(135deg,#5e5ce6,#7c7ae8);
+  color:#fff; border:none; border-radius:999px;
+  padding:11px 26px; font-size:14px; font-weight:600;
+  cursor:pointer; font-family:var(--font-ui); letter-spacing:-.1px;
+  box-shadow:0 4px 22px rgba(94,92,230,.45), 0 1px 2px rgba(0,0,0,.3);
+  transition:all .22s cubic-bezier(.4,0,.2,1);
+}
+.btn-filled:hover { filter:brightness(1.12); transform:translateY(-1px) scale(1.015); box-shadow:0 8px 32px rgba(94,92,230,.6); }
+.btn-filled:active{ transform:scale(.975); }
+.btn-glass {
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--g2); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  color:var(--t1); border:.5px solid var(--gsh); border-radius:999px;
+  padding:11px 26px; font-size:14px; font-weight:500;
+  cursor:pointer; font-family:var(--font-ui); letter-spacing:-.1px;
+  text-decoration:none;
+  transition:all .22s;
+}
+.btn-glass:hover { background:var(--g3); border-color:rgba(255,255,255,.34); }
+.btn-glass:active{ transform:scale(.975); }
+
+/* ═══════════════════════════════════════════════════
+   AUTHORS PILL / AVATAR
+═══════════════════════════════════════════════════ */
+.authors-pill {
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:999px; padding:7px 16px; margin-bottom:22px;
+  font-size:13px; font-weight:500; color:var(--t2);
+}
+.av {
+  width:26px; height:26px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px; font-weight:700; color:#fff; flex-shrink:0;
+}
+.av-j { background:linear-gradient(135deg,#6366f1,#a855f7); box-shadow:0 0 10px rgba(99,102,241,.5); }
+.av-o { background:linear-gradient(135deg,#ec4899,#6366f1); box-shadow:0 0 10px rgba(236,72,153,.5); }
+.sep-dot { color:var(--t3); }
+
+.stat-chips { display:flex; gap:8px; margin-top:28px; flex-wrap:wrap; }
+.stat-chip {
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-sm); padding:8px 14px;
+  font-size:12px; font-weight:500; color:var(--t2); transition:all .2s;
+}
+.stat-chip:hover{ background:var(--g2); color:var(--t1); }
+.sc-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+
+/* ═══════════════════════════════════════════════════
+   HOLO WRAP
+═══════════════════════════════════════════════════ */
+.holo-wrap {
+  position:relative; display:flex; align-items:center; justify-content:center;
+  min-height:clamp(220px, 30vw, 380px);
+}
+.holo-glow {
+  position:absolute;
+  width:clamp(200px, 30vw, 380px); height:clamp(200px, 30vw, 380px);
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(139,92,246,.38) 0%,rgba(236,72,153,.18) 42%,transparent 70%);
+  filter:blur(36px);
+  animation:glow-breathe 4.5s ease-in-out infinite alternate;
+}
+@keyframes glow-breathe {
+  from{transform:scale(.88); opacity:.7;}
+  to  {transform:scale(1.12); opacity:1;}
+}
+.holo-sphere-wrap {
+  position:relative;
+  width:clamp(160px, 22vw, 300px); height:clamp(160px, 22vw, 300px);
+  animation:sphere-float 6.5s ease-in-out infinite;
+}
+@keyframes sphere-float {
+  0%,100%{ transform:translateY(0) rotate(0deg); }
+  33%    { transform:translateY(-15px) rotate(2deg); }
+  66%    { transform:translateY(-8px) rotate(-1.5deg); }
+}
+
+/* Floating badges */
+.float-badge {
+  position:absolute;
+  display:flex; align-items:center; gap:8px;
+  background:rgba(6,6,20,.62);
+  backdrop-filter:saturate(180%) blur(28px);
+  -webkit-backdrop-filter:saturate(180%) blur(28px);
+  border:.5px solid rgba(255,255,255,.18);
+  border-radius:var(--r-md); padding:9px 15px;
+  font-size:12px; font-weight:500; color:var(--t1);
+  box-shadow:0 4px 24px rgba(0,0,0,.42), 0 1px 0 rgba(255,255,255,.09) inset;
+  white-space:nowrap; z-index:4;
+}
+.fb-1{top:13%; right:-6%; animation:fb1 4s ease-in-out infinite alternate;}
+.fb-2{top:43%; right:-6%; animation:fb2 3.6s ease-in-out infinite alternate;}
+.fb-3{bottom:14%; right:0; animation:fb3 5s ease-in-out infinite alternate;}
+@keyframes fb1{from{transform:translateY(0);}to{transform:translateY(-12px);}}
+@keyframes fb2{from{transform:translateY(0);}to{transform:translateY(-9px);}}
+@keyframes fb3{from{transform:translateY(0);}to{transform:translateY(-15px);}}
+.fb-dot{width:7px; height:7px; border-radius:50%; flex-shrink:0;}
+.fb-text{display:flex; flex-direction:column; gap:1px;}
+.fb-label{font-size:11px; font-weight:600; color:var(--t1); line-height:1;}
+.fb-sub  {font-size:10px; color:var(--t2); line-height:1;}
+
+/* ═══════════════════════════════════════════════════
+   GLASS TILE
+═══════════════════════════════════════════════════ */
+.tile {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); padding:clamp(13px,1.8vw,20px) clamp(13px,2vw,22px);
+  transition:all .22s cubic-bezier(.4,0,.2,1);
+  position:relative; overflow:hidden;
+}
+.tile::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:.5px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.24),transparent);
+  pointer-events:none;
+}
+.tile:hover {
+  background:var(--g2); border-color:rgba(255,255,255,.20);
+  transform:translateY(-2px); box-shadow:0 14px 36px rgba(0,0,0,.30);
+}
+.tile-num {
+  font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--c-indigo); margin-bottom:9px;
+}
+.tile-icon {
+  width:36px; height:36px; border-radius:10px;
+  background:rgba(94,92,230,.15); border:.5px solid rgba(94,92,230,.30);
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px; margin-bottom:13px;
+}
+.tile h3 { font-size:clamp(12px,1.1vw,14px); font-weight:600; color:var(--t1); margin-bottom:7px; letter-spacing:-.2px; }
+.tile p  { font-size:clamp(11px,.95vw,12.5px); color:var(--t2); line-height:1.64; }
+
+.feat-num {
+  font-family:var(--font-mono);
+  font-size:clamp(22px,2.6vw,36px); font-weight:700; letter-spacing:-.05em;
+  color:rgba(255,255,255,.055); line-height:1; margin-bottom:10px; display:block;
+}
+.feat-title { font-size:clamp(12px,1.1vw,15px); font-weight:600; color:var(--c-indigo); margin-bottom:6px; }
+
+.tile-accent   { border-left:2px solid var(--c-indigo); border-radius:0 var(--r-lg) var(--r-lg) 0; }
+.tile-accent.g { border-left-color:var(--c-green);  }
+.tile-accent.y { border-left-color:var(--c-yellow); }
+.tile-accent.p { border-left-color:var(--c-pink);   }
+
+/* ═══════════════════════════════════════════════════
+   GRIDS
+═══════════════════════════════════════════════════ */
+.g2      { display:grid; grid-template-columns:1fr 1fr;      gap:14px; }
+.g3      { display:grid; grid-template-columns:repeat(3,1fr);gap:14px; }
+.g2-asym { display:grid; grid-template-columns:1.1fr .9fr;   gap:16px; }
+.g2-60   { display:grid; grid-template-columns:3fr 2fr;      gap:16px; }
+.col     { display:flex; flex-direction:column; gap:14px; }
+.section-header { margin-bottom:clamp(16px,2.2vw,30px); position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════════
+   CONCEPT FLOW
+═══════════════════════════════════════════════════ */
+.concept-flow {
+  display:flex; align-items:center; gap:6px;
+  margin-bottom:22px; position:relative; z-index:1;
+}
+.cf-node {
+  flex:1; background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-sm); padding:11px 14px; text-align:center; transition:all .2s;
+}
+.cf-node:hover { background:var(--g2); }
+.cf-node.focus { background:rgba(94,92,230,.16); border-color:rgba(94,92,230,.5); }
+.cf-node span   { font-size:9.5px; color:var(--t3); display:block; margin-bottom:3px; font-weight:500; letter-spacing:.04em; text-transform:uppercase; }
+.cf-node strong { font-size:12.5px; color:var(--t1); font-weight:600; }
+.cf-node.focus span, .cf-node.focus strong { color:rgba(200,198,255,.92); }
+.cf-arrow { color:var(--t3); font-size:13px; flex-shrink:0; }
+
+/* ═══════════════════════════════════════════════════
+   GITHUB FLOW ROW
+═══════════════════════════════════════════════════ */
+.flow-row {
+  display:flex; align-items:stretch;
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); overflow:hidden; margin-bottom:16px;
+  position:relative; z-index:1;
+}
+.flow-step {
+  flex:1; padding:14px 10px; text-align:center;
+  border-right:.5px solid var(--gs); transition:background .2s;
+}
+.flow-step:last-child { border-right:none; }
+.flow-step:hover { background:var(--g2); }
+.fs-n   { font-size:9px; color:var(--t3); margin-bottom:5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
+.fs-cmd { font-family:var(--font-mono); font-size:11.5px; color:var(--c-indigo); font-weight:700; }
+.fs-lbl { font-size:10px; color:var(--t2); margin-top:4px; }
+.flow-sub { font-size:11px; color:var(--t3); margin-bottom:18px; padding-left:4px; font-style:italic; position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════════
+   PROMPT ANATOMY
+═══════════════════════════════════════════════════ */
+.pa-wrap {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); overflow:hidden; position:relative; z-index:1;
+}
+.pa-head {
+  padding:11px 18px; border-bottom:.5px solid var(--gs);
+  font-size:10px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:var(--t3);
+}
+.pa-row {
+  display:grid; grid-template-columns:82px 1fr;
+  border-bottom:.5px solid rgba(255,255,255,.042);
+}
+.pa-row:last-child { border-bottom:none; }
+.pa-tag-cell {
+  padding:13px 12px; border-right:.5px solid rgba(255,255,255,.042);
+  display:flex; align-items:flex-start; padding-top:15px;
+}
+.pa-tag {
+  font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:3px 10px; border-radius:999px; white-space:nowrap;
+}
+.pa-tag.i { background:rgba(94,92,230,.18); color:rgba(200,198,255,.9); border:.5px solid rgba(94,92,230,.38); }
+.pa-tag.g { background:rgba(48,209,88,.13);  color:var(--c-green);      border:.5px solid rgba(48,209,88,.32);  }
+.pa-tag.y { background:rgba(255,214,10,.11); color:var(--c-yellow);     border:.5px solid rgba(255,214,10,.28); }
+.pa-tag.p { background:rgba(255,55,95,.11);  color:var(--c-pink);       border:.5px solid rgba(255,55,95,.28);  }
+.pa-tag.b { background:rgba(10,132,255,.13); color:var(--c-teal);       border:.5px solid rgba(10,132,255,.28); }
+.pa-content { padding:13px 17px; font-size:12.5px; color:var(--t2); line-height:1.60; }
+.pa-content strong { color:var(--t1); font-weight:600; }
+
+/* ═══════════════════════════════════════════════════
+   CODE BLOCK
+═══════════════════════════════════════════════════ */
+.code-wrap {
+  background:rgba(0,0,0,.54); border:.5px solid rgba(255,255,255,.072);
+  border-radius:var(--r-lg); overflow:hidden; position:relative; z-index:1;
+}
+.code-header {
+  display:flex; align-items:center; gap:7px; padding:11px 18px;
+  border-bottom:.5px solid rgba(255,255,255,.05);
+  background:rgba(255,255,255,.022);
+}
+.code-header.clickable {
+  cursor:pointer;
+  transition:background .18s, border-color .18s;
+  user-select:none;
+}
+.code-header.clickable:hover {
+  background:rgba(255,255,255,.055);
+  border-bottom-color:rgba(255,255,255,.10);
+}
+.code-header.clickable:hover .code-fname { color:var(--t1); transition:color .18s; }
+.code-header.clickable:active { background:rgba(255,255,255,.08); }
+.vsc-hint {
+  margin-left:auto;
+  display:flex; align-items:center; gap:5px;
+  font-size:9.5px; font-family:var(--font-ui);
+  font-weight:500; letter-spacing:.03em;
+  color:rgba(100,160,255,.70);
+  opacity:0; transform:translateX(4px);
+  transition:opacity .22s, transform .22s;
+  white-space:nowrap;
+}
+.vsc-hint svg { flex-shrink:0; }
+.code-header.clickable:hover .vsc-hint {
+  opacity:1; transform:translateX(0);
+}
+.dot-r{width:11px;height:11px;border-radius:50%;background:#ff5f57;flex-shrink:0;}
+.dot-y{width:11px;height:11px;border-radius:50%;background:#febc2e;flex-shrink:0;}
+.dot-g{width:11px;height:11px;border-radius:50%;background:#28c840;flex-shrink:0;}
+.code-fname{font-size:11px;color:var(--t3);margin-left:6px;font-family:var(--font-mono);}
+.code-body {
+  padding:20px 22px; font-family:var(--font-mono);
+  font-size:clamp(10px,.9vw,12px); line-height:1.92; overflow-x:auto;
+}
+.cl  { display:block; color:rgba(255,255,255,.76); }
+.kw  { color:#c792ea; } .fn  { color:#82aaff; }
+.str { color:#c3e88d; } .cm  { color:#48566a; }
+.num { color:#f78c6c; }
+
+/* ═══════════════════════════════════════════════════
+   TECH TABLE
+═══════════════════════════════════════════════════ */
+.tech-table-wrap {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); overflow:hidden; position:relative; z-index:1;
+}
+.tech-table { width:100%; border-collapse:collapse; font-size:clamp(11px,.95vw,13px); }
+.tech-table th {
+  text-align:left; padding:11px 16px;
+  font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--t3); border-bottom:.5px solid var(--gs);
+  background:rgba(255,255,255,.022);
+}
+.tech-table td {
+  padding:13px 16px; border-bottom:.5px solid rgba(255,255,255,.036);
+  color:var(--t2); vertical-align:top;
+}
+.tech-table tr:last-child td { border-bottom:none; }
+.tech-table tr:hover td { background:rgba(255,255,255,.022); }
+.tt-name { color:var(--t1); font-weight:600; }
+.tt-badge {
+  display:inline-block; font-size:9px; font-weight:700;
+  padding:3px 9px; border-radius:999px;
+  margin-left:8px; vertical-align:middle;
+}
+.tb-g { background:rgba(48,209,88,.14);  color:var(--c-green); }
+.tb-i { background:rgba(94,92,230,.17);  color:rgba(200,198,255,.9); }
+.tb-p { background:rgba(255,55,95,.12);  color:var(--c-pink); }
+
+/* ═══════════════════════════════════════════════════
+   STATS ROW
+═══════════════════════════════════════════════════ */
+.stats-row {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:13px; margin-bottom:22px; position:relative; z-index:1;
+}
+.stat-tile {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); padding:clamp(12px,1.8vw,20px); text-align:center;
+  position:relative; overflow:hidden; transition:all .22s;
+}
+.stat-tile:hover { background:var(--g2); transform:translateY(-2px); }
+.stat-tile::before {
+  content:''; position:absolute; top:0; left:10%; right:10%; height:.5px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+}
+.stat-val {
+  font-family:var(--font-mono);
+  font-size:clamp(28px,3.5vw,46px); font-weight:700; line-height:1;
+  letter-spacing:-.04em; margin-bottom:6px;
+}
+.sv-i{color:var(--c-indigo);text-shadow:0 0 30px rgba(94,92,230,.5);}
+.sv-g{color:var(--c-green); text-shadow:0 0 30px rgba(48,209,88,.4);}
+.sv-y{color:var(--c-yellow);text-shadow:0 0 30px rgba(255,214,10,.4);}
+.sv-p{color:var(--c-pink);  text-shadow:0 0 30px rgba(255,55,95,.4);}
+.stat-label { font-size:11px; color:var(--t3); font-weight:500; }
+
+/* ═══════════════════════════════════════════════════
+   FINDINGS GRID
+═══════════════════════════════════════════════════ */
+.findings-grid {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:13px; position:relative; z-index:1;
+}
+.finding {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); padding:18px 20px; transition:all .2s;
+}
+.finding:hover { background:var(--g2); transform:translateY(-1px); }
+.finding-cat {
+  font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  margin-bottom:8px; color:rgba(200,198,255,.88);
+}
+.finding-cat.g{color:var(--c-green);} .finding-cat.y{color:var(--c-yellow);} .finding-cat.p{color:var(--c-pink);}
+.finding p { font-size:12.5px; color:var(--t2); line-height:1.58; }
+
+/* ═══════════════════════════════════════════════════
+   REPO TREE — fully vertical monospace
+═══════════════════════════════════════════════════ */
+.repo-tree {
+  background: linear-gradient(160deg, rgba(0,0,0,.52) 0%, rgba(8,6,24,.44) 100%);
+  border: .5px solid rgba(255,255,255,.08);
+  border-top: .5px solid rgba(255,255,255,.14);
+  border-radius: var(--r-lg);
+  padding: 14px 18px 16px;
+  font-family: var(--font-mono);
+  font-size: clamp(9px, 0.78vw, 11px);
+  line-height: 1.78;
+  color: var(--t2);
+  position: relative; z-index: 1;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 8px 24px rgba(0,0,0,.28);
+}
+.rt-line { display:block; white-space:pre; }
+.rt-root   { color:var(--c-teal); font-weight:700; }
+.rt-folder { color:var(--c-teal); }
+.rt-py     { color:var(--c-green); }
+.rt-json   { color:var(--c-yellow); }
+.rt-txt    { color:rgba(200,198,255,.88); }
+.rt-pdf    { color:var(--c-pink); }
+.rt-file   { color:var(--t3); }
+.rt-branch { color:rgba(255,255,255,.18); user-select:none; }
+
+/* ═══════════════════════════════════════════════════
+   LESSONS GRID
+═══════════════════════════════════════════════════ */
+.lessons-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:13px; position:relative; z-index:1;
+}
+.lesson {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:var(--r-lg); padding:clamp(13px,1.8vw,20px) clamp(12px,1.6vw,18px);
+  position:relative; overflow:hidden; transition:all .22s;
+}
+.lesson:hover { background:var(--g2); transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.24); }
+.lesson-stripe { position:absolute; top:0; left:0; right:0; height:2px; }
+.lesson-num {
+  font-family:var(--font-mono);
+  font-size:28px; font-weight:700; letter-spacing:-.05em;
+  color:rgba(255,255,255,.052); line-height:1; margin-bottom:10px;
+}
+.lesson h3 { font-size:13px; font-weight:600; color:var(--t1); margin-bottom:7px; letter-spacing:-.1px; }
+.lesson p  { font-size:12px; color:var(--t2); line-height:1.60; }
+
+/* ═══════════════════════════════════════════════════
+   CHECKLIST + FIELD PILLS
+═══════════════════════════════════════════════════ */
+.checklist { list-style:none; }
+.checklist li {
+  display:flex; align-items:flex-start; gap:10px;
+  padding:9px 0; border-bottom:.5px solid rgba(255,255,255,.042);
+  font-size:13px; color:var(--t2);
+}
+.checklist li:last-child { border-bottom:none; }
+.ck { color:var(--c-green); font-weight:700; margin-top:1px; flex-shrink:0; }
+.field-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+.field-pill {
+  display:flex; align-items:center; gap:9px;
+  background:rgba(255,255,255,.036); border:.5px solid var(--gs);
+  border-radius:var(--r-sm); padding:8px 12px; transition:all .18s;
+}
+.field-pill:hover { background:var(--g2); }
+.fp-n { font-family:var(--font-mono); font-size:9px; font-weight:700; letter-spacing:.06em; color:var(--c-indigo); min-width:20px; text-transform:uppercase; }
+.fp-l { font-size:12px; color:var(--t2); font-weight:500; }
+
+/* ═══════════════════════════════════════════════════
+   CLOSING
+═══════════════════════════════════════════════════ */
+.closing-wrap {
+  text-align:center; max-width:640px; margin:0 auto;
+  padding:16px 0; position:relative; z-index:1;
+}
+.closing-prism-wrap {
+  width:clamp(80px,9vw,120px); height:clamp(80px,9vw,120px);
+  margin:0 auto 30px;
+}
+.closing-title {
+  font-size:clamp(46px,7.5vw,108px);
+  font-weight:700; letter-spacing:-.055em; line-height:.92; margin-bottom:14px;
+  background:linear-gradient(135deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.50) 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.closing-title span {
+  background:linear-gradient(135deg,#a78bfa,#ec4899);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.closing-sub { font-size:16px; color:var(--t2); margin-bottom:36px; }
+.tag-cloud { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:32px; }
+.tc-tag {
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:999px; padding:6px 16px;
+  font-size:12px; font-weight:500; color:var(--t2); cursor:default; transition:all .2s;
+}
+.tc-tag:hover { background:var(--g2); color:var(--t1); border-color:rgba(94,92,230,.4); }
+
+/* ═══════════════════════════════════════════════════
+   SLIDE NUMBER
+═══════════════════════════════════════════════════ */
+.slide-num {
+  position:absolute; bottom:24px; right:32px;
+  font-family:var(--font-mono);
+  font-size:10px; font-weight:700; color:var(--t3); letter-spacing:.08em;
+  background:var(--g1); border:.5px solid var(--gs);
+  border-radius:999px; padding:4px 12px;
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+}
+
+/* ═══════════════════════════════════════════════════
+   KEYBOARD HINT
+═══════════════════════════════════════════════════ */
+.keyboard-hint {
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  z-index:999; display:flex; align-items:center; gap:8px;
+  background:rgba(4,4,16,.75); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
+  border:.5px solid rgba(255,255,255,.10); border-radius:999px;
+  padding:6px 16px; font-size:11px; color:var(--t3);
+  animation:hint-pop 5s ease-in-out 1.5s both; pointer-events:none;
+}
+.kbd {
+  display:inline-flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,.08); border:.5px solid rgba(255,255,255,.14);
+  border-radius:5px; width:20px; height:20px;
+  font-size:10px; color:var(--t2); font-family:var(--font-mono);
+}
+@keyframes hint-pop {
+  0%  {opacity:0;transform:translateX(-50%) translateY(10px);}
+  12% {opacity:1;transform:translateX(-50%) translateY(0);}
+  82% {opacity:1;}
+  100%{opacity:0;}
+}
+
+/* ═══════════════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════════════ */
+.slide.visible .section-header   { animation:rise .5s .06s both; }
+.slide.visible .g2, .slide.visible .g3,
+.slide.visible .g2-asym, .slide.visible .g2-60,
+.slide.visible .stats-row, .slide.visible .findings-grid,
+.slide.visible .lessons-grid, .slide.visible .concept-flow,
+.slide.visible .flow-row, .slide.visible .tech-table-wrap,
+.slide.visible .pa-wrap, .slide.visible .code-wrap,
+.slide.visible .repo-tree, .slide.visible .closing-wrap { animation:rise .5s .15s both; }
+@keyframes rise {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════ */
+@media(max-width:900px){
+  .glass-card{padding:26px 20px;}
+  nav{padding:0 16px;}
+  .g2,.g2-asym,.g2-60{grid-template-columns:1fr;}
+  .g3,.lessons-grid{grid-template-columns:1fr 1fr;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .float-badge{display:none;}
+  h1.hero-title{font-size:30px;}
+  .holo-wrap{min-height:220px;}
+  .holo-sphere-wrap{width:180px;height:180px;}
+  .holo-glow{width:220px;height:220px;}
+  .nav-segments{display:none;}
+  .findings-grid{grid-template-columns:1fr;}
+}
+@media(max-width:560px){
+  .slide{padding:66px 12px 28px;}
+  .glass-card{
+    padding:18px 14px;
+    border-radius:24px;
+    max-width:calc(100vw - 24px);
+  }
+  .g3,.lessons-grid{grid-template-columns:1fr;}
+  .stat-val{font-size:28px;}
+  .concept-flow{flex-direction:column;}
+  .cf-arrow{transform:rotate(90deg);}
+  .flow-row{flex-wrap:wrap;}
+  .flow-step{min-width:calc(33% - 1px);}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .repo-tree{font-size:8.5px; padding:10px 12px; line-height:1.65;}
+  h2.section-title{font-size:18px;}
+  .section-sub{font-size:12px;}
+}
+@media(min-width:1400px){
+  .glass-card{max-width:1200px;}
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.10);border-radius:4px;}
+
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div class="keyboard-hint">
+  <span class="kbd">↑</span><span class="kbd">↓</span>&nbsp;naviga tra le slide
+</div>
+
+<!-- ═════════════════ NAV ════════════════ -->
+<nav>
+  <div class="nav-logo">
+    <!-- Prism orb — nav size -->
+    <div class="prism-orb prism-orb--sm">
+      <div class="prism-orb__base"></div>
+      <div class="prism-orb__facets"></div>
+      <div class="prism-orb__caustics"></div>
+      <div class="prism-orb__shell"></div>
+      <div class="prism-orb__gloss"></div>
+      <div class="prism-orb__rim"></div>
+    </div>
+    Jack &amp; Octi
+  </div>
+  <div class="nav-segments" id="nav-pills"></div>
+  <div class="nav-right">
+    <span class="nav-counter" id="slide-label">01 / 13</span>
+    <div class="nav-dots" id="nav-dots"></div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     SLIDE 1 — COVER
+══════════════════════════════════════ -->
+<section class="slide" id="s1" data-label="Intro">
+  <div class="glass-card">
+    <div class="blob" style="width:520px;height:520px;top:-190px;right:-130px;background:radial-gradient(circle,rgba(139,92,246,.28) 0%,rgba(236,72,153,.16) 50%,transparent 70%);animation-duration:17s;"></div>
+    <div class="blob" style="width:360px;height:360px;bottom:-130px;left:-90px;background:radial-gradient(circle,rgba(59,130,246,.22) 0%,transparent 66%);animation-duration:12s;animation-direction:alternate-reverse;"></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,48px);align-items:center;">
+      <div style="position:relative;z-index:1;">
+        <div class="authors-pill">
+          <span class="av av-j">GD</span>
+          Giacomo De Bellis
+          <span class="sep-dot">·</span>
+          <span class="av av-o">OU</span>
+          Octavian Ungureanu
+        </div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Stage AI Team · Bologna 2026</div>
+        <h1 class="hero-title">AI, Prompt<br>Engineering<br><span class="grad-text">&amp; Analisi CV</span></h1>
+        <p class="hero-sub">Dal mondo dei Large Language Model fino a un progetto concreto: estrazione automatizzata di dati da curriculum vitae, iterazione dei prompt e validazione con Python.</p>
+        <div class="btn-row">
+          <button class="btn-filled" onclick="go(1)">Scopri il progetto →</button>
+          <a class="btn-glass" href="https://github.com/DEV-Octavian/NS_PromptEngineering" target="_blank" rel="noopener">GitHub Repo</a>
+        </div>
+        <div class="stat-chips">
+          <span class="stat-chip"><span class="sc-dot" style="background:var(--c-indigo)"></span>Studio AI &amp; LLM</span>
+          <span class="stat-chip"><span class="sc-dot" style="background:var(--c-green)"></span>3 Prompt Iterativi</span>
+          <span class="stat-chip"><span class="sc-dot" style="background:var(--c-yellow)"></span>Python DeepDiff</span>
+          <span class="stat-chip"><span class="sc-dot" style="background:var(--c-pink)"></span>5 CV Analizzati</span>
+        </div>
+      </div>
+
+      <!-- PRISM SPHERE hero -->
+      <div class="holo-wrap">
+        <div class="holo-glow"></div>
+        <div class="holo-sphere-wrap">
+          <div class="prism-orb" style="width:100%;height:100%;border-radius:50%;">
+            <div class="prism-orb__base"></div>
+            <div class="prism-orb__facets"></div>
+            <div class="prism-orb__caustics"></div>
+            <div class="prism-orb__shell"></div>
+            <div class="prism-orb__gloss"></div>
+            <div class="prism-orb__rim"></div>
+          </div>
+        </div>
+        <div class="float-badge fb-1">
+          <span class="fb-dot" style="background:var(--c-green);box-shadow:0 0 7px rgba(48,209,88,.85)"></span>
+          <span class="fb-text"><span class="fb-label">Prompt Engineering</span></span>
+        </div>
+        <div class="float-badge fb-2">
+          <span class="fb-dot" style="background:var(--c-indigo);box-shadow:0 0 7px rgba(94,92,230,.85)"></span>
+          <span class="fb-text"><span class="fb-label">Gemini, ChatGPT e Copilot</span></span>
+        </div>
+        <div class="float-badge fb-3">
+          <span class="fb-dot" style="background:var(--c-yellow);box-shadow:0 0 7px rgba(255,214,10,.7)"></span>
+          <span class="fb-text"><span class="fb-label">Agenti AI</span></span>
+        </div>
+      </div>
+    </div>
+    <span class="slide-num">01 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 2 — AGENDA
+══════════════════════════════════════ -->
+<section class="slide" id="s2" data-label="Agenda">
+  <div class="glass-card">
+    <div class="blob" style="width:400px;height:400px;top:-100px;right:-80px;background:radial-gradient(circle,rgba(59,130,246,.20) 0%,transparent 65%);animation-duration:14s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Agenda</div>
+      <h2 class="section-title">Il nostro <span class="grad-text">percorso</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Dalla teoria sull'intelligenza artificiale fino al progetto operativo, passo dopo passo.</p>
+    </div>
+    <div class="g3">
+      <div class="tile"><span class="feat-num">01</span><div class="feat-title">Fondamenti AI &amp; LLM</div><p>Cos'è l'IA, come funziona un Large Language Model, token e context window. Introduzione agli agenti AI.</p></div>
+      <div class="tile"><span class="feat-num">02</span><div class="feat-title">Prompt Engineering</div><p>Tecniche zero-shot, few-shot, chain of thought, vincoli espliciti, iterazione e anatomia di un prompt efficace.</p></div>
+      <div class="tile"><span class="feat-num">03</span><div class="feat-title">GitHub &amp; Collaborazione</div><p>Repository, branch, commit, pull, push e pull request.</p></div>
+      <div class="tile"><span class="feat-num">04</span><div class="feat-title">Progetto CV con AI</div><p>5 CV analizzati con 3 prompt diversi. Output: tabelle Markdown e JSON strutturati.</p></div>
+      <div class="tile"><span class="feat-num">05</span><div class="feat-title">Validazione Python</div><p>Script RunToCheck.py con DeepDiff: confronto tra JSON generati dall'AI e ground truth.</p></div>
+      <div class="tile"><span class="feat-num">06</span><div class="feat-title">Risultati &amp; Conclusioni</div><p>Analisi delle differenze rilevate, lezioni apprese e prospettive future.</p></div>
+    </div>
+    <span class="slide-num">03 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 3 — MODALITÀ DI LAVORO
+══════════════════════════════════════ -->
+<section class="slide" id="s3" data-label="Metodo">
+  <div class="glass-card">
+    <div class="blob" style="width:420px;height:420px;top:-120px;right:-100px;background:radial-gradient(circle,rgba(168,85,247,.22) 0%,rgba(236,72,153,.12) 55%,transparent 70%);animation-duration:16s;"></div>
+    <div class="blob" style="width:300px;height:300px;bottom:-100px;left:-70px;background:radial-gradient(circle,rgba(59,130,246,.18) 0%,transparent 65%);animation-duration:11s;animation-direction:alternate-reverse;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 01</div>
+      <h2 class="section-title">Come abbiamo <span class="grad-text">lavorato</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Il percorso dal primo modulo studiato in autonomia fino alla collaborazione attiva con il team.</p>
+    </div>
+
+    <!-- Timeline verticale con 2 fasi -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;z-index:1;">
+
+      <!-- FASE 1 -->
+      <div class="tile" style="border-left:2px solid var(--c-indigo);border-radius:0 var(--r-lg) var(--r-lg) 0;padding:clamp(14px,2vw,22px);">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:rgba(94,92,230,.18);border:.5px solid rgba(94,92,230,.40);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">📚</div>
+          <div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(200,198,255,.7);margin-bottom:2px;">Fase 1 — Individuale</div>
+            <div style="font-size:14px;font-weight:600;color:var(--t1);">Studio in autonomia</div>
+          </div>
+        </div>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.7;margin-bottom:14px;">Ogni stagista ha completato in modo indipendente i moduli formativi, costruendo una base solida prima di iniziare il progetto.</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="background:rgba(94,92,230,.10);border:.5px solid rgba(94,92,230,.25);border-radius:var(--r-sm);padding:10px 14px;">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(200,198,255,.6);margin-bottom:5px;">Microsoft Learn — AI Fluency</div>
+            <p style="font-size:12px;color:var(--t2);line-height:1.6;">12 moduli su AI Fundamentals: fondamenti, IA generativa, LLM, Copilot, etica e accessibilità.</p>
+          </div>
+          <div style="background:rgba(16,185,129,.08);border:.5px solid rgba(16,185,129,.22);border-radius:var(--r-sm);padding:10px 14px;">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(100,230,180,.7);margin-bottom:5px;">Corsi brevi — ChatGPT &amp; Gemini</div>
+            <p style="font-size:12px;color:var(--t2);line-height:1.6;">Prompt engineering applicato: strategie zero-shot, few-shot, vincoli di formato e iterazione. Basati sulla documentazione ufficiale Google e OpenAI.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 2 -->
+      <div class="tile" style="border-left:2px solid var(--c-pink);border-radius:0 var(--r-lg) var(--r-lg) 0;padding:clamp(14px,2vw,22px);">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,55,95,.15);border:.5px solid rgba(255,55,95,.35);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">🤝</div>
+          <div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,150,170,.7);margin-bottom:2px;">Fase 2 — Con il Team</div>
+            <div style="font-size:14px;font-weight:600;color:var(--t1);">Lavoro in coppia</div>
+          </div>
+        </div>
+        <p style="font-size:12.5px;color:var(--t2);line-height:1.7;margin-bottom:14px;">Sessioni di lavoro in coppia per sviluppare il progetto riguardo i CV e il confronto tra i dati.</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="background:rgba(255,55,95,.09);border:.5px solid rgba(255,55,95,.22);border-radius:var(--r-sm);padding:10px 14px;">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+              <span style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,150,170,.7);">Basi di AI &amp; LLM</span>
+              <span style="font-size:9px;background:rgba(255,55,95,.15);border:.5px solid rgba(255,55,95,.28);border-radius:999px;padding:2px 8px;color:rgba(255,150,170,.85);">con Davide &amp; Lorenzo</span>
+            </div>
+            <p style="font-size:12px;color:var(--t2);line-height:1.6;">Come funzionano i modelli linguistici, token, context window, temperature e allucinazioni: Spiegati con esempi pratici e casi d'uso reali.</p>
+          </div>
+          <div style="background:rgba(245,158,11,.08);border:.5px solid rgba(245,158,11,.22);border-radius:var(--r-sm);padding:10px 14px;">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+              <span style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,210,100,.7);">Basi di GitHub</span>
+              <span style="font-size:9px;background:rgba(245,158,11,.15);border:.5px solid rgba(245,158,11,.28);border-radius:999px;padding:2px 8px;color:rgba(255,210,100,.85);">con Davide &amp; Lorenzo</span>
+            </div>
+            <p style="font-size:12px;color:var(--t2);line-height:1.6;">Repository, branch, commit, pull request e flusso collaborativo: Dal setup iniziale alla gestione del progetto in coppia.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <span class="slide-num">03 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 4 — FONDAMENTI AI
+══════════════════════════════════════ -->
+<section class="slide" id="s3" data-label="AI Fondamentali">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;bottom:-80px;left:-60px;background:radial-gradient(circle,rgba(16,185,129,.18) 0%,transparent 65%);animation-duration:11s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 02</div>
+      <h2 class="section-title">Fondamenti di <span class="grad-text">AI &amp; LLM</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Cosa abbiamo studiato prima di scrivere il primo prompt.</p>
+    </div>
+    <div class="concept-flow">
+      <div class="cf-node"><span>Fase 1</span><strong>Pre-training</strong></div>
+      <span class="cf-arrow">→</span>
+      <div class="cf-node"><span>Fase 2</span><strong>Supervised Fine-tuning</strong></div>
+      <span class="cf-arrow">→</span>
+      <div class="cf-node"><span>Fase 3</span><strong>Valutazione</strong></div>
+      <span class="cf-arrow">→</span>
+      <div class="cf-node"><span>Fase 4</span><strong>RLHF</strong></div>
+      <span class="cf-arrow">→</span>
+      <div class="cf-node focus"><span>Risultato</span><strong>LLM</strong></div>
+    </div>
+    <div class="g3">
+      <div class="tile"><div class="tile-icon">🧠</div><h3>Come funziona un LLM</h3><p>Pre-training su miliardi di testi, poi fine-tuning e RLHF. Genera testo token per token basandosi su probabilità statistiche.</p></div>
+      <div class="tile"><div class="tile-icon">🔤</div><h3>Token &amp; Context Window</h3><p>Un token corrisponde generalmente a 3/4 di parola, ma dipende dal modello usato. Il modello "ricorda" solo ciò che rientra nella sua finestra di contesto — dai 4K ai 200K token.</p></div>
+      <div class="tile"><div class="tile-icon">🌡️</div><h3>Temperature</h3><p>Temperature 0 = risposta deterministica. Valori alti = più creatività e variabilità nell'output generato.</p></div>
+      <div class="tile"><div class="tile-icon">⚡</div><h3>Prompt = Input AI</h3><p>La qualità dell'output dipende direttamente dal prompt. Una richiesta vaga produce una risposta vaga — prima lezione.</p></div>
+      <div class="tile"><div class="tile-icon">⚠️</div><h3>Allucinazioni</h3><p>I modelli generano fatti plausibili ma falsi. Non sono calcolatori: producono testo statisticamente coerente, non "verità".</p></div>
+      <div class="tile"><div class="tile-icon">🔄</div><h3>Agenti AI</h3><p>Compie azioni pratiche delineate, superando i limiti strutturali dell'intelligenza artificiale generica.</p></div>
+    </div>
+    <span class="slide-num">04 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 4 — PROMPT ENGINEERING
+══════════════════════════════════════ -->
+<section class="slide" id="s4" data-label="Prompt Eng.">
+  <div class="glass-card">
+    <div class="blob" style="width:350px;height:350px;top:-80px;right:-60px;background:radial-gradient(circle,rgba(139,92,246,.20) 0%,transparent 65%);animation-duration:13s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 03</div>
+      <h2 class="section-title">Prompt <span class="grad-text">Engineering</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Le tecniche che abbiamo imparato e poi applicato al progetto CV.</p>
+    </div>
+    <div class="g2-asym">
+      <div class="col">
+        <div class="tile tile-accent"><div class="tile-num">Zero-Shot</div><p>Nessun esempio nel prompt: il modello usa solo le istruzioni fornite. Funziona per task noti, ma produce risultati meno prevedibili sul formato.</p></div>
+        <div class="tile tile-accent g"><div class="tile-num" style="color:var(--c-green)">Few-Shot</div><p>2–5 esempi di input/output guidano il modello verso il formato desiderato. La tecnica più potente per output strutturati come JSON o tabelle.</p></div>
+        <div class="tile tile-accent y"><div class="tile-num" style="color:var(--c-yellow)">Vincoli espliciti</div><p>Specifica formato, lunghezza, stile, cosa NON fare. Il modello risponde meglio a prompt diretti con vincoli ben definiti all'inizio.</p></div>
+        <div class="tile tile-accent p"><div class="tile-num" style="color:var(--c-pink)">Iterazione</div><p>Il primo prompt non è mai perfetto. Riformula, cambia ordine, aggiungi contesto finché l'output è quello atteso.</p></div>
+      </div>
+      <div class="pa-wrap">
+        <div class="pa-head">Anatomia del nostro prompt</div>
+        <div class="pa-row"><div class="pa-tag-cell"><span class="pa-tag i">Ruolo</span></div><div class="pa-content"><strong>Agisci come un recruiter</strong> con capacità di analisi precisa e strutturata di Curriculum Vitae.</div></div>
+        <div class="pa-row"><div class="pa-tag-cell"><span class="pa-tag g">Obiettivo</span></div><div class="pa-content">Estrai i dati: Nome, Età, Istruzione, Anzianità, Ruolo, Competenze, Lingue, Soft Skills, Tecnologie, Certificazioni.</div></div>
+        <div class="pa-row"><div class="pa-tag-cell"><span class="pa-tag y">Formato</span></div><div class="pa-content">Output <strong>esclusivamente JSON</strong> nello schema fornito. <strong>Nessuna frase</strong> introduttiva o conclusiva.</div></div>
+        <div class="pa-row"><div class="pa-tag-cell"><span class="pa-tag p">Vincoli</span></div><div class="pa-content"><strong>Non auto-completare</strong>. Null per numeri, "" per stringhe, [] per array vuoti.</div></div>
+        <div class="pa-row"><div class="pa-tag-cell"><span class="pa-tag b">Verifica</span></div><div class="pa-content">Controlla <strong>uno per uno</strong> tutti i campi: zero discrepanze tra tabella e JSON.</div></div>
+      </div>
+    </div>
+    <span class="slide-num">05 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 5 — GITHUB
+══════════════════════════════════════ -->
+<section class="slide" id="s5" data-label="GitHub">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;bottom:-80px;right:-60px;background:radial-gradient(circle,rgba(16,185,129,.17) 0%,transparent 65%);animation-duration:15s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 04</div>
+      <h2 class="section-title">GitHub: il nostro <span class="grad-text">flusso</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Come abbiamo versionato il codice, collaborato e condiviso il progetto.</p>
+    </div>
+    <!-- Fix 4: git add (no ".") · git commit (no -m flag) -->
+    <div class="flow-row">
+      <div class="flow-step"><div class="fs-n">01</div><div class="fs-cmd">git pull</div><div class="fs-lbl">Aggiorna locale</div></div>
+      <div class="flow-step"><div class="fs-n">02</div><div class="fs-cmd">modifica file</div><div class="fs-lbl">Lavoro dello sviluppatore</div></div>
+      <div class="flow-step"><div class="fs-n">03</div><div class="fs-cmd">git add</div><div class="fs-lbl">Stage changes</div></div>
+      <div class="flow-step"><div class="fs-n">04</div><div class="fs-cmd">git commit</div><div class="fs-lbl">Salva progressi</div></div>
+      <div class="flow-step"><div class="fs-n">05</div><div class="fs-cmd">git push</div><div class="fs-lbl">Carica online</div></div>
+    </div>
+    <p class="flow-sub">Push al branch feature → Pull Request → Review → Merge su main</p>
+    <div class="g2">
+      <div class="tile"><div class="tile-icon">🗄️</div><h3>Repository</h3><p>Una cartella condivisa nel cloud con tutto il progetto: prompt, CV, JSON generati, JSON di verità e script Python.</p></div>
+      <div class="tile"><div class="tile-icon">🌿</div><h3>Branch</h3><p>Ogni nuova funzionalità su un branch separato. Nessun rischio di rompere il main durante lo sviluppo parallelo.</p></div>
+      <div class="tile"><div class="tile-icon">📝</div><h3>Commit message</h3><p>Messaggi descrittivi per ogni salvataggio. "Aggiunto prompt v2 JSON" è molto più utile di "update" per trovare una versione precedente.</p></div>
+      <div class="tile"><div class="tile-icon">🔀</div><h3>Pull Request</h3><p>Revisione del codice prima del merge nel main. Anche in un team di 2 persone ha evitato errori e conflitti nel progetto.</p></div>
+    </div>
+    <span class="slide-num">06 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 6 — REPOSITORY
+══════════════════════════════════════ -->
+<section class="slide" id="s6" data-label="Repository">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;top:-80px;left:-70px;background:radial-gradient(circle,rgba(94,92,230,.18) 0%,transparent 65%);animation-duration:13s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 04 — dettaglio</div>
+      <h2 class="section-title">Struttura della <span class="grad-text">Repository</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Come abbiamo organizzato file e cartelle per rendere il progetto leggibile.</p>
+    </div>
+    <div class="g2-60">
+      <!-- Fully vertical tree -->
+      <div style="display:flex;flex-direction:column;gap:0;position:relative;z-index:1;">
+        <div style="background:rgba(255,255,255,.04);border:.5px solid rgba(255,255,255,.10);border-bottom:.5px solid rgba(255,255,255,.06);border-radius:var(--r-lg) var(--r-lg) 0 0;padding:9px 16px;display:flex;align-items:center;gap:7px;">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--t3);margin-left:6px;">NS_PromptEngineering/</span>
+        </div>
+        <div class="repo-tree" style="border-radius:0 0 var(--r-lg) var(--r-lg);border-top:none;"><span class="rt-line"><span class="rt-root">📁 NS_PromptEngineering/</span></span>
+<span class="rt-line"><span class="rt-branch">│</span></span>
+<span class="rt-line"><span class="rt-branch">├── </span><span class="rt-folder">📁 CheckerJSON/</span></span>
+<span class="rt-line"><span class="rt-branch">│   ├── </span><span class="rt-folder">📁 DaComparare/</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   ├── </span><span class="rt-json">Alberi.json</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   ├── </span><span class="rt-json">Bigozzi.json</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   ├── </span><span class="rt-json">Occhi.json</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   ├── </span><span class="rt-json">Piovani.json</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   └── </span><span class="rt-json">Santarelli.json</span></span>
+<span class="rt-line"><span class="rt-branch">│   ├── </span><span class="rt-folder">📁 Verita/</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   └── </span><span class="rt-json">+5 file [true].json</span></span>
+<span class="rt-line"><span class="rt-branch">│   └── </span><span class="rt-py">🐍 RunToCheck.py</span></span>
+<span class="rt-line"><span class="rt-branch">│</span></span>
+<span class="rt-line"><span class="rt-branch">├── </span><span class="rt-folder">📁 PDFs/</span></span>
+<span class="rt-line"><span class="rt-branch">│   ├── </span><span class="rt-folder">📁 Curriculum Vitae/</span></span>
+<span class="rt-line"><span class="rt-branch">│   │   └── </span><span class="rt-pdf">+5 file .pdf</span></span>
+<span class="rt-line"><span class="rt-branch">│   └── </span><span class="rt-folder">📁 Relazione e Output/</span></span>
+<span class="rt-line"><span class="rt-branch">│       ├── </span><span class="rt-pdf">CV-Prompt&amp;Outputs.pdf</span></span>
+<span class="rt-line"><span class="rt-branch">│       └── </span><span class="rt-pdf">RelazionePromptEngineering.pdf</span></span>
+<span class="rt-line"><span class="rt-branch">│</span></span>
+<span class="rt-line"><span class="rt-branch">└── </span><span class="rt-folder">📁 Prompt/</span></span>
+<span class="rt-line"><span class="rt-branch">    ├── </span><span class="rt-txt">Prompt_JSON.txt</span></span>
+<span class="rt-line"><span class="rt-branch">    ├── </span><span class="rt-txt">Prompt_Tabella.txt</span></span>
+<span class="rt-line"><span class="rt-branch">    └── </span><span class="rt-txt">Prompt_Unico.txt</span></span></div>
+      </div>
+
+      <div class="col">
+        <div class="tile">
+          <div class="tile-num">📁 CheckerJSON</div>
+          <p>Cuore della validazione: i JSON generati dall'AI in <strong style="color:var(--t1)">DaComparare</strong> vengono confrontati con i JSON ground truth in <strong style="color:var(--t1)">Verita</strong>. RunToCheck.py esegue il diff.</p>
+        </div>
+        <div class="tile">
+          <div class="tile-num">📁 PDFs</div>
+          <p>I 5 CV originali dei candidati e i documenti di relazione e output del progetto, separati in sottocartelle.</p>
+        </div>
+        <div class="tile">
+          <div class="tile-num">📁 Prompt</div>
+          <p>Le 3 versioni del prompt in formato <span style="color:rgba(200,198,255,.9)">.txt</span>: Tabella, JSON e Unico (v3). Evoluzione documentata e confrontabile.</p>
+        </div>
+      </div>
+    </div>
+    <span class="slide-num">07 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 7 — PROGETTO CV
+══════════════════════════════════════ -->
+<section class="slide" id="s7" data-label="Progetto CV">
+  <div class="glass-card">
+    <div class="blob" style="width:350px;height:350px;top:-60px;right:-50px;background:radial-gradient(circle,rgba(245,158,11,.17) 0%,transparent 65%);animation-duration:12s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 05</div>
+      <h2 class="section-title">Il progetto <span class="grad-text">CV con AI</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Obiettivo: estrarre automaticamente 10 campi da 5 CV usando 3 prompt in evoluzione.</p>
+    </div>
+    <div class="g2-60">
+      <div class="tile">
+        <div class="tile-num" style="margin-bottom:16px">Obiettivo del progetto</div>
+        <ul class="checklist">
+          <li><span class="ck">✓</span>Analisi di 5 CV reali con Gemini, ChatGPT e Copilot</li>
+          <li><span class="ck">✓</span>3 versioni di prompt con diversi approcci tecnici (un prompt unico, e due separati)</li>
+          <li><span class="ck">✓</span>Output doppio (con il prompt unico): tabella Markdown + file JSON</li>
+          <li><span class="ck">✓</span>Nessun auto-completamento dei dati mancanti</li>
+          <li><span class="ck">✓</span>Consistenza per la TABELLA e il JSON</li>
+          <li><span class="ck">✓</span>Validazione automatica con script Python</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <div class="tile-num" style="margin-bottom:14px">I 10 campi estratti</div>
+        <div class="field-grid">
+          <div class="field-pill"><span class="fp-n">01</span><span class="fp-l">Nome e Cognome</span></div>
+          <div class="field-pill"><span class="fp-n">02</span><span class="fp-l">Età</span></div>
+          <div class="field-pill"><span class="fp-n">03</span><span class="fp-l">Livello istruzione</span></div>
+          <div class="field-pill"><span class="fp-n">04</span><span class="fp-l">Anni anzianità</span></div>
+          <div class="field-pill"><span class="fp-n">05</span><span class="fp-l">Ruolo</span></div>
+          <div class="field-pill"><span class="fp-n">06</span><span class="fp-l">Competenze tecniche</span></div>
+          <div class="field-pill"><span class="fp-n">07</span><span class="fp-l">Lingue</span></div>
+          <div class="field-pill"><span class="fp-n">08</span><span class="fp-l">Soft Skills</span></div>
+          <div class="field-pill"><span class="fp-n">09</span><span class="fp-l">Tecnologie</span></div>
+          <div class="field-pill"><span class="fp-n">10</span><span class="fp-l">Certificazioni</span></div>
+        </div>
+      </div>
+    </div>
+    <span class="slide-num">08 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 8 — I TRE PROMPT
+══════════════════════════════════════ -->
+<section class="slide" id="s8" data-label="I Tre Prompt">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;bottom:-80px;left:-60px;background:radial-gradient(circle,rgba(94,92,230,.20) 0%,transparent 65%);animation-duration:14s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 05 — dettaglio</div>
+      <h2 class="section-title">L'evoluzione <span class="grad-text">iterativa</span> dei prompt</h2>
+      <p class="section-sub" style="margin-bottom:0">Tre versioni, ognuna più precisa e completa della precedente.</p>
+    </div>
+    <div class="tech-table-wrap" style="margin-bottom:16px">
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th style="width:130px">Versione</th>
+            <th>Output</th>
+            <th>Caratteristiche chiave</th>
+            <th>Limite principale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tt-name">Prompt Tabella</span><span class="tt-badge tb-g">v1</span></td>
+            <td style="color:var(--c-green)">Tabella Markdown</td>
+            <td>Ruolo recruiter, 10 campi, "mancante" se assente. Nessun testo introduttivo.</td>
+            <td>Solo tabella — non parsabile automaticamente da Python.</td>
+          </tr>
+          <tr>
+            <td><span class="tt-name">Prompt JSON</span><span class="tt-badge tb-i">v2</span></td>
+            <td style="color:rgba(200,198,255,.9)">JSON strutturato</td>
+            <td>Schema JSON fisso, null / "" / [] per dati mancanti, chiavi minuscole.</td>
+            <td>Nessuna tabella leggibile — output solo machine-readable.</td>
+          </tr>
+          <tr>
+            <td><span class="tt-name">Prompt Unico</span><span class="tt-badge tb-p">v3</span></td>
+            <td style="color:var(--c-pink)">Tabella + JSON</td>
+            <td>Combina v1 e v2. Prima tabella, poi JSON. Controllo incrociato obbligatorio.</td>
+            <td>Più lungo e complesso — richiede context window ampia.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tile" style="position:relative;z-index:1">
+      <div class="tile-num">Estratto dal Prompt Unico (v3) — vincolo di verifica</div>
+      <div class="code-wrap" style="margin-top:10px">
+        <div class="code-body" style="padding:14px 18px;font-size:12px">
+          <span class="cl"><span class="cm"># Istruzione di verifica alla fine del prompt</span></span>
+          <span class="cl">"Terminato l'output <span class="kw">torna sui tuoi passi</span> e controlla</span>
+          <span class="cl">&nbsp;uno per uno i parametri della tabella in relazione</span>
+          <span class="cl">&nbsp;a quelli del file JSON: i parametri devono essere <span class="str">identici</span>,</span>
+          <span class="cl">&nbsp;<span class="kw">zero discrepanze</span>. Se ci sono, torna a rileggere il CV"</span>
+        </div>
+      </div>
+    </div>
+    <span class="slide-num">09 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 9 — PYTHON CHECKER
+══════════════════════════════════════ -->
+<section class="slide" id="s9" data-label="Python Checker">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;top:-80px;right:-80px;background:radial-gradient(circle,rgba(16,185,129,.18) 0%,transparent 65%);animation-duration:13s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 06</div>
+      <h2 class="section-title">Validazione con <span class="grad-text">Python</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Script RunToCheck.py: confronto automatico tra JSON generato e ground truth con DeepDiff.</p>
+    </div>
+    <div class="g2">
+      <div class="code-wrap">
+        <div class="code-header clickable" onclick="openInVSCode()" title="Apri RunToCheck.py in Visual Studio Code">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="code-fname">RunToCheck.py</span>
+          <span class="vsc-hint">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            Apri in VS Code
+          </span>
+        </div>
+        <div class="code-body">
+          <span class="cl"><span class="kw">import</span> json</span>
+          <span class="cl"><span class="kw">from</span> deepdiff <span class="kw">import</span> <span class="fn">DeepDiff</span></span>
+          <span class="cl"></span>
+          <span class="cl"><span class="cm"># Input: cognome del candidato</span></span>
+          <span class="cl">nomefile1 = <span class="fn">input</span>(<span class="str">"Cognome CV: "</span>) + <span class="str">"true"</span></span>
+          <span class="cl">nomefile2 = nomefile1.<span class="fn">replace</span>(<span class="str">"true"</span>, <span class="str">""</span>)</span>
+          <span class="cl"></span>
+          <span class="cl"><span class="cm"># Caricamento entrambi i JSON</span></span>
+          <span class="cl"><span class="kw">with</span> <span class="fn">open</span>(<span class="str">f"Verita/{nomefile1}.json"</span>) <span class="kw">as</span> f:</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;data_true = json.<span class="fn">load</span>(f)</span>
+          <span class="cl"><span class="kw">with</span> <span class="fn">open</span>(<span class="str">f"DaComparare/{nomefile2}.json"</span>) <span class="kw">as</span> f:</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;data_cv = json.<span class="fn">load</span>(f)</span>
+          <span class="cl"></span>
+          <span class="cl"><span class="cm"># Confronto ricorsivo, ignora ordine array</span></span>
+          <span class="cl">diff = <span class="fn">DeepDiff</span>(data_true, data_cv,</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ignore_order=<span class="kw">True</span>)</span>
+          <span class="cl"></span>
+          <span class="cl"><span class="kw">if not</span> diff:</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">print</span>(<span class="str">"I file sono uguali"</span>)</span>
+          <span class="cl"><span class="kw">else</span>:</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">for</span> cat <span class="kw">in</span> <span class="fn">sorted</span>(categorie):</span>
+          <span class="cl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">print</span>(<span class="str">f"Diff in {cat}"</span>)</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tile">
+          <div class="tile-num">Come funziona — 4 step</div>
+          <ul class="checklist" style="margin-top:6px">
+            <li><span style="color:var(--c-indigo);font-weight:700;min-width:18px;flex-shrink:0;font-family:var(--font-mono)">1</span>Inserisci il cognome del candidato da verificare</li>
+            <li><span style="color:var(--c-indigo);font-weight:700;min-width:18px;flex-shrink:0;font-family:var(--font-mono)">2</span>Lo script carica il JSON "verità" e il JSON generato</li>
+            <li><span style="color:var(--c-indigo);font-weight:700;min-width:18px;flex-shrink:0;font-family:var(--font-mono)">3</span>DeepDiff confronta ricorsivamente tutti i valori</li>
+            <li><span style="color:var(--c-indigo);font-weight:700;min-width:18px;flex-shrink:0;font-family:var(--font-mono)">4</span>Stampa le categorie dove ci sono differenze</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <div class="tile-num">Funzione mappa_categoria</div>
+          <p>Analizza il path JSON delle differenze e lo mappa a un nome leggibile: "competenze_tecniche" → <span style="color:var(--c-green)">Competenze Tecniche</span>, "lingue" → <span style="color:var(--c-green)">Lingue</span>.</p>
+        </div>
+        <div class="tile">
+          <div class="tile-num">Output esempio</div>
+          <div style="font-family:var(--font-mono);font-size:12px;color:var(--t2);line-height:2;margin-top:4px">
+            <span style="color:var(--c-pink)">I file sono diversi</span><br>
+            Diff in <span style="color:var(--c-yellow)">Lingue</span><br>
+            Diff in <span style="color:var(--c-yellow)">Soft skills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="slide-num">10 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 10 — RISULTATI
+══════════════════════════════════════ -->
+<section class="slide" id="s10" data-label="Risultati">
+  <div class="glass-card">
+    <div class="blob" style="width:380px;height:380px;top:-60px;left:-40px;background:radial-gradient(circle,rgba(94,92,230,.20) 0%,transparent 65%);animation-duration:16s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Sezione 07</div>
+      <h2 class="section-title">Risultati &amp; <span class="grad-text">differenze</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Cosa ha trovato il checker confrontando i JSON generati dall'AI con quelli di verità.</p>
+    </div>
+    <div class="stats-row">
+      <div class="stat-tile"><div class="stat-val sv-i">5</div><div class="stat-label">CV analizzati</div></div>
+      <div class="stat-tile"><div class="stat-val sv-g">3</div><div class="stat-label">Prompt testati</div></div>
+      <div class="stat-tile"><div class="stat-val sv-y">10</div><div class="stat-label">Campi per CV</div></div>
+      <div class="stat-tile"><div class="stat-val sv-p">15+</div><div class="stat-label">Iterazioni</div></div>
+    </div>
+    <div class="findings-grid">
+      <div class="finding"><div class="finding-cat y">Anni di anzianità</div><p>Calcolo errato quando le date di inizio/fine esperienza erano implicite o in formati non standard. Il modello sovrastimava o sottostimava.</p></div>
+      <div class="finding"><div class="finding-cat">Soft Skills</div><p>Spesso estratte in modo incompleto o generalizzate. Il modello tendeva a inferire skill non esplicitamente citate nel documento.</p></div>
+      <div class="finding"><div class="finding-cat g">Lingue</div><p>A volte non viene specificata la lingua italiana o il livello di essa.</p></div>
+      <div class="finding"><div class="finding-cat p">Certificazioni</div><p>Array vuoto restituito quando le certificazioni erano citate in sezioni non standard o in corpo libero del CV, senza una voce dedicata.</p></div>
+    </div>
+    <span class="slide-num">11 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 11 — CONCLUSIONI
+══════════════════════════════════════ -->
+<section class="slide" id="s11" data-label="Conclusioni">
+  <div class="glass-card">
+    <div class="blob" style="width:450px;height:450px;bottom:-120px;right:-100px;background:radial-gradient(circle,rgba(168,85,247,.20) 0%,transparent 65%);animation-duration:15s;"></div>
+    <div class="section-header">
+      <div class="section-tag">Conclusioni</div>
+      <h2 class="section-title">Cosa abbiamo <span class="grad-text">imparato</span></h2>
+      <p class="section-sub" style="margin-bottom:0">Tre mesi di studio e progettazione — dall'AI theory al prodotto reale.</p>
+    </div>
+    <div class="lessons-grid">
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-indigo)"></div><div class="lesson-num">01</div><h3>Il prompt è tutto</h3><p>La qualità dell'output dipende direttamente dalla precisione del prompt.</p></div>
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-green)"></div><div class="lesson-num">02</div><h3>Iterare è la norma</h3><p>Il primo prompt non è mai perfetto. L'ottimizzazione progressiva è il cuore del prompt engineering.</p></div>
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-yellow)"></div><div class="lesson-num">03</div><h3>La struttura salva</h3><p>JSON schema fisso + verifica campo per campo = risultati affidabili e confrontabili automaticamente.</p></div>
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-pink)"></div><div class="lesson-num">04</div><h3>GitHub è essenziale</h3><p>Versioning, branch e pull request hanno reso il lavoro a due persone ordinato, tracciabile e reversibile.</p></div>
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-orange)"></div><div class="lesson-num">05</div><h3>Verifica sempre l'AI</h3><p>DeepDiff di Python ha dimostrato che i modelli sbagliano su dati strutturati.</p></div>
+      <div class="lesson"><div class="lesson-stripe" style="background:var(--c-teal)"></div><div class="lesson-num">06</div><h3>L'AI potenzia, non sostituisce</h3><p>L'AI accelera l'analisi dei CV, ma serve un prompt efficace, per generare risultati attendibili e prevedibili.</p></div>
+    </div>
+    <span class="slide-num">12 / 13</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 12 — CLOSING
+══════════════════════════════════════ -->
+<section class="slide" id="s12" data-label="Fine">
+  <div class="glass-card">
+    <div class="blob" style="width:600px;height:600px;top:-200px;right:-200px;background:radial-gradient(circle,rgba(139,92,246,.22) 0%,rgba(236,72,153,.13) 50%,transparent 70%);animation-duration:18s;"></div>
+    <div class="blob" style="width:400px;height:400px;bottom:-150px;left:-120px;background:radial-gradient(circle,rgba(59,130,246,.18) 0%,transparent 65%);animation-duration:14s;animation-direction:alternate-reverse;"></div>
+
+    <div class="closing-wrap">
+      <!-- Prism orb closing -->
+      <div class="closing-prism-wrap">
+        <div class="prism-orb" style="width:100%;height:100%;border-radius:50%;">
+          <div class="prism-orb__base"></div>
+          <div class="prism-orb__facets"></div>
+          <div class="prism-orb__caustics"></div>
+          <div class="prism-orb__shell"></div>
+          <div class="prism-orb__gloss"></div>
+          <div class="prism-orb__rim"></div>
+        </div>
+      </div>
+      <div class="eyebrow" style="justify-content:center"><span class="eyebrow-dot"></span>Stage AI Team · Bologna 2026</div>
+      <div class="closing-title">Grazie<span>.</span></div>
+      <p class="closing-sub">Domande, approfondimenti e curiosità — siamo qui.</p>
+      <div class="tag-cloud">
+        <span class="tc-tag">AI Fundamentals</span>
+        <span class="tc-tag">LLM</span>
+        <span class="tc-tag">Prompt Engineering</span>
+        <span class="tc-tag">Python</span>
+        <span class="tc-tag">DeepDiff</span>
+        <span class="tc-tag">GitHub</span>
+        <span class="tc-tag">JSON Validation</span>
+        <span class="tc-tag">CV Analysis</span>
+      </div>
+      <div style="display:flex;gap:11px;justify-content:center;flex-wrap:wrap;margin-bottom:28px">
+        <!-- Fix 3: "Riparti dall'inizio" button now correctly calls go(0) -->
+        <button class="btn-filled" id="btn-restart">↑ Riparti dall'inizio</button>
+        <a class="btn-glass" href="https://github.com/DEV-Octavian/NS_PromptEngineering" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+      <div class="authors-pill" style="justify-content:center">
+        <span class="av av-j">GD</span>
+        <span style="color:var(--t1);font-weight:500">Giacomo De Bellis</span>
+        <span class="sep-dot">·</span>
+        <span class="av av-o">OU</span>
+        <span style="color:var(--t1);font-weight:500">Octavian Ungureanu</span>
+      </div>
+    </div>
+    <span class="slide-num">13 / 13</span>
+  </div>
+</section>
+
+<script>
+/* ── Apri RunToCheck.py in VS Code ── */
+function openInVSCode() {
+  const loc  = window.location.pathname;
+  const dir  = loc.substring(0, loc.lastIndexOf('/'));
+  const path = dir + '/CheckerJSON/RunToCheck.py';
+  window.open('vscode://file' + path);
+}
+
+(function(){
+  'use strict';
+  const slides   = document.querySelectorAll('.slide');
+  const navDots  = document.getElementById('nav-dots');
+  const navPills = document.getElementById('nav-pills');
+  const counter  = document.getElementById('slide-label');
+  const bar      = document.getElementById('progress-bar');
+  const TOTAL    = slides.length;
+  let cur = 0;
+
+  const labels = ['Intro','Agenda','Metodo','AI Fondamentali','Prompt Eng.',
+    'GitHub','Repository','Progetto CV','I Tre Prompt',
+    'Python Checker','Risultati','Conclusioni','Fine'];
+
+  /* build dots */
+  slides.forEach((_,i)=>{
+    const d = document.createElement('div');
+    d.className = 'nav-dot'+(i===0?' active':'');
+    d.title = labels[i];
+    d.onclick = ()=>go(i);
+    navDots.appendChild(d);
+  });
+
+  /* build segmented pills — all 12 */
+  labels.forEach((lbl,i)=>{
+    const p = document.createElement('div');
+    p.className = 'nav-seg'+(i===0?' active':'');
+    p.textContent = lbl;
+    p.onclick = ()=>go(i);
+    navPills.appendChild(p);
+  });
+
+  /* expose go() globally */
+  window.go = function(i){
+    i = Math.max(0, Math.min(i, TOTAL-1));
+    slides[i].scrollIntoView({behavior:'smooth', block:'start'});
+  };
+
+  function setActive(i){
+    cur = i;
+    document.querySelectorAll('.nav-dot').forEach((d,j)=>d.classList.toggle('active',j===i));
+    document.querySelectorAll('.nav-seg').forEach((p,j)=>p.classList.toggle('active',j===i));
+    counter.textContent = String(i+1).padStart(2,'0')+' / '+TOTAL;
+    bar.style.width = ((i+1)/TOTAL*100)+'%';
+  }
+
+  /* IntersectionObserver */
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        setActive([...slides].indexOf(e.target));
+      }
+    });
+  },{threshold:0.45});
+  slides.forEach(s=>obs.observe(s));
+
+  /* immediate first slide */
+  slides[0].classList.add('visible');
+  setActive(0);
+
+  /* restart button — fix 3 */
+  document.getElementById('btn-restart').addEventListener('click', function(){
+    go(0);
+  });
+
+  /* keyboard */
+  document.addEventListener('keydown',e=>{
+    if(['ArrowDown','ArrowRight','PageDown'].includes(e.key)){e.preventDefault();go(cur+1);}
+    if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(cur-1);}
+    if(e.key==='Home'){e.preventDefault();go(0);}
+    if(e.key==='End') {e.preventDefault();go(TOTAL-1);}
+  });
+
+  /* touch swipe */
+  let ty=0;
+  document.addEventListener('touchstart',e=>{ty=e.touches[0].clientY;},{passive:true});
+  document.addEventListener('touchend',e=>{
+    const d=ty-e.changedTouches[0].clientY;
+    if(Math.abs(d)>50) go(d>0?cur+1:cur-1);
+  },{passive:true});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 12
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione progetti ICT",
+        "Risk management",
+        "Pianificazione progetti",
+        "Stima costi e risorse",
+        "Governance progetti di migrazione tecnologica",
+        "Metodologie di sviluppo e test software",
+        "Cybersecurity",
+        "Continuità operativa",
+        "Privacy",
+        "Intelligenza Artificiale"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Ottime capacità relazionali",
+        "Coordinamento team",
+        "Comunicazione con stakeholder"
+      ],
+      "tecnologie_conosciute": [
+        "Machine Learning",
+        "NLP",
+        "Analytics avanzati",
+        "Software di project management",
+        "Software di risk management"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "PMI o equivalenti"
+      ]
+    }
+  },
+  "consulente_organizzativo_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Consulenza strategica",
+        "Reingegnerizzazione processi",
+        "Change management",
+        "Program & Project Management",
+        "Analisi di mercato",
+        "Studi di fattibilità",
+        "Business case",
+        "Modelli organizzativi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Visione strategica",
+        "Proattività",
+        "Interazione ai diversi livelli organizzativi"
+      ],
+      "tecnologie_conosciute": [
+        "Strumenti di Program & Project Management"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "consulente_organizzativo_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 3,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Consulenza strategica",
+        "Change management",
+        "PMO",
+        "Analisi organizzativa",
+        "Studi di fattibilità"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Proattività",
+        "Collaborazione",
+        "Interazione organizzativa"
+      ],
+      "tecnologie_conosciute": [
+        "Strumenti PMO"
+      ],
+      "certificazioni": []
+    }
+  },
+  "consulente_business_process_reengineering_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Business Process Reengineering",
+        "Disegno processi digitali",
+        "Benchmarking",
+        "Analisi organizzativa",
+        "Workflow management",
+        "Gestione cambiamento"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Coordinamento gruppi di lavoro",
+        "Leadership",
+        "Visione sistemica"
+      ],
+      "tecnologie_conosciute": [
+        "Software di project/program management",
+        "Strumenti di disegno workflow"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "consulente_business_process_reengineering_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Business Process Reengineering",
+        "Disegno processi digitali",
+        "Benchmarking",
+        "Analisi organizzativa"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Collaborazione",
+        "Supporto al team"
+      ],
+      "tecnologie_conosciute": [
+        "Strumenti di disegno workflow"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Raccolta requisiti",
+        "Analisi funzionale",
+        "PMO",
+        "Business case",
+        "Testing software",
+        "Data modeling",
+        "OOA",
+        "SOA",
+        "IA governance",
+        "Explainability",
+        "Etica dell'IA"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Analisi",
+        "Supporto metodologico",
+        "Problem solving"
+      ],
+      "tecnologie_conosciute": [
+        "Python",
+        "R",
+        "Piattaforme cloud IA",
+        "Machine Learning",
+        "Data Science",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation",
+        "CBAP®",
+        "Microsoft AI Fundamentals",
+        "Google Professional Machine Learning Engineer"
+      ]
+    }
+  },
+  "business_information_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Demand management",
+        "Customer satisfaction",
+        "Data mining",
+        "Workflow management",
+        "Gestione documentale",
+        "Risk management",
+        "Analisi processi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Analisi del business",
+        "Gestione stakeholder"
+      ],
+      "tecnologie_conosciute": [
+        "Cloud",
+        "Open data",
+        "Big data",
+        "ITIL",
+        "COBIT",
+        "Function Point",
+        "COSMIC",
+        "SNAP",
+        "SQuaRE"
+      ],
+      "certificazioni": []
+    }
+  },
+  "digital_transformation_leader": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Strategia digitale",
+        "Digital by design",
+        "Business case",
+        "Analisi dati",
+        "Trasformazione digitale",
+        "Maturità digitale",
+        "Governance IA",
+        "Reingegnerizzazione processi"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Leadership",
+        "Visione strategica",
+        "Coordinamento team multidisciplinari"
+      ],
+      "tecnologie_conosciute": [
+        "Machine Learning",
+        "NLP",
+        "Analytics avanzati",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN"
+      ],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_change_management_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Change management",
+        "Mappatura competenze",
+        "Strategie di comunicazione",
+        "Risk management",
+        "Governance dati",
+        "Privacy",
+        "Sicurezza informatica"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Leadership",
+        "Comunicazione",
+        "Gestione team"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_change_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 6,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Change management",
+        "Mappatura competenze",
+        "Strategie di comunicazione"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Collaborazione",
+        "Comunicazione"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  },
+  "digital_educator_senior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 10
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione formazione",
+        "E-learning",
+        "Upskilling IA",
+        "Verifica apprendimento",
+        "Governance dati",
+        "Privacy",
+        "Risk management"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Coordinamento",
+        "Comunicazione",
+        "Affiancamento utenti"
+      ],
+      "tecnologie_conosciute": [
+        "Tecnologie formative",
+        "Piattaforme e-learning"
+      ],
+      "certificazioni": []
+    }
+  },
+  "digital_educator_junior": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 5,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Supporto formazione",
+        "Supporto e-learning",
+        "Test apprendimento"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Collaborazione",
+        "Supporto utenti"
+      ],
+      "tecnologie_conosciute": [
+        "Tecnologie formative"
+      ],
+      "certificazioni": []
+    }
+  },
+  "consulente_di_project_management": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 7
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Project management",
+        "PMO",
+        "Risk management",
+        "Pianificazione progetti",
+        "Cybersecurity",
+        "Privacy"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Coordinamento",
+        "Comunicazione"
+      ],
+      "tecnologie_conosciute": [
+        "Software di project management",
+        "Software di risk management"
+      ],
+      "certificazioni": [
+        "ITIL 4 foundation"
+      ]
+    }
+  },
+  "user_experience_designer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 6
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "User Experience",
+        "Human Centered Design",
+        "Accessibilità",
+        "Usabilità",
+        "Wireframing",
+        "Prototipazione",
+        "Design Thinking"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Empatia utente",
+        "Analisi",
+        "Comunicazione con team di sviluppo"
+      ],
+      "tecnologie_conosciute": [
+        "CMS",
+        "ECM",
+        "Markup",
+        "Fogli di stile",
+        "Linguaggi di scripting",
+        "OWL Web Ontology Language",
+        "WCAG 2.0",
+        "ISO/IEC 40500:2012",
+        "Designers Italia",
+        "Developers Italia",
+        "Forum Italia",
+        "Catalogo ACN"
+      ],
+      "certificazioni": []
+    }
+  },
+  "esperto_di_dominio": {
+    "formazione": {
+      "livello_di_istruzione": ""
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Analisi di mercato",
+        "Studi di fattibilità",
+        "Consulenza giuridica",
+        "Cybersecurity",
+        "Privacy",
+        "Continuità operativa",
+        "Analisi dati"
+      ],
+      "lingue": [],
+      "soft_skills": [
+        "Proattività",
+        "Consulenza specialistica"
+      ],
+      "tecnologie_conosciute": [
+        "Prodotti software specialistici"
+      ],
+      "certificazioni": []
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 0,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Project management IT",
+        "SDLC, Agile, SAFE, Waterfall",
+        "Integrazione sistemi, API, middleware",
+        "Data management e database",
+        "Cybersecurity best practices",
+        "ITIL e IT service management",
+        "Metodologie PMBOK, PM2, PRINCE2, Agile, Scrum"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Comunicazione",
+        "Negoziazione",
+        "Leadership",
+        "Team management",
+        "Analytical thinking",
+        "Problem solving",
+        "Gestione dello stress",
+        "Gestione priorità",
+        "Capacità di lavorare in ambienti internazionali"
+      ],
+      "tecnologie_conosciute": [
+        "MS Project",
+        "Jira",
+        "Azure DevOps",
+        "AWS",
+        "Azure"
+      ],
+      "certificazioni": [
+        "PMBOK",
+        "PM2",
+        "PRINCE2",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  },
+
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 0,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Business analysis",
+        "SWOT, MOSCOW, BPMN, UML",
+        "Requirement management",
+        "Use cases, user stories, wireframes",
+        "SQL e data analysis",
+        "API specifications",
+        "ERP/CRM",
+        "Modellazione processi"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Comunicazione",
+        "Facilitazione",
+        "Presentazione",
+        "Pensiero critico",
+        "Problem solving",
+        "Organizzazione",
+        "Lavoro in team",
+        "Adattabilità",
+        "Capacità di lavorare in ambienti internazionali"
+      ],
+      "tecnologie_conosciute": [
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "Trello",
+        "Excel",
+        "Power BI"
+      ],
+      "certificazioni": []
+    }
+  },
+
+  "testing_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 0,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Test planning",
+        "Manual & automated testing",
+        "Bug tracking",
+        "Regression, integration, system, UAT, performance testing",
+        "SDLC, STLC, Agile",
+        "API testing",
+        "Database validation (SQL)",
+        "Performance testing"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Attenzione al dettaglio",
+        "Analytical thinking",
+        "Comunicazione",
+        "Documentazione",
+        "Problem solving",
+        "Gestione priorità",
+        "Adattabilità"
+      ],
+      "tecnologie_conosciute": [
+        "Azure DevOps",
+        "TestRail",
+        "OTRS",
+        "ServiceNow",
+        "Selenium",
+        "webdriver.io",
+        "Postman",
+        "Python",
+        "Java",
+        "JavaScript",
+        "JMeter",
+        "Jenkins",
+        "GitLab CI"
+      ],
+      "certificazioni": [
+        "ISTQB Foundation (junior)",
+        "ISTQB Advanced (senior)"
+      ]
+    }
+  },
+
+  "solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Solution design",
+        "Architecture blueprints",
+        "Data modelling",
+        "Integration design",
+        "Cloud architecture",
+        "API design",
+        "Middleware",
+        "Message queues",
+        "Database architecture",
+        "DevOps",
+        "CI/CD",
+        "Containerization",
+        "Kubernetes",
+        "Enterprise architecture frameworks"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Comunicazione",
+        "Presentazione",
+        "Leadership tecnica",
+        "Pensiero strategico",
+        "Problem solving",
+        "Collaborazione",
+        "Adattabilità"
+      ],
+      "tecnologie_conosciute": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Kafka",
+        "RabbitMQ",
+        "SQL",
+        "NoSQL",
+        "Docker",
+        "Kubernetes",
+        "ArchiMate",
+        "Sparx EA"
+      ],
+      "certificazioni": [
+        "TOGAF",
+        "Zachman"
+      ]
+    }
+  },
+
+  "security_officer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 0,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Cybersecurity",
+        "Risk management",
+        "Security audits",
+        "Incident response",
+        "Compliance (ISO 27001, NIST, Reg.2018/1725, Reg.2023/2841)",
+        "Security monitoring",
+        "SIEM",
+        "IAM",
+        "MFA",
+        "PKI",
+        "Networking security",
+        "Vulnerability scanning",
+        "Penetration testing coordination"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Etica",
+        "Integrità",
+        "Problem solving",
+        "Comunicazione",
+        "Report writing",
+        "Leadership",
+        "Gestione priorità",
+        "Lavoro in ambienti internazionali"
+      ],
+      "tecnologie_conosciute": [
+        "Splunk",
+        "QRadar",
+        "Nessus",
+        "Qualys",
+        "Firewall",
+        "IDS/IPS",
+        "DLP",
+        "VPN",
+        "Endpoint protection",
+        "AWS Security",
+        "Azure Security"
+      ],
+      "certificazioni": []
+    }
+  },
+
+  "software_developer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree (3 anni) in IT, Computer Science, Mathematics, Physics, Engineering, Business Administration o equivalente"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": 0,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Software design",
+        "Software development",
+        "Unit testing",
+        "Integration testing",
+        "Debugging",
+        "CI/CD",
+        "REST API",
+        "Web services"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Problem solving",
+        "Comunicazione",
+        "Team collaboration",
+        "Time management",
+        "Attenzione al dettaglio",
+        "Adattabilità"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C#",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "PHP",
+        "React",
+        "Angular",
+        "Spring Boot",
+        "Django",
+        ".NET",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "JUnit",
+        "Mocha",
+        "Jasmine",
+        "Azure DevOps",
+        "Jira",
+        "Confluence"
+      ],
+      "certificazioni": []
+    }
+  }
+}

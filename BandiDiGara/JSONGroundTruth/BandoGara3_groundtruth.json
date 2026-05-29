@@ -1,0 +1,918 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": "meno di 8 anni come project manager",
+      "anni_di_anzianita_senior": "8 o più anni come project manager"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Gestione end-to-end di progetti IT (applicazioni aziendali, software enterprise, sistemi informativi)",
+        "Sviluppo di piani di progetto dettagliati (timeline, milestone, allocazione risorse, risk assessment)",
+        "Applicazione di metodologie agile e tradizionali di project management",
+        "Gestione delle parti interessate e comunicazione strutturata",
+        "Analisi dei requisiti e studi di fattibilità",
+        "Gestione dei rischi e sviluppo di strategie di mitigazione",
+        "Supervisione di implementazione e integrazione di applicazioni aziendali",
+        "Gestione del budget e monitoraggio dei costi",
+        "Analisi e ottimizzazione dei processi aziendali",
+        "Comprensione dell'architettura di sistemi informativi e applicazioni aziendali",
+        "Conoscenza del ciclo di vita dello sviluppo software (SDLC)",
+        "Conoscenza di tecnologie di integrazione, API, middleware e piattaforme cloud",
+        "Conoscenza di gestione dei dati, tecnologie database e processi di integrazione",
+        "Conoscenza delle best practice di cybersecurity e normative sulla protezione dei dati",
+        "Conoscenza di ITIL e pratiche di IT service management"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellenti capacità di comunicazione e negoziazione",
+        "Forte leadership e gestione di team cross-funzionali",
+        "Pensiero analitico e problem solving in ambienti ad alta pressione",
+        "Capacità di gestire più progetti e priorità contemporaneamente",
+        "Orientamento ai dettagli e alle scadenze",
+        "Capacità di motivare team multifunzionali"
+      ],
+      "tecnologie_conosciute": [
+        "MS Project",
+        "Jira",
+        "Azure DevOps",
+        "AWS",
+        "Azure"
+      ],
+      "certificazioni": [
+        "PMBOK",
+        "PM²",
+        "PRINCE2",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": "meno di 8 anni in business analysis",
+      "anni_di_anzianita_senior": "8 o più anni in business analysis"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Raccolta, analisi e documentazione dei requisiti aziendali",
+        "Traduzione dei requisiti di business in requisiti software funzionali e non funzionali",
+        "Facilitazione di workshop con stakeholder e rappresentanti del business",
+        "Sviluppo e manutenzione di modelli di business e documentazione di analisi dei processi",
+        "Sviluppo di use case, user stories, wireframe e mockup",
+        "Redazione di documentazione di progetto (Business Case)",
+        "Supporto a QA nella creazione di test case e validazione dei risultati",
+        "Partecipazione a user acceptance testing (UAT)",
+        "Conoscenza dei processi amministrativi di grandi organizzazioni",
+        "Conoscenza di metodologie di analisi/modellazione (use case diagram, state diagram, entity relationship model)",
+        "Conoscenza di BPMN o UML o metodologie equivalenti",
+        "Conoscenza di metodologie di sviluppo software (PM², Agile)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forti capacità analitiche e di pensiero critico",
+        "Eccellenti capacità di comunicazione, facilitazione e presentazione",
+        "Alta attenzione al dettaglio e capacità organizzative",
+        "Capacità di lavorare in autonomia e in team cross-funzionali",
+        "Forti capacità interpersonali con stakeholder tecnici e non tecnici",
+        "Approccio proattivo e adattabilità",
+        "Capacità di applicare standard qualitativi elevati",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "SWOT",
+        "MoSCoW",
+        "BPMN",
+        "UML",
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "Trello",
+        "Excel",
+        "Power BI",
+        "SQL"
+      ],
+      "certificazioni": []
+    }
+  },
+  "testing_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": "meno di 8 anni in software/system testing",
+      "anni_di_anzianita_senior": "8 o più anni in software/system testing"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Sviluppo e manutenzione di test plan, test case e test script",
+        "Definizione e implementazione di strategie di testing (manuale e automatizzato)",
+        "Esecuzione di test manuali e automatizzati",
+        "Gestione dei difetti con strumenti appositi",
+        "Costruzione di scenari e script di test",
+        "Forti competenze di programmazione e conoscenza di strumenti di test automation",
+        "Garanzia della conformità agli standard di qualità nel ciclo SDLC",
+        "Esecuzione di regression, integration, system, UAT e performance testing",
+        "Redazione di report di test, metriche e documentazione",
+        "Partecipazione a sprint planning, review e retrospettive in ambienti Agile/Scrum",
+        "Conoscenza di metodologie Agile e principi di Agile Testing",
+        "Conoscenza di SDLC, STLC"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellente attenzione al dettaglio e pensiero analitico",
+        "Forti capacità di comunicazione e documentazione",
+        "Mentalità metodica nel problem solving",
+        "Approccio collaborativo, proattivo e orientato all'apprendimento continuo",
+        "Capacità di gestire più task e priorità in ambienti frenetici",
+        "Capacità di adattarsi a tecnologie in rapida evoluzione",
+        "Capacità di identificare e risolvere problemi attraverso soluzioni creative e pratiche"
+      ],
+      "tecnologie_conosciute": [
+        "Azure DevOps",
+        "TestRail",
+        "Bugzilla",
+        "OTRS",
+        "ServiceNow",
+        "Selenium",
+        "webdriver.io",
+        "Postman",
+        "Python",
+        "Java",
+        "JavaScript",
+        "JMeter",
+        "Jenkins",
+        "GitLab CI"
+      ],
+      "certificazioni": [
+        "ISTQB Foundation Level (junior)",
+        "ISTQB Advanced Level - una o più certificazioni (senior)"
+      ]
+    }
+  },
+  "solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "8 o più anni in solution e system architecture"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione di soluzioni tecniche end-to-end allineate ai requisiti aziendali",
+        "Definizione di blueprint architetturali, interfacce di sistema, flussi di dati e punti di integrazione",
+        "Selezione di tecnologie, piattaforme e strumenti per scalabilità, performance e sicurezza",
+        "Analisi di processi aziendali e portfolio dei sistemi informativi",
+        "Modellazione dei dati e analisi dei flussi di dati aziendali",
+        "Elaborazione di design di alto livello e analisi costi/benefici",
+        "Leadership tecnica durante l'esecuzione dei progetti",
+        "Supervisione dell'integrazione di nuovi sistemi con infrastruttura esistente (API, sistemi legacy, piattaforme di terze parti)",
+        "Conoscenza di modelli e strumenti di enterprise architecture",
+        "Conoscenza di metodologie di analisi dei processi aziendali",
+        "Conoscenza di modelli di maturità software"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forte pensiero analitico e strategico",
+        "Eccellenti capacità di comunicazione e presentazione per pubblici tecnici e non tecnici",
+        "Leadership tecnica e collaborazione cross-funzionale",
+        "Alta attenzione al dettaglio con focus su performance, sicurezza e affidabilità",
+        "Adattabilità e resilienza in ambienti in rapida evoluzione",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "REST",
+        "SOAP",
+        "Kafka",
+        "RabbitMQ",
+        "SQL",
+        "NoSQL",
+        "Docker",
+        "Kubernetes",
+        "TOGAF",
+        "Zachman",
+        "ArchiMate",
+        "Sparx EA",
+        "ERP",
+        "CRM",
+        "CMS"
+      ],
+      "certificazioni": []
+    }
+  },
+  "security_officer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": "meno di 8 anni in un ruolo simile di IT security",
+      "anni_di_anzianita_senior": "8 o più anni in un ruolo simile di IT security"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Sviluppo, implementazione e manutenzione della strategia di sicurezza informatica",
+        "Conduzione di risk assessment, audit di sicurezza e gap analysis",
+        "Monitoraggio dell'infrastruttura IT per breach, incidenti e vulnerabilità",
+        "Gestione della risposta agli incidenti (investigation, containment, mitigation, post-incident reporting)",
+        "Garanzia della conformità a leggi, standard e framework (Reg.2018/1725, Reg.2023/2841, ISO 27001, NIST)",
+        "Coordinamento di penetration test e compliance audit",
+        "Sviluppo e conduzione di programmi di security awareness training",
+        "Supervisione di access control, identity management, encryption, firewall, antivirus e endpoint security",
+        "Valutazione e implementazione di strumenti e tecnologie di sicurezza",
+        "Gestione del rischio di terze parti",
+        "Buona conoscenza degli standard di sicurezza IT",
+        "Conoscenza di metodologie e strumenti di security management",
+        "Capacità di redigere studi e documentazione di alta qualità"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Alti standard etici, integrità e riservatezza",
+        "Forte pensiero analitico e problem solving",
+        "Eccellenti capacità di comunicazione e redazione di report per pubblici tecnici e non tecnici",
+        "Leadership, collaborazione e capacità di influenza a tutti i livelli",
+        "Capacità di gestire più priorità in ambienti ad alta pressione",
+        "Capacità di applicare standard qualitativi elevati",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "Splunk",
+        "QRadar",
+        "AWS security tools",
+        "Azure security tools",
+        "GCP security tools",
+        "IAM",
+        "MFA",
+        "PKI",
+        "TCP/IP",
+        "DNS",
+        "VPN",
+        "SSL/TLS",
+        "HTTPS",
+        "IPsec",
+        "Nessus",
+        "Qualys",
+        "IDS/IPS",
+        "DLP",
+        "SIEM"
+      ],
+      "certificazioni": []
+    }
+  },
+  "software_developer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": "meno di 5 anni in sviluppo software",
+      "anni_di_anzianita_senior": "5 o più anni in sviluppo software"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, sviluppo e manutenzione di applicazioni software",
+        "Scrittura di codice pulito, efficiente e ben documentato",
+        "Sviluppo di unit test e integration test",
+        "Collaborazione con team front-end e back-end",
+        "Ottimizzazione di codebase esistenti per scalabilità ed efficienza",
+        "Implementazione di best practice per code versioning, code management e release management",
+        "Partecipazione a CI/CD process",
+        "Identificazione, troubleshooting e risoluzione di difetti software e problemi di performance",
+        "Mentoring di sviluppatori junior",
+        "Conoscenza di SDLC e metodologie Agile, Scrum, Kanban"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellente problem solving e pensiero critico",
+        "Forti capacità di comunicazione scritta e verbale con stakeholder tecnici e non tecnici",
+        "Capacità di collaborazione in team agile",
+        "Efficace gestione del tempo e delle priorità",
+        "Alta attenzione al dettaglio e impegno per la qualità del software",
+        "Adattabilità e volontà di apprendere nuove tecnologie"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C#",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "PHP",
+        "IBM Case Manager",
+        "IBM Business Automations",
+        "IBM BPM",
+        "React",
+        "Angular",
+        "Spring Boot",
+        "Django",
+        ".NET",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "REST API",
+        "WebSockets",
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "JUnit",
+        "Mocha",
+        "Jasmine",
+        "Azure DevOps",
+        "Jenkins",
+        "GitLab CI",
+        "Travis CI",
+        "Jira",
+        "Confluence"
+      ],
+      "certificazioni": []
+    }
+  },
+  "support_officer_trainer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor), o istruzione post-secondaria, o istruzione secondaria con equivalente esperienza professionale, in Computer Science o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Supporto tecnico di secondo livello per hardware, software, applicazioni M365, sistemi di videoconferenza e servizi IT critici",
+        "Onboarding di nuovo personale EPPO, fornitori esterni, tirocinanti e personale interinale",
+        "Gestione del ciclo di vita degli asset IT (deployment, tracking, manutenzione)",
+        "Sviluppo, documentazione e test di Standard Operating Procedures (SOP)",
+        "Log, troubleshooting e risoluzione di incidenti tecnici con escalation se necessario",
+        "Valutazione delle esigenze formative e dei gap di competenze degli utenti",
+        "Progettazione, preparazione e erogazione di sessioni di formazione IT in formato individuale e di gruppo",
+        "Sviluppo di documentazione user-friendly (manuali, guide ai processi, how-to)",
+        "Creazione di materiali formativi moderni (video, tutorial interattivi, e-learning)",
+        "Conoscenza di principi di data protection e cybersecurity awareness",
+        "Conoscenza di ITIL (incident, change e configuration management)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellenti capacità organizzative, di gestione del tempo e pianificazione",
+        "Forti capacità di comunicazione e relazione interpersonale con stakeholder tecnici e non tecnici",
+        "Capacità di lavorare in autonomia e in team multiculturale e multilingue",
+        "Resilienza e flessibilità sotto pressione",
+        "Mentalità proattiva e orientata al miglioramento"
+      ],
+      "tecnologie_conosciute": [
+        "Microsoft 365",
+        "Azure",
+        "Confluence",
+        "SharePoint"
+      ],
+      "certificazioni": [
+        "ITIL Foundation (asset)",
+        "Microsoft Certified: Modern Desktop Administrator Associate (asset)",
+        "CompTIA Network+ (asset)",
+        "CompTIA Security+ (asset)"
+      ]
+    }
+  },
+  "m365_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, pianificazione, sviluppo e implementazione di soluzioni basate su M365",
+        "Amministrazione, configurazione e supporto dell'ambiente M365 (account utente, licenze, gruppi di sicurezza)",
+        "Troubleshooting di problemi tecnici complessi legati ai servizi M365 e alle integrazioni",
+        "Applicazione di policy di governance M365 (data retention, compliance, access control)",
+        "Automazione di task e configurazioni tramite scripting",
+        "Monitoraggio e ottimizzazione delle performance del tenant M365",
+        "Conoscenza dei principi di networking, infrastruttura ICT e integrazioni di sistema",
+        "Background in system engineering con conoscenza di ambienti on-premises (Active Directory, Exchange Server, hybrid identity)",
+        "Redazione di documentazione tecnica chiara e strutturata (procedure, architecture diagrams, user guide)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Capacità di produrre documentazione tecnica chiara e adeguata al pubblico",
+        "Orientamento al miglioramento continuo",
+        "Capacità di lavorare in ambienti Agile"
+      ],
+      "tecnologie_conosciute": [
+        "SharePoint Online",
+        "Microsoft Teams",
+        "Exchange Online",
+        "OneDrive",
+        "Power Automate",
+        "Power Apps",
+        "Azure Active Directory",
+        "Microsoft Intune",
+        "Autopilot",
+        "Microsoft 365 Defender",
+        "Azure Security Centre",
+        "Microsoft Purview",
+        "DLP",
+        "Microsoft Sentinel",
+        "PowerShell",
+        "Azure DevOps"
+      ],
+      "certificazioni": [
+        "PM2-Agile (asset)",
+        "Scrum (asset)"
+      ]
+    }
+  },
+  "ibm_solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "8 o più anni in tecnologie IBM e solution architecture"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione e implementazione dell'architettura di soluzioni basate su tecnologia IBM e moduli del CMS Ecosystem",
+        "Collaborazione con fornitori esterni per monitorare roadmap e identificare opportunità",
+        "Analisi di processi aziendali e portfolio dei sistemi informativi",
+        "Facilitazione di workshop e sessioni demo con gli utenti finali",
+        "Modellazione dei dati e analisi dei flussi di dati aziendali per il CMS ecosystem",
+        "Elaborazione di design di alto livello, design dettagliati e analisi costi/benefici",
+        "Conoscenza dei modelli e strumenti di enterprise architecture",
+        "Conoscenza dell'analisi dei processi aziendali",
+        "Esperienza precedente in team Agile DevOps in ruolo tecnico"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forte capacità di scrivere e presentare studi",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "IBM Filenet",
+        "IBM Content Navigator",
+        "IBM Business Automation Workflow",
+        "Datacap",
+        "IBM Enterprise Bus",
+        "Aspera",
+        "IBM Cloud Pak"
+      ],
+      "certificazioni": []
+    }
+  },
+  "network_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Engineering o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 8 anni come Network Engineer o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, configurazione e implementazione di soluzioni di infrastruttura di rete",
+        "Installazione, configurazione e gestione di dispositivi di rete (router, switch, firewall, access point)",
+        "Monitoraggio delle performance di rete e garanzia di uptime e throughput ottimali",
+        "Troubleshooting e risoluzione di problemi di rete (hardware, software, connettività)",
+        "Analisi del traffico di rete",
+        "Implementazione e gestione di soluzioni di network security (firewall, VPN, IDS/IPS, access control policy)",
+        "Conduzione di audit di sicurezza di rete",
+        "Pianificazione e implementazione di upgrade di rete",
+        "Manutenzione di documentazione completa (configurazioni, IP scheme, topologie, network diagram)",
+        "Conoscenza approfondita di protocolli TCP/IP, DNS, DHCP, HTTP, SNMP, VPN",
+        "Conoscenza di protocolli di routing e switching (OSPF, BGP, EIGRP, VLAN, STP)",
+        "Conoscenza di tecnologie WAN (MPLS, SD-WAN, VPN)",
+        "Conoscenza di standard wireless (802.11, Wi-Fi 6)",
+        "Conoscenza di IPv6",
+        "Conoscenza di cloud networking (AWS, Azure) e ambienti di rete virtualizzati (SDN, VMware NSX)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forte problem solving e pensiero analitico e strategico",
+        "Eccellenti capacità di comunicazione con stakeholder tecnici e non tecnici",
+        "Capacità di lavorare in autonomia e in team, gestendo multiple priorità",
+        "Attenzione al dettaglio nella gestione di grandi progetti di infrastruttura di rete",
+        "Adattabilità alle tecnologie emergenti",
+        "Forte gestione del tempo e capacità organizzative"
+      ],
+      "tecnologie_conosciute": [
+        "SolarWinds",
+        "PRTG",
+        "Nagios",
+        "Wireshark",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "AWS",
+        "Azure",
+        "SDN",
+        "VMware NSX"
+      ],
+      "certificazioni": []
+    }
+  },
+  "data_and_ai_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 5 anni come AI Engineer o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Creazione di modelli di dati avanzati e ontologie",
+        "Sviluppo di un catalogo dati completo per la data discoverability, accessibilità e governance",
+        "Definizione ed esecuzione di una data strategy e governance model",
+        "Progettazione e sviluppo di pipeline di Intelligenza Artificiale per applicazioni aziendali",
+        "Progettazione e implementazione di soluzioni di data reporting in tempo reale",
+        "Gestione dell'ingestion, storage e visualizzazione dei dati",
+        "Deployment e fine-tuning di Large Language Models (LLM) e Transformer",
+        "Programmazione in Python con librerie di machine learning per NLP e GenAI",
+        "Conoscenza approfondita di containerizzazione",
+        "Conoscenza di strutture dati, algoritmi e design pattern software"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Capacità di collaborazione con team cross-funzionali e stakeholder",
+        "Partecipazione attiva a meeting con contributo di idee innovative e feedback"
+      ],
+      "tecnologie_conosciute": [
+        "Apache Atlas",
+        "DataHub",
+        "ELK stack",
+        "IBM solutions",
+        "Microsoft data tools",
+        "Hugging Face Transformers",
+        "TensorFlow",
+        "PyTorch",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "cloud_azure_aws_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Engineering o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 5 anni come Cloud (Azure/AWS) Engineer o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, implementazione e gestione di soluzioni di infrastruttura cloud scalabili, sicure e ad alte performance su Azure e/o AWS",
+        "Provisioning automatizzato dell'infrastruttura tramite IaC",
+        "Monitoraggio e manutenzione delle risorse cloud per performance, scalabilità ed efficienza dei costi",
+        "Implementazione e gestione di policy di sicurezza cloud (IAM, encryption, network security)",
+        "Conduzione di audit di sicurezza, vulnerability assessment e patching",
+        "Integrazione con pipeline CI/CD",
+        "Pianificazione, migrazione e integrazione di sistemi on-premises verso il cloud",
+        "Adozione di architetture cloud ibride",
+        "Redazione di documentazione per architettura, configurazioni, processi e procedure cloud",
+        "Conoscenza di cloud networking (VPC, subnet, firewall, VPN, load balancing)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellenti capacità analitiche e problem solving",
+        "Forti capacità di comunicazione verbale e scritta",
+        "Attenzione al dettaglio nella progettazione di soluzioni sicure, scalabili ed efficienti",
+        "Gestione del tempo e delle priorità in ambienti dinamici",
+        "Adattabilità e apprendimento continuo"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "EC2",
+        "S3",
+        "Lambda",
+        "RDS",
+        "VPC",
+        "Azure Virtual Machines",
+        "Azure Blob Storage",
+        "App Services",
+        "AKS",
+        "AWS CloudFormation",
+        "Terraform",
+        "Azure ARM templates",
+        "Docker",
+        "Kubernetes",
+        "Amazon ECS",
+        "Jenkins",
+        "GitLab CI",
+        "AWS CodePipeline",
+        "Azure DevOps",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "CloudWatch",
+        "Azure Monitor",
+        "Prometheus",
+        "Datadog",
+        "New Relic"
+      ],
+      "certificazioni": []
+    }
+  },
+  "devsecops_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Engineering o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 5 anni come Dev(Sec)Ops Engineer o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Integrazione delle pratiche di sicurezza nella pipeline DevOps",
+        "Automazione di security check, vulnerability scanning e compliance assessment nel CI/CD",
+        "Embedding di best practice di sicurezza (OWASP, secure coding) nel codice applicativo",
+        "Monitoraggio continuo di applicazioni, sistemi e infrastruttura per vulnerabilità e minacce",
+        "Analisi dei security finding e gestione della remediation",
+        "Esecuzione di audit di sicurezza e penetration test",
+        "Automazione delle procedure di incident response",
+        "Implementazione di strumenti di security automation (patch management, encryption, access control)",
+        "Gestione della sicurezza di infrastrutture cloud e on-premise",
+        "Esecuzione di security assessment di ambienti cloud e containerizzati",
+        "Garanzia della conformità a policy interne, standard di settore (GDPR, HIPAA, PCI DSS) e requisiti normativi",
+        "Documentazione di processi, configurazioni e decisioni di sicurezza"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Collaborazione con team di sviluppo, operations e sicurezza",
+        "Forte pensiero analitico e troubleshooting di problemi di sicurezza complessi in sistemi live",
+        "Alta attenzione al dettaglio nelle configurazioni di sicurezza",
+        "Leadership e mentoring dei team nell'adozione di pratiche di secure coding e DevSecOps",
+        "Adattabilità a nuove tecniche e strumenti di sicurezza",
+        "Efficace gestione del tempo in ambienti agile"
+      ],
+      "tecnologie_conosciute": [
+        "Jenkins",
+        "GitLab CI",
+        "Azure DevOps",
+        "CircleCI",
+        "Snyk",
+        "SonarQube",
+        "Fortify",
+        "Aqua Security",
+        "HashiCorp Vault",
+        "OWASP ZAP",
+        "Docker",
+        "Kubernetes",
+        "AWS Security Hub",
+        "Azure Security Center",
+        "GCP Security Command Center",
+        "AWS IAM",
+        "Azure AD",
+        "Terraform",
+        "CloudFormation",
+        "Azure ARM templates",
+        "Splunk",
+        "ELK Stack",
+        "Nessus",
+        "Qualys",
+        "Datadog",
+        "New Relic",
+        "Syslog",
+        "OSSEC"
+      ],
+      "certificazioni": []
+    }
+  },
+  "systems_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Engineering o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 5 anni come Systems Engineer o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Consulenza esperta in ingegneria di sistemi e infrastrutture virtualizzate (hyperconverged/Nutanix)",
+        "Progettazione, configurazione e implementazione di soluzioni di infrastruttura server (fisiche e virtualizzate)",
+        "Installazione, configurazione e gestione di server fisici e virtualizzati",
+        "Provisioning automatizzato dell'infrastruttura tramite IaC",
+        "Monitoraggio delle performance di sistemi/infrastruttura",
+        "Troubleshooting e risoluzione di problemi infrastrutturali",
+        "Ottimizzazione dei costi cloud",
+        "Implementazione e gestione di policy di sicurezza (IAM, encryption, systems security)",
+        "Garanzia della conformità a standard di settore (GDPR, HIPAA, SOC 2)",
+        "Redazione di documentazione accurata e aggiornata per architettura, configurazioni e processi"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Eccellenti capacità analitiche e problem solving",
+        "Forti capacità di comunicazione verbale e scritta",
+        "Attenzione al dettaglio nella progettazione di soluzioni sicure, scalabili ed efficienti",
+        "Gestione del tempo e delle priorità in ambienti dinamici",
+        "Adattabilità e apprendimento continuo"
+      ],
+      "tecnologie_conosciute": [
+        "Nutanix AHV",
+        "Nutanix AOS",
+        "Prism",
+        "Linux",
+        "Windows Server",
+        "Terraform",
+        "Ansible",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "Docker",
+        "Kubernetes",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "SolarWinds",
+        "PRTG",
+        "Nagios",
+        "AWS Cost Explorer",
+        "Azure Cost Management"
+      ],
+      "certificazioni": []
+    }
+  },
+  "it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor) in Information Technology, Computer Science, Engineering o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 5 anni come IT Expert o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Manutenzione e supporto di infrastruttura IT (server, reti, endpoint)",
+        "Supporto tecnico agli utenti finali (Tier 1 & Tier 2) per hardware, software e problemi di rete",
+        "Installazione, configurazione e manutenzione di sistemi operativi e pacchetti software standard",
+        "Monitoraggio di sistemi e performance di rete",
+        "Partecipazione a progetti IT (upgrade di sistemi, migrazioni cloud, miglioramenti della sicurezza)",
+        "Redazione di documentazione per sistemi, procedure e configurazioni",
+        "Implementazione e applicazione delle best practice di sicurezza IT",
+        "Conoscenza approfondita della specifica metodologia richiesta",
+        "Esperienza precedente in progetti simili di implementazione, formazione e guida all'adozione della metodologia",
+        "Capacità di condurre meeting e di erogare formazione",
+        "Conoscenza dei concetti ITIL e delle pratiche di service management"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forte problem solving e capacità analitiche",
+        "Capacità di lavorare in autonomia e di prioritizzare i task",
+        "Forti capacità di comunicazione e relazione interpersonale",
+        "Mentalità orientata al cliente e all'erogazione di servizi",
+        "Volontà di apprendere e adattarsi a nuove tecnologie",
+        "Eccellenti capacità di preparazione e redazione di studi/documentazione",
+        "Capacità di applicare standard qualitativi elevati",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "Windows",
+        "Linux",
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "VPN",
+        "Active Directory",
+        "Microsoft 365",
+        "VMware",
+        "Hyper-V",
+        "PowerShell",
+        "Bash",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "high_level_it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea magistrale (Master, 4 anni) in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration o campo correlato"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": "Oltre 8 anni come High Level IT Expert o equivalente"
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Progettazione, implementazione e supervisione di soluzioni IT complesse (reti, piattaforme cloud, data center)",
+        "Leadership di progetti IT strategici (architecture planning, system integration, digital transformation)",
+        "Consulenza tecnica a leadership e team cross-funzionali",
+        "Adozione di best practice di cybersecurity (risk assessment, incident response, compliance management)",
+        "Valutazione di tecnologie emergenti e raccomandazioni per innovazione",
+        "Mentoring e supporto a personale IT junior",
+        "Sviluppo e manutenzione di documentazione enterprise e disaster recovery plan",
+        "Garanzia di alta disponibilità e performance di sistemi e servizi mission-critical",
+        "Consulenza esperta in specifiche aree IT (enterprise & web content management, XML, portali, BPM, interoperabilità, AI, ALM, test driven development, search technologies, ecc.)",
+        "Assistenza nell'implementazione di metodologie di software engineering",
+        "Fornitura di studi tecnici, valutazioni, assessment, gap analysis, risk analysis",
+        "Fornitura di studi e assessment di sicurezza",
+        "Elaborazione di documentazione di design con consultazione degli stakeholder",
+        "Elaborazione di requisiti funzionali e non funzionali e analisi di business case"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Pensiero strategico e leadership",
+        "Alto livello di responsabilità e capacità decisionale",
+        "Eccellenti capacità di comunicazione con stakeholder tecnici e non tecnici",
+        "Esperienza di project management con forti capacità organizzative e di pianificazione",
+        "Adattabilità in ambienti dinamici",
+        "Capacità di scrivere documentazione tecnica chiara e strutturata",
+        "Capacità di guidare un team e coordinare meeting",
+        "Capacità di lavorare in ambiente internazionale/multiculturale"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "PowerShell",
+        "Python",
+        "Ansible",
+        "Terraform"
+      ],
+      "certificazioni": []
+    }
+  },
+  "service_desk_operator": {
+    "formazione": {
+      "livello_di_istruzione": "Laurea triennale (Bachelor), o istruzione post-secondaria, o istruzione secondaria con equivalente esperienza professionale"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Fornitura di supporto tecnico di primo livello per problemi IT e non IT",
+        "Diagnosi e troubleshooting di hardware, software, applicazioni desktop e problemi di connettività di rete",
+        "Installazione, configurazione e manutenzione di hardware e software desktop",
+        "Log e documentazione di incidenti e richieste di servizio nel sistema di ticketing",
+        "Supporto alla gestione degli account utente (password reset, access request, user provisioning)",
+        "Monitoraggio e reportistica sullo stato dei ticket",
+        "Supporto logistico e amministrativo (gestione posta, forniture ufficio, gestione inventario fisico)",
+        "Gestione di richieste di supporto per attrezzature IT/AV delle sale riunioni",
+        "Formazione ai nuovi arrivati sui ruoli, responsabilità e workflow del Service Desk",
+        "Esecuzione di inventario semestrale di asset IT e non IT (etichettatura, scansione barcode, report)",
+        "Conoscenza degli strumenti di service desk (ticketing system e soluzioni di supporto remoto)",
+        "Conoscenza delle pratiche di service management e SLA"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Forte orientamento al cliente con eccellenti capacità interpersonali e di comunicazione",
+        "Capacità di lavorare in autonomia e in team in ambiente multiculturale e frenetico",
+        "Flessibilità e reattività nella gestione di situazioni impreviste",
+        "Discrezione e responsabilità nella gestione di informazioni riservate",
+        "Impegno nell'apprendimento continuo e aggiornamento sulle tendenze tecnologiche",
+        "Forti capacità analitiche e problem solving"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  }
+}

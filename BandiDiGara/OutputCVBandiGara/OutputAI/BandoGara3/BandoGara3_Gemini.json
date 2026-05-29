@@ -1,0 +1,830 @@
+{
+  "project_manager": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor Degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Project management methodologies (Agile, SAFE, Waterfall)",
+        "Software development life cycle (SDLC)",
+        "Business applications and information systems architecture",
+        "Data management, database technologies, and system integration",
+        "Cybersecurity best practices and data protection regulations",
+        "ITIL and IT service management practices"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Project management and organisational skills",
+        "Excellent communication and negotiation skills",
+        "Strong leadership and team management capabilities",
+        "Analytical thinking and problem-solving abilities",
+        "Ability to balance multiple projects and priorities",
+        "Stakeholder management"
+      ],
+      "tecnologie_conosciute": [
+        "MS Project",
+        "Jira",
+        "Azure DevOps",
+        "APIs",
+        "middleware",
+        "AWS",
+        "Azure"
+      ],
+      "certificazioni": [
+        "PMBOK",
+        "PM²",
+        "PRINCE2",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  },
+  "business_analyst": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor's degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Business analysis tools and techniques (SWOT, MOSCOW, BPMN, UML)",
+        "Software development methodologies (Agile, Scrum, Kanban, Waterfall, PM²)",
+        "Software architecture and development concepts",
+        "Data analysis and reporting",
+        "API specifications, system integration, and ERP/CRM systems",
+        "Large organisation administrative business processes",
+        "Analysis/modelling tools and techniques (use case diagram, state diagram, entity relationship model)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong analytical and critical thinking skills",
+        "Excellent communication, facilitation, and presentation skills",
+        "High attention to detail and organizational abilities",
+        "Ability to work independently and collaboratively",
+        "Strong interpersonal skills",
+        "Proactive, adaptable, and open to learning",
+        "Capability of working in an international/ multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "Trello",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "certificazioni": []
+    }
+  },
+  "testing_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor's degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "SDLC, STLC, and Agile methodologies",
+        "Automation frameworks and tools",
+        "Scripting or programming languages",
+        "API testing, database validation (SQL)",
+        "Performance/load testing",
+        "CI/CD tools and DevOps practices",
+        "Agile project organisation and Agile Testing principles"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Excellent attention to detail and analytical thinking",
+        "Strong communication and documentation skills",
+        "Methodical problem-solving mindset",
+        "Ability to work independently",
+        "Collaborative, proactive, and committed to continuous learning",
+        "Ability to manage multiple tasks and priorities in a fast-paced environment",
+        "Ability to cope with fast changing technologies"
+      ],
+      "tecnologie_conosciute": [
+        "Azure DevOps",
+        "TestRail",
+        "OTRS",
+        "ServiceNow",
+        "Selenium",
+        "webdriver.io",
+        "Postman",
+        "Python",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "JMeter",
+        "Jenkins",
+        "GitLab CI"
+      ],
+      "certificazioni": [
+        "ISTQB Foundation Level",
+        "ISTQB Advanced Level"
+      ]
+    }
+  },
+  "solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Designing scalable, secure, and resilient software architectures",
+        "Application integration, APIs (REST, SOAP), middleware, and message queues",
+        "Database technologies (SQL, NoSQL), data architecture, and storage solutions",
+        "DevOps practices, CI/CD pipelines, containerization, and orchestration",
+        "Enterprise architecture frameworks",
+        "Enterprise systems (ERP, CRM, CMS) and architecture modelling",
+        "Business processes analysis",
+        "Software maturity models"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong analytical and strategic thinking",
+        "Excellent communication and presentation skills",
+        "Technical leadership and team collaboration capabilities",
+        "High attention to detail",
+        "Adaptability and resilience",
+        "Capability of working in an international/ multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Kafka",
+        "RabbitMQ",
+        "Docker",
+        "Kubernetes",
+        "TOGAF",
+        "Zachman",
+        "ArchiMate",
+        "Sparx EA"
+      ],
+      "certificazioni": []
+    }
+  },
+  "security_officer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Cybersecurity principles, threat landscapes, and risk management",
+        "Security technologies (firewalls, IDS/IPS, antivirus, endpoint protection, DLP, VPNs, SIEM)",
+        "Cloud security tools and configurations",
+        "Identity and access management (IAM), MFA, PKI",
+        "Networking concepts, operating systems, and security protocols",
+        "Vulnerability scanning and penetration testing coordination",
+        "IT security standards and information systems security",
+        "Security management methodologies and tools"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "High ethical standards, integrity, and confidentiality",
+        "Strong analytical thinking and problem-solving skills",
+        "Excellent communication and report-writing abilities",
+        "Leadership, collaboration, and influencing skills",
+        "Ability to manage multiple priorities in a high-pressure environment",
+        "Capability of working in an international/ multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "Splunk",
+        "QRadar",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Linux",
+        "Windows",
+        "Nessus",
+        "Qualys"
+      ],
+      "certificazioni": []
+    }
+  },
+  "software_developer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Software Design & Development",
+        "Database Management",
+        "Version Control",
+        "Software Development Lifecycle (SDLC: Agile, Scrum, Kanban)",
+        "APIs & Web Services (RESTful APIs, WebSockets)",
+        "Cloud Technologies",
+        "Testing Frameworks",
+        "DevOps & CI/CD"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Excellent problem-solving skills",
+        "Strong written and verbal communication skills",
+        "Team Collaboration",
+        "Time Management",
+        "Attention to Detail",
+        "Adaptability"
+      ],
+      "tecnologie_conosciute": [
+        "Java",
+        "C#",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "PHP",
+        "IBM Frameworks",
+        "React",
+        "Angular",
+        "Spring Boot",
+        "Django",
+        ".NET",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "JUnit",
+        "Mocha",
+        "Jasmine",
+        "Azure DevOps",
+        "Jenkins",
+        "GitLab CI",
+        "Travis CI",
+        "Jira",
+        "Confluence"
+      ],
+      "certificazioni": []
+    }
+  },
+  "support_officer_trainer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree, or post-secondary education, or secondary education with equivalent professional experience, in Computer Science or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "IT support, second-line support, and direct end-user assistance",
+        "Diagnosing and resolving issues related to networking, infrastructure, servers, enterprise systems",
+        "IT service management best practices (ITIL)",
+        "Assessing user needs and designing/delivering tailored IT training",
+        "Data protection principles and cybersecurity awareness"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Excellent organizational, time management, and planning skills",
+        "Strong communication and interpersonal skills",
+        "Ability to work autonomously as well as collaboratively",
+        "Resilience and flexibility under pressure",
+        "Proactive and improvement-driven mindset"
+      ],
+      "tecnologie_conosciute": [
+        "Microsoft 365",
+        "Azure",
+        "Confluence",
+        "SharePoint"
+      ],
+      "certificazioni": [
+        "ITIL Foundation",
+        "Microsoft Certified: Modern Desktop Administrator Associate",
+        "CompTIA Network+",
+        "CompTIA Security+"
+      ]
+    }
+  },
+  "m365_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "M365 administration, configuration, design, deployment",
+        "Identity & Access Management",
+        "Endpoint & Device Management",
+        "Information Protection & Governance",
+        "Networking principles, ICT infrastructure, and system integrations",
+        "Hybrid identity architectures",
+        "Automation and scripting",
+        "Agile environments"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong ability to produce clear, structured and audience-appropriate technical documentation"
+      ],
+      "tecnologie_conosciute": [
+        "Microsoft 365",
+        "SharePoint Online",
+        "Microsoft Teams",
+        "Exchange Online",
+        "OneDrive",
+        "Power Platform",
+        "Microsoft Viva",
+        "Azure Active Directory",
+        "Microsoft Intune",
+        "Autopilot",
+        "Endpoint Manager",
+        "Microsoft 365 Defender",
+        "Azure Security Centre",
+        "Microsoft Purview",
+        "DLP",
+        "Microsoft Information Protection",
+        "Microsoft Sentinel",
+        "Active Directory",
+        "Exchange Server",
+        "PowerShell",
+        "Power Automate",
+        "Azure DevOps"
+      ],
+      "certificazioni": [
+        "PM2-Agile",
+        "Scrum"
+      ]
+    }
+  },
+  "ibm_solution_architect": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "IBM technologies and solution architecture",
+        "Latest IBM technologies related to AI and automation",
+        "Enterprise architecture models and tools",
+        "Business processes analysis",
+        "Agile DevOps"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong capacity in writing and presenting studies",
+        "Capability of working in an international/ multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "IBM Filenet",
+        "IBM Content Navigator",
+        "IBM Business Automation workflow",
+        "Datacap",
+        "IBM Enterprise Bus",
+        "Aspera",
+        "IBM Cloud Pak"
+      ],
+      "certificazioni": []
+    }
+  },
+  "network_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Networking Protocols",
+        "Routing & Switching",
+        "Network Security",
+        "Cloud & Virtualization network architecture",
+        "IPv6 implementation and migration",
+        "WAN Technologies",
+        "Wi-Fi Networks"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong problem-solving skills",
+        "Ability to think analytically and strategically",
+        "Excellent communication skills",
+        "Ability to work independently and as part of a collaborative team",
+        "Attention to detail",
+        "Adaptability",
+        "Strong time management and organizational skills"
+      ],
+      "tecnologie_conosciute": [
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "HTTP",
+        "SNMP",
+        "VPN",
+        "OSPF",
+        "BGP",
+        "EIGRP",
+        "VLANs",
+        "STP",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "SolarWinds",
+        "PRTG",
+        "Wireshark",
+        "AWS",
+        "Azure",
+        "SDN",
+        "VMware NSX",
+        "MPLS",
+        "SD WAN"
+      ],
+      "certificazioni": []
+    }
+  },
+  "data_and_ai_specialist": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Data management and data governance",
+        "Design and deployment experience in data pipelines",
+        "AI, Machine Learning, and Generative AI (GenAI) solutions",
+        "Data ingestion, storage, and visualization techniques",
+        "Deployment and fine-tuning Large Language Models (LLMs) and Transformers",
+        "Containerization",
+        "Data structures, algorithms, and software design patterns"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Proven ability to collaborate with cross-functional teams and stakeholders"
+      ],
+      "tecnologie_conosciute": [
+        "Apache Atlas",
+        "DataHub",
+        "ELK stack",
+        "IBM solutions",
+        "Microsoft",
+        "Hugging Face Transformers",
+        "TensorFlow",
+        "PyTorch",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "cloud_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Cloud Security (IAM, RBAC, encryption, secure network design)",
+        "Infrastructure as Code (IaC)",
+        "Containerization & Orchestration",
+        "CI/CD & Automation",
+        "Scripting & Automation",
+        "Cloud Networking",
+        "Monitoring & Performance"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Problem-Solving & Troubleshooting",
+        "Communication & Collaboration",
+        "Attention to Detail",
+        "Time Management",
+        "Adaptability & Continuous Learning"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "EC2",
+        "S3",
+        "Lambda",
+        "RDS",
+        "VPC",
+        "Azure Virtual Machines",
+        "Azure Blob Storage",
+        "App Services",
+        "AKS",
+        "AWS CloudFormation",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "Amazon ECS",
+        "Jenkins",
+        "GitLab CI",
+        "AWS CodePipeline",
+        "Azure DevOps",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "CloudWatch",
+        "Azure Monitor",
+        "Prometheus",
+        "Datadog",
+        "New Relic"
+      ],
+      "certificazioni": []
+    }
+  },
+  "devsecops_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "DevOps Tools & Practices",
+        "Security Tools & Frameworks",
+        "Containerization & Orchestration",
+        "Cloud Security",
+        "Identity & Access Management (IAM)",
+        "Infrastructure as Code (IaC)",
+        "Monitoring & Logging",
+        "Networking & Firewall Management",
+        "Incident Response Tools"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Collaboration & Communication",
+        "Problem-Solving & Critical Thinking",
+        "Attention to Detail",
+        "Leadership & Mentorship",
+        "Adaptability",
+        "Time Management"
+      ],
+      "tecnologie_conosciute": [
+        "Jenkins",
+        "GitLab CI",
+        "Azure DevOps",
+        "CircleCI",
+        "Snyk",
+        "SonarQube",
+        "Fortify",
+        "Aqua Security",
+        "HashiCorp Vault",
+        "OWASP ZAP",
+        "Docker",
+        "Kubernetes",
+        "AWS Security Hub",
+        "Azure Security Center",
+        "GCP Security Command Center",
+        "AWS IAM",
+        "Azure AD",
+        "Terraform",
+        "CloudFormation",
+        "Azure ARM",
+        "Splunk",
+        "ELK Stack",
+        "Nessus",
+        "Qualys",
+        "Datadog",
+        "New Relic",
+        "Syslog",
+        "OSSEC"
+      ],
+      "certificazioni": []
+    }
+  },
+  "systems_engineer": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Linux Administration",
+        "Windows Administration",
+        "Infrastructure Security",
+        "Infrastructure as Code (IaC)",
+        "Containerization & Orchestration",
+        "Networking",
+        "Scripting languages for automation"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Problem-Solving & Troubleshooting",
+        "Communication & Collaboration",
+        "Attention to Detail",
+        "Time Management",
+        "Adaptability & Continuous Learning"
+      ],
+      "tecnologie_conosciute": [
+        "Nutanix AHV",
+        "AOS",
+        "Prism",
+        "Object",
+        "Linux",
+        "Windows Server",
+        "Terraform",
+        "Ansible",
+        "Bash",
+        "PowerShell",
+        "Python",
+        "Ruby",
+        "Docker",
+        "Kubernetes",
+        "Cisco",
+        "Juniper",
+        "HP",
+        "SolarWinds",
+        "PRTG",
+        "Nagios"
+      ],
+      "certificazioni": []
+    }
+  },
+  "it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree in Information Technology, Computer Science, Engineering or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 5
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Networking fundamentals",
+        "Endpoint protection, backup systems, and IT monitoring tools",
+        "Basic scripting skills",
+        "ITIL concepts and service management practices",
+        "Specific methodology implementation and training"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strong problem-solving and analytical skills",
+        "Ability to work independently and prioritize tasks",
+        "Strong communication and interpersonal skills",
+        "Customer-focused mindset",
+        "Willingness to learn and adapt",
+        "Excellent skills in preparing and writing studies/documentation",
+        "Ability to apply high quality standards",
+        "Ability to lead meetings and provide trainings",
+        "Capability of working in an international/ multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "Windows",
+        "Linux",
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "VPN",
+        "Active Directory",
+        "Microsoft 365",
+        "VMware",
+        "Hyper-V",
+        "PowerShell",
+        "Bash",
+        "Python"
+      ],
+      "certificazioni": []
+    }
+  },
+  "high_level_it_expert": {
+    "formazione": {
+      "livello_di_istruzione": "Master degree in Information Technology, Computer Science, Mathematics, Physics, Engineering, Business Administration, or related field"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": 8
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "Enterprise infrastructure: networking, cloud, virtualization, storage, and security",
+        "IT architecture, systems engineering, and DevOps methodologies",
+        "Automation and scripting",
+        "Containerization and orchestration",
+        "Cybersecurity frameworks and compliance standards",
+        "All areas of IT including governance and technological aspects"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Strategic thinking and leadership skills",
+        "High level of accountability and decision-making ability",
+        "Excellent communication skills",
+        "Project management experience with strong organizational and planning capabilities",
+        "Adaptability in fast-paced, dynamic environments",
+        "Capability to write clear and structured technical documentation",
+        "Ability to lead a team and coordinate meetings",
+        "Capability of working in an international/multicultural environment"
+      ],
+      "tecnologie_conosciute": [
+        "Azure",
+        "AWS",
+        "GCP",
+        "PowerShell",
+        "Python",
+        "Ansible",
+        "Terraform",
+        "Docker",
+        "Kubernetes"
+      ],
+      "certificazioni": [
+        "NIST",
+        "ISO 27001"
+      ]
+    }
+  },
+  "service_desk_operator": {
+    "formazione": {
+      "livello_di_istruzione": "Bachelor’s degree, or post-secondary education, or secondary education with equivalent professional experience"
+    },
+    "esperienza": {
+      "anni_di_anzianita_junior": null,
+      "anni_di_anzianita_senior": null
+    },
+    "competenze": {
+      "competenze_tecniche": [
+        "IT support or Facility services",
+        "Hardware, software, and network troubleshooting",
+        "Service desk tools – ticketing systems and remote support solutions",
+        "Service management practices and service-level agreements (SLAs)"
+      ],
+      "lingue": [
+        "Inglese - C1"
+      ],
+      "soft_skills": [
+        "Understand and anticipate user needs",
+        "Strong analytical and problem-solving capabilities",
+        "Capable of working both independently and collaboratively",
+        "Flexibility and responsiveness",
+        "Strong client orientation with excellent interpersonal and communication skills",
+        "Discretion and a responsible attitude",
+        "Commitment to ongoing learning"
+      ],
+      "tecnologie_conosciute": [],
+      "certificazioni": []
+    }
+  }
+}

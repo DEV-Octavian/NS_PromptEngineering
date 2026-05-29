@@ -1,0 +1,100 @@
+{
+  "BandoGara": {
+    "project_manager": {
+      "formazione": {
+        "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento"
+      },
+      "esperienza": {
+        "anni_di_anzianita_junior": null,
+        "anni_di_anzianita_senior": 5
+      },
+      "competenze": {
+        "competenze_tecniche": [
+          "Gestione di progetti complessi in ambito ICT",
+          "Coordinamento team di lavoro",
+          "Gestione dei tempi, costi e qualità del progetto"
+        ],
+        "lingue": [],
+        "soft_skills": [],
+        "tecnologie_conosciute": [],
+        "certificazioni": []
+      }
+    },
+    "cloud_administrator": {
+      "formazione": {
+        "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento"
+      },
+      "esperienza": {
+        "anni_di_anzianita_junior": null,
+        "anni_di_anzianita_senior": 3
+      },
+      "competenze": {
+        "competenze_tecniche": [
+          "Gestione e manutenzione infrastruttura e servizi di cloud computing",
+          "Installazione software e configurazione sistemi ICT",
+          "Monitoraggio prestazioni e servizi cloud",
+          "Implementazione politiche di sicurezza (standard di sicurezza)",
+          "Risoluzione problemi (troubleshooting)",
+          "Gestione backup e piani di disaster recovery",
+          "Automazione attività di routine",
+          "Ottimizzazione risorse cloud",
+          "Sviluppo e disegno strategie basi dati"
+        ],
+        "lingue": [],
+        "soft_skills": [],
+        "tecnologie_conosciute": [
+          "Cloud computing",
+          "Database"
+        ],
+        "certificazioni": []
+      }
+    },
+    "solution_application_architect": {
+      "formazione": {
+        "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento"
+      },
+      "esperienza": {
+        "anni_di_anzianita_junior": null,
+        "anni_di_anzianita_senior": 3
+      },
+      "competenze": {
+        "competenze_tecniche": [
+          "Implementazione e integrazione di soluzioni applicative",
+          "Definizione architetture software",
+          "Gestione interfacciamenti"
+        ],
+        "lingue": [],
+        "soft_skills": [],
+        "tecnologie_conosciute": [],
+        "certificazioni": []
+      }
+    },
+    "esperto_di_dominio": {
+      "formazione": {
+        "livello_di_istruzione": "Laurea magistrale, specialistica o vecchio ordinamento e almeno un corso post laurea nella materia di riferimento"
+      },
+      "esperienza": {
+        "anni_di_anzianita_junior": null,
+        "anni_di_anzianita_senior": 5
+      },
+      "competenze": {
+        "competenze_tecniche": [
+          "Competenze tematiche specialistiche in materia giuridica/normativa",
+          "Protezione dei dati (GDPR)",
+          "Procedimenti amministrativi della PA",
+          "Comunicazione pubblica",
+          "Supporto all'innovazione, semplificazione e digitalizzazione dei processi"
+        ],
+        "lingue": [],
+        "soft_skills": [
+          "Capacità di dialogo con l'Amministrazione",
+          "Capacità di recepimento e indirizzo esigenze di innovazione"
+        ],
+        "tecnologie_conosciute": [],
+        "certificazioni": [
+          "Corso post laurea nella materia di riferimento"
+        ]
+      }
+    }
+  }
+}
